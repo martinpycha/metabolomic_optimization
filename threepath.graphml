@@ -1,0 +1,4016 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="LB" attr.type="boolean"/>
+<key id="d12" for="edge" attr.name="UB" attr.type="boolean"/>
+<key id="d11" for="edge" attr.name="path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="URL" attr.type="string"/>
+<key id="d9" for="edge" attr.name="UB" attr.type="double"/>
+<key id="d8" for="edge" attr.name="LB" attr.type="double"/>
+<key id="d7" for="edge" attr.name="error" attr.type="double"/>
+<key id="d6" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d5" for="edge" attr.name="equation" attr.type="string"/>
+<key id="d4" for="edge" attr.name="name" attr.type="string"/>
+<key id="d3" for="node" attr.name="degree" attr.type="long"/>
+<key id="d2" for="node" attr.name="includes" attr.type="string"/>
+<key id="d1" for="node" attr.name="configuration" attr.type="string"/>
+<key id="d0" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="directed"><node id="Pal.lab">
+  <data key="d0">Pal.lab</data>
+  <data key="d1">square</data>
+  <data key="d2">Pal</data>
+  <data key="d3">1</data>
+</node>
+<node id="Pal">
+  <data key="d0">Pal</data>
+  <data key="d1">square</data>
+  <data key="d2">Pal</data>
+  <data key="d3">39</data>
+</node>
+<node id="Pal.Pre">
+  <data key="d0">Pal.Pre</data>
+  <data key="d1">square</data>
+  <data key="d2">Pal</data>
+  <data key="d3">1</data>
+</node>
+<node id="Pal.out">
+  <data key="d0">Pal.out</data>
+  <data key="d1">square</data>
+  <data key="d2">Pal</data>
+  <data key="d3">1</data>
+</node>
+<node id="Glc.lab">
+  <data key="d0">Glc.lab</data>
+  <data key="d1">square</data>
+  <data key="d2">Glc</data>
+  <data key="d3">1</data>
+</node>
+<node id="Glc">
+  <data key="d0">Glc</data>
+  <data key="d1">square</data>
+  <data key="d2">Glc</data>
+  <data key="d3">5</data>
+</node>
+<node id="Glc.Pre">
+  <data key="d0">Glc.Pre</data>
+  <data key="d1">square</data>
+  <data key="d2">Glc</data>
+  <data key="d3">1</data>
+</node>
+<node id="Glc.out">
+  <data key="d0">Glc.out</data>
+  <data key="d1">square</data>
+  <data key="d2">Glc</data>
+  <data key="d3">1</data>
+</node>
+<node id="Gly">
+  <data key="d0">Gly</data>
+  <data key="d1">square</data>
+  <data key="d2">Gly</data>
+  <data key="d3">6</data>
+</node>
+<node id="Gly.out">
+  <data key="d0">Gly.out</data>
+  <data key="d1">square</data>
+  <data key="d2">Gly</data>
+  <data key="d3">1</data>
+</node>
+<node id="G3P">
+  <data key="d0">G3P</data>
+  <data key="d1">square</data>
+  <data key="d2">G3P</data>
+  <data key="d3">6</data>
+</node>
+<node id="GAP">
+  <data key="d0">GAP</data>
+  <data key="d1">square</data>
+  <data key="d2">GAP</data>
+  <data key="d3">9</data>
+</node>
+<node id="DAP">
+  <data key="d0">DAP</data>
+  <data key="d1">square</data>
+  <data key="d2">DAP</data>
+  <data key="d3">3</data>
+</node>
+<node id="Lac">
+  <data key="d0">Lac</data>
+  <data key="d1">square</data>
+  <data key="d2">Lac</data>
+  <data key="d3">4</data>
+</node>
+<node id="ATP">
+  <data key="d0">ATP</data>
+  <data key="d1">square</data>
+  <data key="d2">ATP</data>
+  <data key="d3">4</data>
+</node>
+<node id="ADP">
+  <data key="d0">ADP</data>
+  <data key="d1">square</data>
+  <data key="d2">ADP</data>
+  <data key="d3">3</data>
+</node>
+<node id="3*dummy">
+  <data key="d0">3*dummy</data>
+  <data key="d1">square</data>
+  <data key="d2"></data>
+  <data key="d3">2</data>
+</node>
+<node id="CO2#0">
+  <data key="d0">CO2#0</data>
+  <data key="d1">square</data>
+  <data key="d2"></data>
+  <data key="d3">2</data>
+</node>
+<node id="CO2#1">
+  <data key="d0">CO2#1</data>
+  <data key="d1">square</data>
+  <data key="d2"></data>
+  <data key="d3">2</data>
+</node>
+<node id="CO2#2">
+  <data key="d0">CO2#2</data>
+  <data key="d1">square</data>
+  <data key="d2"></data>
+  <data key="d3">2</data>
+</node>
+<node id="*ATP">
+  <data key="d0">*ATP</data>
+  <data key="d1">square</data>
+  <data key="d2"></data>
+  <data key="d3">2</data>
+</node>
+<node id="dummy">
+  <data key="d0">dummy</data>
+  <data key="d1">square</data>
+  <data key="d2"></data>
+  <data key="d3">2</data>
+</node>
+<node id="*ADP">
+  <data key="d0">*ADP</data>
+  <data key="d1">square</data>
+  <data key="d2"></data>
+  <data key="d3">5</data>
+</node>
+<node id="G12PalPal">
+  <data key="d0">G12PalPal</data>
+  <data key="d1">square</data>
+  <data key="d2">G12,Pal</data>
+  <data key="d3">12</data>
+</node>
+<node id="G12PalOle">
+  <data key="d0">G12PalOle</data>
+  <data key="d1">square</data>
+  <data key="d2">G12,Pal</data>
+  <data key="d3">12</data>
+</node>
+<node id="Ole">
+  <data key="d0">Ole</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole</data>
+  <data key="d3">38</data>
+</node>
+<node id="G12OlePal">
+  <data key="d0">G12OlePal</data>
+  <data key="d1">square</data>
+  <data key="d2">G12,Ole</data>
+  <data key="d3">12</data>
+</node>
+<node id="G12OleOle">
+  <data key="d0">G12OleOle</data>
+  <data key="d1">square</data>
+  <data key="d2">G12,Ole</data>
+  <data key="d3">12</data>
+</node>
+<node id="G20Pal">
+  <data key="d0">G20Pal</data>
+  <data key="d1">square</data>
+  <data key="d2">G20</data>
+  <data key="d3">10</data>
+</node>
+<node id="G23PalPal">
+  <data key="d0">G23PalPal</data>
+  <data key="d1">square</data>
+  <data key="d2">G23,Pal</data>
+  <data key="d3">19</data>
+</node>
+<node id="G20Ole">
+  <data key="d0">G20Ole</data>
+  <data key="d1">square</data>
+  <data key="d2">G20</data>
+  <data key="d3">10</data>
+</node>
+<node id="G23PalOle">
+  <data key="d0">G23PalOle</data>
+  <data key="d1">square</data>
+  <data key="d2">G23,Pal</data>
+  <data key="d3">19</data>
+</node>
+<node id="G23OlePal">
+  <data key="d0">G23OlePal</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,G23</data>
+  <data key="d3">19</data>
+</node>
+<node id="G23OleOle">
+  <data key="d0">G23OleOle</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,G23</data>
+  <data key="d3">19</data>
+</node>
+<node id="GlyPalPalPal">
+  <data key="d0">GlyPalPalPal</data>
+  <data key="d1">square</data>
+  <data key="d2">Gly,Pal</data>
+  <data key="d3">20</data>
+</node>
+<node id="GlyPalPalOle">
+  <data key="d0">GlyPalPalOle</data>
+  <data key="d1">square</data>
+  <data key="d2">Gly,Pal</data>
+  <data key="d3">20</data>
+</node>
+<node id="GlyPalOlePal">
+  <data key="d0">GlyPalOlePal</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly,Pal</data>
+  <data key="d3">20</data>
+</node>
+<node id="GlyPalOleOle">
+  <data key="d0">GlyPalOleOle</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly,Pal</data>
+  <data key="d3">20</data>
+</node>
+<node id="GlyOlePalPal">
+  <data key="d0">GlyOlePalPal</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly,Pal</data>
+  <data key="d3">20</data>
+</node>
+<node id="GlyOlePalOle">
+  <data key="d0">GlyOlePalOle</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly,Pal</data>
+  <data key="d3">20</data>
+</node>
+<node id="GlyOleOlePal">
+  <data key="d0">GlyOleOlePal</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly</data>
+  <data key="d3">20</data>
+</node>
+<node id="GlyOleOleOle">
+  <data key="d0">GlyOleOleOle</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly</data>
+  <data key="d3">20</data>
+</node>
+<node id="G13PalPal">
+  <data key="d0">G13PalPal</data>
+  <data key="d1">square</data>
+  <data key="d2">Pal,G13</data>
+  <data key="d3">32</data>
+</node>
+<node id="G13PalOle">
+  <data key="d0">G13PalOle</data>
+  <data key="d1">square</data>
+  <data key="d2">Pal,G13</data>
+  <data key="d3">32</data>
+</node>
+<node id="G13OlePal">
+  <data key="d0">G13OlePal</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,G13</data>
+  <data key="d3">32</data>
+</node>
+<node id="G13OleOle">
+  <data key="d0">G13OleOle</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,G13</data>
+  <data key="d3">32</data>
+</node>
+<node id="G10Pal">
+  <data key="d0">G10Pal</data>
+  <data key="d1">square</data>
+  <data key="d2">G10</data>
+  <data key="d3">36</data>
+</node>
+<node id="G10Ole">
+  <data key="d0">G10Ole</data>
+  <data key="d1">square</data>
+  <data key="d2">G10</data>
+  <data key="d3">36</data>
+</node>
+<node id="GlyPalPalPal.Pre">
+  <data key="d0">GlyPalPalPal.Pre</data>
+  <data key="d1">square</data>
+  <data key="d2">Gly,Pal</data>
+  <data key="d3">1</data>
+</node>
+<node id="GlyPalPalOle.Pre">
+  <data key="d0">GlyPalPalOle.Pre</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly,Pal</data>
+  <data key="d3">1</data>
+</node>
+<node id="GlyPalOlePal.Pre">
+  <data key="d0">GlyPalOlePal.Pre</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly,Pal</data>
+  <data key="d3">1</data>
+</node>
+<node id="GlyPalOleOle.Pre">
+  <data key="d0">GlyPalOleOle.Pre</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly,Pal</data>
+  <data key="d3">1</data>
+</node>
+<node id="GlyOlePalPal.Pre">
+  <data key="d0">GlyOlePalPal.Pre</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly,Pal</data>
+  <data key="d3">1</data>
+</node>
+<node id="GlyOlePalOle.Pre">
+  <data key="d0">GlyOlePalOle.Pre</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly,Pal</data>
+  <data key="d3">1</data>
+</node>
+<node id="GlyOleOlePal.Pre">
+  <data key="d0">GlyOleOlePal.Pre</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly,Pal</data>
+  <data key="d3">1</data>
+</node>
+<node id="GlyOleOleOle.Pre">
+  <data key="d0">GlyOleOleOle.Pre</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Gly</data>
+  <data key="d3">1</data>
+</node>
+<node id="Ole.Pre">
+  <data key="d0">Ole.Pre</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole</data>
+  <data key="d3">1</data>
+</node>
+<node id="G2xPalPal.mix">
+  <data key="d0">G2xPalPal.mix</data>
+  <data key="d1">square</data>
+  <data key="d2">Pal,G2x</data>
+  <data key="d3">3</data>
+</node>
+<node id="Sink">
+  <data key="d0">Sink</data>
+  <data key="d1">square</data>
+  <data key="d2"></data>
+  <data key="d3">22</data>
+</node>
+<node id="G2xPalOle.mix">
+  <data key="d0">G2xPalOle.mix</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,Pal,G2x</data>
+  <data key="d3">5</data>
+</node>
+<node id="G2xOleOle.mix">
+  <data key="d0">G2xOleOle.mix</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole,G2x</data>
+  <data key="d3">3</data>
+</node>
+<node id="Ole.out">
+  <data key="d0">Ole.out</data>
+  <data key="d1">square</data>
+  <data key="d2">Ole</data>
+  <data key="d3">1</data>
+</node>
+<node id="GLYOleOle.mix">
+  <data key="d0">GLYOleOle.mix</data>
+  <data key="d1">square</data>
+  <data key="d2">GLY,Ole</data>
+  <data key="d3">4</data>
+</node>
+<node id="GLYOleOleOle.mix">
+  <data key="d0">GLYOleOleOle.mix</data>
+  <data key="d1">square</data>
+  <data key="d2">GLY,Ole</data>
+  <data key="d3">2</data>
+</node>
+<node id="GLYPalOle.mix">
+  <data key="d0">GLYPalOle.mix</data>
+  <data key="d1">square</data>
+  <data key="d2">GLY,Ole,Pal</data>
+  <data key="d3">7</data>
+</node>
+<node id="GLYPalOleOle.mix">
+  <data key="d0">GLYPalOleOle.mix</data>
+  <data key="d1">square</data>
+  <data key="d2">GLY,Ole,Pal</data>
+  <data key="d3">4</data>
+</node>
+<node id="GLYPalPal.mix">
+  <data key="d0">GLYPalPal.mix</data>
+  <data key="d1">square</data>
+  <data key="d2">GLY,Pal</data>
+  <data key="d3">4</data>
+</node>
+<node id="GLYPalPalOle.mix">
+  <data key="d0">GLYPalPalOle.mix</data>
+  <data key="d1">square</data>
+  <data key="d2">GLY,Ole,Pal</data>
+  <data key="d3">4</data>
+</node>
+<node id="GLYPalPalPal.mix">
+  <data key="d0">GLYPalPalPal.mix</data>
+  <data key="d1">square</data>
+  <data key="d2">GLY,Pal</data>
+  <data key="d3">2</data>
+</node>
+<node id="Lac.out">
+  <data key="d0">Lac.out</data>
+  <data key="d1">square</data>
+  <data key="d2">Lac</data>
+  <data key="d3">1</data>
+</node>
+<edge source="Pal.lab" target="Pal" id="0">
+  <data key="d4">R1</data>
+  <data key="d5">Pal.lab -&gt; Pal</data>
+  <data key="d6">168.626262497115</data>
+  <data key="d7">31902.7883398841</data>
+  <data key="d8">153.14463372956</data>
+  <data key="d9">215.700882052432</data>
+  <data key="d10">R1path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="Pal" target="Pal.out" id="2">
+  <data key="d4">R3</data>
+  <data key="d5">Pal -&gt; Pal.out</data>
+  <data key="d6">75.1446429287273</data>
+  <data key="d7">6.99999970101084</data>
+  <data key="d8">61.6628755364724</data>
+  <data key="d9">88.7405721753106</data>
+  <data key="d10">R3path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="Pal" target="G12PalPal" id="30">
+  <data key="d4">R16</data>
+  <data key="d5">G3P + Pal + Pal + 2*ATP + 2*ATP -&gt; G12PalPal + 2*ADP + 2*ADP</data>
+  <data key="d6">35.8600251250817</data>
+  <data key="d7">59504.806167783</data>
+  <data key="d8">0.0</data>
+  <data key="d9">103.287657255327</data>
+  <data key="d10">R16path</data>
+  <data key="d11">GPAT</data>
+</edge>
+<edge source="Pal" target="G12PalPal" id="31">
+  <data key="d4">R16</data>
+  <data key="d5">G3P + Pal + Pal + 2*ATP + 2*ATP -&gt; G12PalPal + 2*ADP + 2*ADP</data>
+  <data key="d6">35.8600251250817</data>
+  <data key="d7">59504.806167783</data>
+  <data key="d8">0.0</data>
+  <data key="d9">103.287657255327</data>
+  <data key="d10">R16path</data>
+  <data key="d11">GPAT</data>
+</edge>
+<edge source="Pal" target="G12PalPal" id="42">
+  <data key="d4">R20</data>
+  <data key="d5">G20Pal + Pal + 2*ATP -&gt; G12PalPal + 2*ADP</data>
+  <data key="d6">64.1403785361419</data>
+  <data key="d7">51683.3719371147</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3698.31100352783</data>
+  <data key="d10">R20path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="Pal" target="G12PalOle" id="33">
+  <data key="d4">R17</data>
+  <data key="d5">G3P + Pal + Ole + 2*ATP + 2*ATP -&gt; G12PalOle + 2*ADP + 2*ADP</data>
+  <data key="d6">81.1558079257951</data>
+  <data key="d7">40363.3028322458</data>
+  <data key="d8">0.0</data>
+  <data key="d9">473.341011649075</data>
+  <data key="d10">R17path</data>
+  <data key="d11">GPAT</data>
+</edge>
+<edge source="Pal" target="G12PalOle" id="46">
+  <data key="d4">R22</data>
+  <data key="d5">G20Ole + Pal + 2*ATP -&gt; G12PalOle + 2*ADP</data>
+  <data key="d6">18.8491580444601</data>
+  <data key="d7">19538.5658779565</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R22path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="Pal" target="G12OlePal" id="37">
+  <data key="d4">R18</data>
+  <data key="d5">G3P + Ole + Pal + 2*ATP + 2*ATP -&gt; G12OlePal + 2*ADP + 2*ADP</data>
+  <data key="d6">100.000105905456</data>
+  <data key="d7">54502.8367175469</data>
+  <data key="d8">37.8073470898986</data>
+  <data key="d9">239.89873783805</data>
+  <data key="d10">R18path</data>
+  <data key="d11">GPAT</data>
+</edge>
+<edge source="Pal" target="G23PalPal" id="44">
+  <data key="d4">R21</data>
+  <data key="d5">G20Pal + Pal + 2*ATP -&gt; G23PalPal + 2*ADP</data>
+  <data key="d6">7.28278769202007e-05</data>
+  <data key="d7">26093.2231184076</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3649.41974479223</data>
+  <data key="d10">R21path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="Pal" target="G23OlePal" id="52">
+  <data key="d4">R25</data>
+  <data key="d5">G20Ole + Pal + 2*ATP -&gt; G23OlePal + 2*ADP</data>
+  <data key="d6">7.75564175938825e-05</data>
+  <data key="d7">43585.4480378699</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R25path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="Pal" target="GlyPalPalPal" id="58">
+  <data key="d4">R28</data>
+  <data key="d5">G12PalPal + Pal + 2*ATP -&gt; GlyPalPalPal + 2*ADP</data>
+  <data key="d6">4.98116175151608e-05</data>
+  <data key="d7">0.39672009640754</data>
+  <data key="d8">0.0</data>
+  <data key="d9">1.48897044843642</data>
+  <data key="d10">R28path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Pal" target="GlyPalPalPal" id="60">
+  <data key="d4">R29</data>
+  <data key="d5">G23PalPal + Pal + 2*ATP -&gt; GlyPalPalPal + 2*ADP</data>
+  <data key="d6">4.57424997790667e-05</data>
+  <data key="d7">10298.0720047823</data>
+  <data key="d8">0.0</data>
+  <data key="d9">1.77972823466587</data>
+  <data key="d10">R29path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Pal" target="GlyPalPalPal" id="90">
+  <data key="d4">R44</data>
+  <data key="d5">G13PalPal + Pal + 2*ATP -&gt; GlyPalPalPal + 2*ADP</data>
+  <data key="d6">7.94991958059654e-05</data>
+  <data key="d7">10026.4660745786</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R44path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="Pal" target="GlyPalPalOle" id="64">
+  <data key="d4">R31</data>
+  <data key="d5">G23PalOle + Pal + 2*ATP -&gt; GlyPalPalOle + 2*ADP</data>
+  <data key="d6">5.3742796769285e-05</data>
+  <data key="d7">19230.2890048787</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3792.60158593237</data>
+  <data key="d10">R31path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Pal" target="GlyPalPalOle" id="92">
+  <data key="d4">R45</data>
+  <data key="d5">G13PalOle + Pal + 2*ATP -&gt; GlyPalPalOle + 2*ADP</data>
+  <data key="d6">0.168237116183446</data>
+  <data key="d7">20605.1879207628</data>
+  <data key="d8">0.0</data>
+  <data key="d9">77.9110462933575</data>
+  <data key="d10">R45path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="Pal" target="GlyPalOlePal" id="66">
+  <data key="d4">R32</data>
+  <data key="d5">G12PalOle + Pal + 2*ATP -&gt; GlyPalOlePal + 2*ADP</data>
+  <data key="d6">5.4582916426682e-05</data>
+  <data key="d7">7.22801205995936</data>
+  <data key="d8">0.0</data>
+  <data key="d9">12.3430423989752</data>
+  <data key="d10">R32path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Pal" target="GlyPalOlePal" id="68">
+  <data key="d4">R33</data>
+  <data key="d5">G23OlePal + Pal + 2*ATP -&gt; GlyPalOlePal + 2*ADP</data>
+  <data key="d6">4.79694953980925e-05</data>
+  <data key="d7">60177.0344321625</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R33path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Pal" target="GlyPalOleOle" id="72">
+  <data key="d4">R35</data>
+  <data key="d5">G23OleOle + Pal + 2*ATP -&gt; GlyPalOleOle + 2*ADP</data>
+  <data key="d6">88.1475686641505</data>
+  <data key="d7">28973.0785196701</data>
+  <data key="d8">60.5047354477314</data>
+  <data key="d9">3865.59219614154</data>
+  <data key="d10">R35path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Pal" target="GlyOlePalPal" id="74">
+  <data key="d4">R36</data>
+  <data key="d5">G12OlePal + Pal + 2*ATP -&gt; GlyOlePalPal + 2*ADP</data>
+  <data key="d6">5.44048997141999e-05</data>
+  <data key="d7">14588.4052887732</data>
+  <data key="d8">0.0</data>
+  <data key="d9">15.0605456442636</data>
+  <data key="d10">R36path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Pal" target="GlyOlePalPal" id="98">
+  <data key="d4">R48</data>
+  <data key="d5">G13OlePal + Pal + 2*ATP -&gt; GlyOlePalPal + 2*ADP</data>
+  <data key="d6">2.63348916078598e-05</data>
+  <data key="d7">7486.84560557178</data>
+  <data key="d8">0.0</data>
+  <data key="d9">7.38159125687237</data>
+  <data key="d10">R48path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="Pal" target="GlyOleOlePal" id="82">
+  <data key="d4">R40</data>
+  <data key="d5">G12OleOle + Pal + 2*ATP -&gt; GlyOleOlePal + 2*ADP</data>
+  <data key="d6">5.98081973066655e-05</data>
+  <data key="d7">1630.86240531897</data>
+  <data key="d8">0.0</data>
+  <data key="d9">7.21643464873137</data>
+  <data key="d10">R40path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Pal" target="GlyOlePalOle" id="100">
+  <data key="d4">R49</data>
+  <data key="d5">G13OleOle + Pal + 2*ATP -&gt; GlyOlePalOle + 2*ADP</data>
+  <data key="d6">5.3690061712075e-05</data>
+  <data key="d7">27702.5971529271</data>
+  <data key="d8">0.0</data>
+  <data key="d9">190.588861346042</data>
+  <data key="d10">R49path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="Pal.Pre" target="Pal" id="1">
+  <data key="d4">R2</data>
+  <data key="d5">Pal.Pre -&gt; Pal</data>
+  <data key="d6">6.14492729282823e-05</data>
+  <data key="d7">105201.133578706</data>
+  <data key="d8">0.0</data>
+  <data key="d9">40.5159405489494</data>
+  <data key="d10">R2path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="Glc.lab" target="Glc" id="3">
+  <data key="d4">R4</data>
+  <data key="d5">Glc.lab -&gt; Glc</data>
+  <data key="d6">126.735772103354</data>
+  <data key="d7">17358.036391785</data>
+  <data key="d8">116.716890078461</data>
+  <data key="d12">False</data>
+  <data key="d10">R4path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="Glc" target="Glc.out" id="5">
+  <data key="d4">R6</data>
+  <data key="d5">Glc -&gt; Glc.out</data>
+  <data key="d6">0.627767586047383</data>
+  <data key="d7">27107.8284031275</data>
+  <data key="d8">0.0</data>
+  <data key="d9">65535.0</data>
+  <data key="d10">R6path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="Glc" target="GAP" id="8">
+  <data key="d4">R10</data>
+  <data key="d5">Glc + 2*ATP -&gt; GAP + DAP + 2*ADP</data>
+  <data key="d6">494.999894686375</data>
+  <data key="d7">43251.9556226598</data>
+  <data key="d8">478.802153753652</data>
+  <data key="d12">False</data>
+  <data key="d10">R10path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="Glc" target="DAP" id="9">
+  <data key="d4">R10</data>
+  <data key="d5">Glc + 2*ATP -&gt; GAP + DAP + 2*ADP</data>
+  <data key="d6">494.999894686375</data>
+  <data key="d7">43251.9556226598</data>
+  <data key="d8">478.802153753652</data>
+  <data key="d12">False</data>
+  <data key="d10">R10path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="Glc.Pre" target="Glc" id="4">
+  <data key="d4">R5</data>
+  <data key="d5">Glc.Pre -&gt; Glc</data>
+  <data key="d6">368.891890169068</data>
+  <data key="d7">38454.1587411978</data>
+  <data key="d8">0.0</data>
+  <data key="d9">65535.0</data>
+  <data key="d10">R5path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="Gly" target="Gly.out" id="6">
+  <data key="d4">R7</data>
+  <data key="d5">Gly -&gt; Gly.out</data>
+  <data key="d6">78.1979731409389</data>
+  <data key="d7">7.99999970646418</data>
+  <data key="d8">63.2990978088466</data>
+  <data key="d9">84.4238204655069</data>
+  <data key="d10">R7path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="G3P" target="Gly" id="7">
+  <data key="d4">R8</data>
+  <data key="d5">G3P -&gt; Gly</data>
+  <data key="d6">24.2070434693537</data>
+  <data key="d7">41821.4330599377</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6937177471007</data>
+  <data key="d10">R8path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="G3P" target="G12PalPal" id="29">
+  <data key="d4">R16</data>
+  <data key="d5">G3P + Pal + Pal + 2*ATP + 2*ATP -&gt; G12PalPal + 2*ADP + 2*ADP</data>
+  <data key="d6">35.8600251250817</data>
+  <data key="d7">59504.806167783</data>
+  <data key="d8">0.0</data>
+  <data key="d9">103.287657255327</data>
+  <data key="d10">R16path</data>
+  <data key="d11">GPAT</data>
+</edge>
+<edge source="G3P" target="G12PalOle" id="32">
+  <data key="d4">R17</data>
+  <data key="d5">G3P + Pal + Ole + 2*ATP + 2*ATP -&gt; G12PalOle + 2*ADP + 2*ADP</data>
+  <data key="d6">81.1558079257951</data>
+  <data key="d7">40363.3028322458</data>
+  <data key="d8">0.0</data>
+  <data key="d9">473.341011649075</data>
+  <data key="d10">R17path</data>
+  <data key="d11">GPAT</data>
+</edge>
+<edge source="G3P" target="G12OlePal" id="35">
+  <data key="d4">R18</data>
+  <data key="d5">G3P + Ole + Pal + 2*ATP + 2*ATP -&gt; G12OlePal + 2*ADP + 2*ADP</data>
+  <data key="d6">100.000105905456</data>
+  <data key="d7">54502.8367175469</data>
+  <data key="d8">37.8073470898986</data>
+  <data key="d9">239.89873783805</data>
+  <data key="d10">R18path</data>
+  <data key="d11">GPAT</data>
+</edge>
+<edge source="G3P" target="G12OleOle" id="38">
+  <data key="d4">R19</data>
+  <data key="d5">G3P + Ole + Ole + 2*ATP + 2*ATP -&gt; G12OleOle + 2*ADP + 2*ADP</data>
+  <data key="d6">253.776854928429</data>
+  <data key="d7">65216.7065903932</data>
+  <data key="d8">0.0</data>
+  <data key="d9">432.226966708491</data>
+  <data key="d10">R19path</data>
+  <data key="d11">GPAT</data>
+</edge>
+<edge source="GAP" target="Lac" id="12">
+  <data key="d4">R13</data>
+  <data key="d5">GAP + 4*ADP + 2.3*dummy -&gt; Lac + 4*ATP</data>
+  <data key="d6">149.999985460193</data>
+  <data key="d7">24153.7798294541</data>
+  <data key="d8">145.095896893992</data>
+  <data key="d9">150.0000001</data>
+  <data key="d10">R13path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="GAP" target="ATP" id="13">
+  <data key="d4">R13</data>
+  <data key="d5">GAP + 4*ADP + 2.3*dummy -&gt; Lac + 4*ATP</data>
+  <data key="d6">149.999985460193</data>
+  <data key="d7">24153.7798294541</data>
+  <data key="d8">145.095896893992</data>
+  <data key="d9">150.0000001</data>
+  <data key="d10">R13path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="GAP" target="CO2#0" id="18">
+  <data key="d4">R14</data>
+  <data key="d5">GAP + 34*ADP -&gt; CO2 + CO2 + CO2 + 34*ATP + dummy</data>
+  <data key="d6">344.999966558443</data>
+  <data key="d7">55553.6936077444</data>
+  <data key="d8">333.720562856183</data>
+  <data key="d9">345.00000023</data>
+  <data key="d10">R14path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="GAP" target="CO2#1" id="19">
+  <data key="d4">R14</data>
+  <data key="d5">GAP + 34*ADP -&gt; CO2 + CO2 + CO2 + 34*ATP + dummy</data>
+  <data key="d6">344.999966558443</data>
+  <data key="d7">55553.6936077444</data>
+  <data key="d8">333.720562856183</data>
+  <data key="d9">345.00000023</data>
+  <data key="d10">R14path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="GAP" target="CO2#2" id="20">
+  <data key="d4">R14</data>
+  <data key="d5">GAP + 34*ADP -&gt; CO2 + CO2 + CO2 + 34*ATP + dummy</data>
+  <data key="d6">344.999966558443</data>
+  <data key="d7">55553.6936077444</data>
+  <data key="d8">333.720562856183</data>
+  <data key="d9">345.00000023</data>
+  <data key="d10">R14path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="GAP" target="*ATP" id="21">
+  <data key="d4">R14</data>
+  <data key="d5">GAP + 34*ADP -&gt; CO2 + CO2 + CO2 + 34*ATP + dummy</data>
+  <data key="d6">344.999966558443</data>
+  <data key="d7">55553.6936077444</data>
+  <data key="d8">333.720562856183</data>
+  <data key="d9">345.00000023</data>
+  <data key="d10">R14path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="GAP" target="dummy" id="22">
+  <data key="d4">R14</data>
+  <data key="d5">GAP + 34*ADP -&gt; CO2 + CO2 + CO2 + 34*ATP + dummy</data>
+  <data key="d6">344.999966558443</data>
+  <data key="d7">55553.6936077444</data>
+  <data key="d8">333.720562856183</data>
+  <data key="d9">345.00000023</data>
+  <data key="d10">R14path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="DAP" target="GAP" id="10">
+  <data key="d4">R11</data>
+  <data key="d5">DAP -&gt; GAP</data>
+  <data key="d6">5.73322602406279e-05</data>
+  <data key="d7">43278.3600808735</data>
+  <data key="d8">0.0</data>
+  <data key="d9">8.09940680267208</data>
+  <data key="d10">R11path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="DAP" target="G3P" id="11">
+  <data key="d4">R12</data>
+  <data key="d5">DAP + 3*ATP -&gt; G3P + 3*ADP</data>
+  <data key="d6">494.999837354115</data>
+  <data key="d7">33678.1072984639</data>
+  <data key="d8">478.801261838753</data>
+  <data key="d12">False</data>
+  <data key="d10">R12path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="Lac" target="Lac.out" id="357">
+  <data key="d4">R192</data>
+  <data key="d5">Lac -&gt; Lac.out</data>
+  <data key="d6">149.999985460192</data>
+  <data key="d7">24153.7798294541</data>
+  <data key="d8">145.095896893992</data>
+  <data key="d9">150.0000001</data>
+  <data key="d10">R192path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="ATP" target="ADP" id="28">
+  <data key="d4">R15</data>
+  <data key="d5">ATP -&gt; ADP</data>
+  <data key="d6">29.060006458295</data>
+  <data key="d7">1942685.07970995</data>
+  <data key="d8">0.0</data>
+  <data key="d9">296.585458638927</data>
+  <data key="d10">R15path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="ADP" target="Lac" id="14">
+  <data key="d4">R13</data>
+  <data key="d5">GAP + 4*ADP + 2.3*dummy -&gt; Lac + 4*ATP</data>
+  <data key="d6">149.999985460193</data>
+  <data key="d7">24153.7798294541</data>
+  <data key="d8">145.095896893992</data>
+  <data key="d9">150.0000001</data>
+  <data key="d10">R13path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="ADP" target="ATP" id="15">
+  <data key="d4">R13</data>
+  <data key="d5">GAP + 4*ADP + 2.3*dummy -&gt; Lac + 4*ATP</data>
+  <data key="d6">149.999985460193</data>
+  <data key="d7">24153.7798294541</data>
+  <data key="d8">145.095896893992</data>
+  <data key="d9">150.0000001</data>
+  <data key="d10">R13path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="3*dummy" target="Lac" id="16">
+  <data key="d4">R13</data>
+  <data key="d5">GAP + 4*ADP + 2.3*dummy -&gt; Lac + 4*ATP</data>
+  <data key="d6">149.999985460193</data>
+  <data key="d7">24153.7798294541</data>
+  <data key="d8">145.095896893992</data>
+  <data key="d9">150.0000001</data>
+  <data key="d10">R13path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="3*dummy" target="ATP" id="17">
+  <data key="d4">R13</data>
+  <data key="d5">GAP + 4*ADP + 2.3*dummy -&gt; Lac + 4*ATP</data>
+  <data key="d6">149.999985460193</data>
+  <data key="d7">24153.7798294541</data>
+  <data key="d8">145.095896893992</data>
+  <data key="d9">150.0000001</data>
+  <data key="d10">R13path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="*ADP" target="CO2#0" id="23">
+  <data key="d4">R14</data>
+  <data key="d5">GAP + 34*ADP -&gt; CO2 + CO2 + CO2 + 34*ATP + dummy</data>
+  <data key="d6">344.999966558443</data>
+  <data key="d7">55553.6936077444</data>
+  <data key="d8">333.720562856183</data>
+  <data key="d9">345.00000023</data>
+  <data key="d10">R14path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="*ADP" target="CO2#1" id="24">
+  <data key="d4">R14</data>
+  <data key="d5">GAP + 34*ADP -&gt; CO2 + CO2 + CO2 + 34*ATP + dummy</data>
+  <data key="d6">344.999966558443</data>
+  <data key="d7">55553.6936077444</data>
+  <data key="d8">333.720562856183</data>
+  <data key="d9">345.00000023</data>
+  <data key="d10">R14path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="*ADP" target="CO2#2" id="25">
+  <data key="d4">R14</data>
+  <data key="d5">GAP + 34*ADP -&gt; CO2 + CO2 + CO2 + 34*ATP + dummy</data>
+  <data key="d6">344.999966558443</data>
+  <data key="d7">55553.6936077444</data>
+  <data key="d8">333.720562856183</data>
+  <data key="d9">345.00000023</data>
+  <data key="d10">R14path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="*ADP" target="*ATP" id="26">
+  <data key="d4">R14</data>
+  <data key="d5">GAP + 34*ADP -&gt; CO2 + CO2 + CO2 + 34*ATP + dummy</data>
+  <data key="d6">344.999966558443</data>
+  <data key="d7">55553.6936077444</data>
+  <data key="d8">333.720562856183</data>
+  <data key="d9">345.00000023</data>
+  <data key="d10">R14path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="*ADP" target="dummy" id="27">
+  <data key="d4">R14</data>
+  <data key="d5">GAP + 34*ADP -&gt; CO2 + CO2 + CO2 + 34*ATP + dummy</data>
+  <data key="d6">344.999966558443</data>
+  <data key="d7">55553.6936077444</data>
+  <data key="d8">333.720562856183</data>
+  <data key="d9">345.00000023</data>
+  <data key="d10">R14path</data>
+  <data key="d11">tracer</data>
+</edge>
+<edge source="G12PalPal" target="GlyPalPalPal" id="57">
+  <data key="d4">R28</data>
+  <data key="d5">G12PalPal + Pal + 2*ATP -&gt; GlyPalPalPal + 2*ADP</data>
+  <data key="d6">4.98116175151608e-05</data>
+  <data key="d7">0.39672009640754</data>
+  <data key="d8">0.0</data>
+  <data key="d9">1.48897044843642</data>
+  <data key="d10">R28path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G12PalPal" target="GlyPalPalOle" id="61">
+  <data key="d4">R30</data>
+  <data key="d5">G12PalPal + Ole + 2*ATP -&gt; GlyPalPalOle + 2*ADP</data>
+  <data key="d6">4.41139672560098e-05</data>
+  <data key="d7">16567.8986529713</data>
+  <data key="d8">0.0</data>
+  <data key="d9">84.8664202699836</data>
+  <data key="d10">R30path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G12PalPal" target="G20Pal" id="141">
+  <data key="d4">R70</data>
+  <data key="d5">G12PalPal -&gt; G20Pal + Pal</data>
+  <data key="d6">0.000309735637642916</data>
+  <data key="d7">79716.0086405887</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R70path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G12PalPal" target="Pal" id="142">
+  <data key="d4">R70</data>
+  <data key="d5">G12PalPal -&gt; G20Pal + Pal</data>
+  <data key="d6">0.000309735637642916</data>
+  <data key="d7">79716.0086405887</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R70path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G12PalPal" target="Sink" id="181">
+  <data key="d4">R112</data>
+  <data key="d5">G12PalPal -&gt; Sink</data>
+  <data key="d6">100.000000000001</data>
+  <data key="d7">0.0</data>
+  <data key="d8">100.000000000001</data>
+  <data key="d9">100.000000000001</data>
+  <data key="d10">R112path</data>
+  <data key="d11">Sink_DG</data>
+</edge>
+<edge source="G12PalPal" target="G2xPalPal.mix" id="328">
+  <data key="d4">R163</data>
+  <data key="d5">0*G12PalPal -&gt; G2xPalPal.mix</data>
+  <data key="d6">0.357247584280906</data>
+  <data key="d7">23038.945700754</data>
+  <data key="d8">1.06581410364015e-13</data>
+  <data key="d9">99.9999999999977</data>
+  <data key="d10">R163path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G12PalPal" target="GLYPalPal.mix" id="347">
+  <data key="d4">R182</data>
+  <data key="d5">0*G12PalPal -&gt; GLYPalPal.mix</data>
+  <data key="d6">8.26245338885201e-05</data>
+  <data key="d7">24784.4819471177</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3.61194939683178</data>
+  <data key="d10">R182path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G12PalOle" target="GlyPalOlePal" id="65">
+  <data key="d4">R32</data>
+  <data key="d5">G12PalOle + Pal + 2*ATP -&gt; GlyPalOlePal + 2*ADP</data>
+  <data key="d6">5.4582916426682e-05</data>
+  <data key="d7">7.22801205995936</data>
+  <data key="d8">0.0</data>
+  <data key="d9">12.3430423989752</data>
+  <data key="d10">R32path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G12PalOle" target="GlyPalOleOle" id="69">
+  <data key="d4">R34</data>
+  <data key="d5">G12PalOle + Ole + 2*ATP -&gt; GlyPalOleOle + 2*ADP</data>
+  <data key="d6">0.00485495122151391</data>
+  <data key="d7">14138.452450318</data>
+  <data key="d8">0.0</data>
+  <data key="d9">59.8339999834584</data>
+  <data key="d10">R34path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G12PalOle" target="G20Ole" id="147">
+  <data key="d4">R73</data>
+  <data key="d5">G12PalOle -&gt; G20Ole + Pal</data>
+  <data key="d6">5.64361184203221e-05</data>
+  <data key="d7">32506.9372910095</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R73path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G12PalOle" target="Pal" id="148">
+  <data key="d4">R73</data>
+  <data key="d5">G12PalOle -&gt; G20Ole + Pal</data>
+  <data key="d6">5.64361184203221e-05</data>
+  <data key="d7">32506.9372910095</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R73path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G12PalOle" target="Sink" id="182">
+  <data key="d4">R113</data>
+  <data key="d5">G12PalOle -&gt; Sink</data>
+  <data key="d6">99.9999999999988</data>
+  <data key="d7">0.0</data>
+  <data key="d8">99.9999999999988</data>
+  <data key="d9">99.9999999999988</data>
+  <data key="d10">R113path</data>
+  <data key="d11">Sink_DG</data>
+</edge>
+<edge source="G12PalOle" target="G2xPalOle.mix" id="324">
+  <data key="d4">R159</data>
+  <data key="d5">0*G12PalOle -&gt; G2xPalOle.mix</data>
+  <data key="d6">59.9005784975123</data>
+  <data key="d7">26557.6588382342</data>
+  <data key="d8">0.0</data>
+  <data key="d9">64.3105376518579</data>
+  <data key="d10">R159path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G12PalOle" target="GLYPalOle.mix" id="336">
+  <data key="d4">R171</data>
+  <data key="d5">0*G12PalOle -&gt; GLYPalOle.mix</data>
+  <data key="d6">4.87047932224982e-05</data>
+  <data key="d7">36439.5498051275</data>
+  <data key="d8">0.0</data>
+  <data key="d9">69.5401391068434</data>
+  <data key="d10">R171path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="Ole" target="G12PalOle" id="34">
+  <data key="d4">R17</data>
+  <data key="d5">G3P + Pal + Ole + 2*ATP + 2*ATP -&gt; G12PalOle + 2*ADP + 2*ADP</data>
+  <data key="d6">81.1558079257951</data>
+  <data key="d7">40363.3028322458</data>
+  <data key="d8">0.0</data>
+  <data key="d9">473.341011649075</data>
+  <data key="d10">R17path</data>
+  <data key="d11">GPAT</data>
+</edge>
+<edge source="Ole" target="G12OlePal" id="36">
+  <data key="d4">R18</data>
+  <data key="d5">G3P + Ole + Pal + 2*ATP + 2*ATP -&gt; G12OlePal + 2*ADP + 2*ADP</data>
+  <data key="d6">100.000105905456</data>
+  <data key="d7">54502.8367175469</data>
+  <data key="d8">37.8073470898986</data>
+  <data key="d9">239.89873783805</data>
+  <data key="d10">R18path</data>
+  <data key="d11">GPAT</data>
+</edge>
+<edge source="Ole" target="G12OlePal" id="50">
+  <data key="d4">R24</data>
+  <data key="d5">G20Pal + Ole + 2*ATP -&gt; G12OlePal + 2*ADP</data>
+  <data key="d6">6.40336548940468e-05</data>
+  <data key="d7">27557.296486098</data>
+  <data key="d8">0.0</data>
+  <data key="d9">63.7676753806518</data>
+  <data key="d10">R24path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="Ole" target="G12OleOle" id="39">
+  <data key="d4">R19</data>
+  <data key="d5">G3P + Ole + Ole + 2*ATP + 2*ATP -&gt; G12OleOle + 2*ADP + 2*ADP</data>
+  <data key="d6">253.776854928429</data>
+  <data key="d7">65216.7065903932</data>
+  <data key="d8">0.0</data>
+  <data key="d9">432.226966708491</data>
+  <data key="d10">R19path</data>
+  <data key="d11">GPAT</data>
+</edge>
+<edge source="Ole" target="G12OleOle" id="40">
+  <data key="d4">R19</data>
+  <data key="d5">G3P + Ole + Ole + 2*ATP + 2*ATP -&gt; G12OleOle + 2*ADP + 2*ADP</data>
+  <data key="d6">253.776854928429</data>
+  <data key="d7">65216.7065903932</data>
+  <data key="d8">0.0</data>
+  <data key="d9">432.226966708491</data>
+  <data key="d10">R19path</data>
+  <data key="d11">GPAT</data>
+</edge>
+<edge source="Ole" target="G12OleOle" id="54">
+  <data key="d4">R26</data>
+  <data key="d5">G20Ole + Ole + 2*ATP -&gt; G12OleOle + 2*ADP</data>
+  <data key="d6">6.60467986541846e-05</data>
+  <data key="d7">61593.293641831</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3679.40689094118</data>
+  <data key="d10">R26path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="Ole" target="G23PalOle" id="48">
+  <data key="d4">R23</data>
+  <data key="d5">G20Pal + Ole + 2*ATP -&gt; G23PalOle + 2*ADP</data>
+  <data key="d6">0.000193857266665987</data>
+  <data key="d7">30121.1981753466</data>
+  <data key="d8">0.0</data>
+  <data key="d9">94.2129657818914</data>
+  <data key="d10">R23path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="Ole" target="G23OleOle" id="56">
+  <data key="d4">R27</data>
+  <data key="d5">G20Ole + Ole + 2*ATP -&gt; G23OleOle + 2*ADP</data>
+  <data key="d6">6.38005054156565e-05</data>
+  <data key="d7">42353.056493368</data>
+  <data key="d8">0.0</data>
+  <data key="d9">175.774534703075</data>
+  <data key="d10">R27path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="Ole" target="GlyPalPalOle" id="62">
+  <data key="d4">R30</data>
+  <data key="d5">G12PalPal + Ole + 2*ATP -&gt; GlyPalPalOle + 2*ADP</data>
+  <data key="d6">4.41139672560098e-05</data>
+  <data key="d7">16567.8986529713</data>
+  <data key="d8">0.0</data>
+  <data key="d9">84.8664202699836</data>
+  <data key="d10">R30path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Ole" target="GlyPalOleOle" id="70">
+  <data key="d4">R34</data>
+  <data key="d5">G12PalOle + Ole + 2*ATP -&gt; GlyPalOleOle + 2*ADP</data>
+  <data key="d6">0.00485495122151391</data>
+  <data key="d7">14138.452450318</data>
+  <data key="d8">0.0</data>
+  <data key="d9">59.8339999834584</data>
+  <data key="d10">R34path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Ole" target="GlyPalOleOle" id="96">
+  <data key="d4">R47</data>
+  <data key="d5">G13PalOle + Ole + 2*ATP -&gt; GlyPalOleOle + 2*ADP</data>
+  <data key="d6">4.19758195933095e-05</data>
+  <data key="d7">33952.0003677696</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R47path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="Ole" target="GlyOlePalPal" id="76">
+  <data key="d4">R37</data>
+  <data key="d5">G23PalPal + Ole + 2*ATP -&gt; GlyOlePalPal + 2*ADP</data>
+  <data key="d6">5.03669705267384e-05</data>
+  <data key="d7">73350.7109509585</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R37path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Ole" target="GlyOlePalOle" id="78">
+  <data key="d4">R38</data>
+  <data key="d5">G12OlePal + Ole + 2*ATP -&gt; GlyOlePalOle + 2*ADP</data>
+  <data key="d6">5.96454268304569e-05</data>
+  <data key="d7">35475.5016218912</data>
+  <data key="d8">0.0</data>
+  <data key="d9">114.596302747463</data>
+  <data key="d10">R38path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Ole" target="GlyOlePalOle" id="80">
+  <data key="d4">R39</data>
+  <data key="d5">G23PalOle + Ole + 2*ATP -&gt; GlyOlePalOle + 2*ADP</data>
+  <data key="d6">7.21783730455172e-05</data>
+  <data key="d7">36716.2366367304</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3795.74525678614</data>
+  <data key="d10">R39path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Ole" target="GlyOleOlePal" id="84">
+  <data key="d4">R41</data>
+  <data key="d5">G23OlePal + Ole + 2*ATP -&gt; GlyOleOlePal + 2*ADP</data>
+  <data key="d6">5.18366787218838e-05</data>
+  <data key="d7">31233.488128109</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3795.7440204493</data>
+  <data key="d10">R41path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Ole" target="GlyOleOlePal" id="102">
+  <data key="d4">R50</data>
+  <data key="d5">G13OlePal + Ole + 2*ATP -&gt; GlyOleOlePal + 2*ADP</data>
+  <data key="d6">2.73102976997563e-05</data>
+  <data key="d7">74170.3705028351</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R50path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="Ole" target="GlyOleOleOle" id="86">
+  <data key="d4">R42</data>
+  <data key="d5">G12OleOle + Ole + 2*ATP -&gt; GlyOleOleOle + 2*ADP</data>
+  <data key="d6">153.776593839696</data>
+  <data key="d7">31755.0710978984</data>
+  <data key="d8">80.8285396700591</data>
+  <data key="d9">257.997535608062</data>
+  <data key="d10">R42path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Ole" target="GlyOleOleOle" id="88">
+  <data key="d4">R43</data>
+  <data key="d5">G23OleOle + Ole + 2*ATP -&gt; GlyOleOleOle + 2*ADP</data>
+  <data key="d6">4.78277271582783e-05</data>
+  <data key="d7">29487.3270555565</data>
+  <data key="d8">0.0</data>
+  <data key="d9">116.697693447252</data>
+  <data key="d10">R43path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="Ole" target="GlyOleOleOle" id="104">
+  <data key="d4">R51</data>
+  <data key="d5">G13OleOle + Ole + 2*ATP -&gt; GlyOleOleOle + 2*ADP</data>
+  <data key="d6">3646.29582761496</data>
+  <data key="d7">27779.823592563</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3795.75205736894</data>
+  <data key="d10">R51path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="Ole" target="GlyPalOlePal" id="94">
+  <data key="d4">R46</data>
+  <data key="d5">G13PalPal + Ole + 2*ATP -&gt; GlyPalOlePal + 2*ADP</data>
+  <data key="d6">8.29665257953138e-05</data>
+  <data key="d7">29043.8572602873</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3795.74729765225</data>
+  <data key="d10">R46path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="Ole" target="Ole.out" id="193">
+  <data key="d4">R124</data>
+  <data key="d5">Ole -&gt; Ole.out</data>
+  <data key="d6">43.0765913726907</data>
+  <data key="d7">3.99999993946403</data>
+  <data key="d8">35.3516204891428</data>
+  <data key="d9">50.8402300584535</data>
+  <data key="d10">R124path</data>
+  <data key="d11">Sink_FA</data>
+</edge>
+<edge source="G12OlePal" target="GlyOlePalPal" id="73">
+  <data key="d4">R36</data>
+  <data key="d5">G12OlePal + Pal + 2*ATP -&gt; GlyOlePalPal + 2*ADP</data>
+  <data key="d6">5.44048997141999e-05</data>
+  <data key="d7">14588.4052887732</data>
+  <data key="d8">0.0</data>
+  <data key="d9">15.0605456442636</data>
+  <data key="d10">R36path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G12OlePal" target="GlyOlePalOle" id="77">
+  <data key="d4">R38</data>
+  <data key="d5">G12OlePal + Ole + 2*ATP -&gt; GlyOlePalOle + 2*ADP</data>
+  <data key="d6">5.96454268304569e-05</data>
+  <data key="d7">35475.5016218912</data>
+  <data key="d8">0.0</data>
+  <data key="d9">114.596302747463</data>
+  <data key="d10">R38path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G12OlePal" target="G20Pal" id="153">
+  <data key="d4">R76</data>
+  <data key="d5">G12OlePal -&gt; G20Pal + Ole</data>
+  <data key="d6">5.5888787365177e-05</data>
+  <data key="d7">28234.6484655732</data>
+  <data key="d8">0.0</data>
+  <data key="d9">6.9758998713852</data>
+  <data key="d10">R76path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G12OlePal" target="Ole" id="154">
+  <data key="d4">R76</data>
+  <data key="d5">G12OlePal -&gt; G20Pal + Ole</data>
+  <data key="d6">5.5888787365177e-05</data>
+  <data key="d7">28234.6484655732</data>
+  <data key="d8">0.0</data>
+  <data key="d9">6.9758998713852</data>
+  <data key="d10">R76path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G12OlePal" target="Sink" id="183">
+  <data key="d4">R114</data>
+  <data key="d5">G12OlePal -&gt; Sink</data>
+  <data key="d6">99.9999999999965</data>
+  <data key="d7">0.0</data>
+  <data key="d8">99.9999999999965</data>
+  <data key="d9">99.9999999999965</data>
+  <data key="d10">R114path</data>
+  <data key="d11">Sink_DG</data>
+</edge>
+<edge source="G12OlePal" target="G2xPalOle.mix" id="326">
+  <data key="d4">R161</data>
+  <data key="d5">0*G12OlePal -&gt; G2xPalOle.mix</data>
+  <data key="d6">6.04001081221384e-05</data>
+  <data key="d7">24572.4092209655</data>
+  <data key="d8">0.0</data>
+  <data key="d9">68.3461053560197</data>
+  <data key="d10">R161path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G12OlePal" target="GLYPalOle.mix" id="339">
+  <data key="d4">R174</data>
+  <data key="d5">0*G12OlePal -&gt; GLYPalOle.mix</data>
+  <data key="d6">69.1260441726098</data>
+  <data key="d7">26761.272253275</data>
+  <data key="d8">2.05133556991947</data>
+  <data key="d12">False</data>
+  <data key="d10">R174path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G12OleOle" target="GlyOleOlePal" id="81">
+  <data key="d4">R40</data>
+  <data key="d5">G12OleOle + Pal + 2*ATP -&gt; GlyOleOlePal + 2*ADP</data>
+  <data key="d6">5.98081973066655e-05</data>
+  <data key="d7">1630.86240531897</data>
+  <data key="d8">0.0</data>
+  <data key="d9">7.21643464873137</data>
+  <data key="d10">R40path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G12OleOle" target="GlyOleOleOle" id="85">
+  <data key="d4">R42</data>
+  <data key="d5">G12OleOle + Ole + 2*ATP -&gt; GlyOleOleOle + 2*ADP</data>
+  <data key="d6">153.776593839696</data>
+  <data key="d7">31755.0710978984</data>
+  <data key="d8">80.8285396700591</data>
+  <data key="d9">257.997535608062</data>
+  <data key="d10">R42path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G12OleOle" target="G20Ole" id="159">
+  <data key="d4">R79</data>
+  <data key="d5">G12OleOle -&gt; G20Ole + Ole</data>
+  <data key="d6">0.000267327331926026</data>
+  <data key="d7">41186.5516274667</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R79path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G12OleOle" target="Ole" id="160">
+  <data key="d4">R79</data>
+  <data key="d5">G12OleOle -&gt; G20Ole + Ole</data>
+  <data key="d6">0.000267327331926026</data>
+  <data key="d7">41186.5516274667</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R79path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G12OleOle" target="Sink" id="184">
+  <data key="d4">R115</data>
+  <data key="d5">G12OleOle -&gt; Sink</data>
+  <data key="d6">100.000000000002</data>
+  <data key="d7">0.0</data>
+  <data key="d8">100.000000000002</data>
+  <data key="d9">100.000000000002</data>
+  <data key="d10">R115path</data>
+  <data key="d11">Sink_DG</data>
+</edge>
+<edge source="G12OleOle" target="G2xOleOle.mix" id="322">
+  <data key="d4">R157</data>
+  <data key="d5">0*G12OleOle -&gt; G2xOleOle.mix</data>
+  <data key="d6">45.2834518092466</data>
+  <data key="d7">29414.5593785836</data>
+  <data key="d8">-8.5265128291212e-14</data>
+  <data key="d9">100.000000000001</data>
+  <data key="d10">R157path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G12OleOle" target="GLYOleOle.mix" id="330">
+  <data key="d4">R165</data>
+  <data key="d5">0*G12OleOle -&gt; GLYOleOle.mix</data>
+  <data key="d6">99.993896792346</data>
+  <data key="d7">32766.3997212306</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R165path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G20Pal" target="G12PalPal" id="41">
+  <data key="d4">R20</data>
+  <data key="d5">G20Pal + Pal + 2*ATP -&gt; G12PalPal + 2*ADP</data>
+  <data key="d6">64.1403785361419</data>
+  <data key="d7">51683.3719371147</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3698.31100352783</data>
+  <data key="d10">R20path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="G20Pal" target="G23PalPal" id="43">
+  <data key="d4">R21</data>
+  <data key="d5">G20Pal + Pal + 2*ATP -&gt; G23PalPal + 2*ADP</data>
+  <data key="d6">7.28278769202007e-05</data>
+  <data key="d7">26093.2231184076</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3649.41974479223</data>
+  <data key="d10">R21path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="G20Pal" target="G23PalOle" id="47">
+  <data key="d4">R23</data>
+  <data key="d5">G20Pal + Ole + 2*ATP -&gt; G23PalOle + 2*ADP</data>
+  <data key="d6">0.000193857266665987</data>
+  <data key="d7">30121.1981753466</data>
+  <data key="d8">0.0</data>
+  <data key="d9">94.2129657818914</data>
+  <data key="d10">R23path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="G20Pal" target="G12OlePal" id="49">
+  <data key="d4">R24</data>
+  <data key="d5">G20Pal + Ole + 2*ATP -&gt; G12OlePal + 2*ADP</data>
+  <data key="d6">6.40336548940468e-05</data>
+  <data key="d7">27557.296486098</data>
+  <data key="d8">0.0</data>
+  <data key="d9">63.7676753806518</data>
+  <data key="d10">R24path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="G20Pal" target="Gly" id="163">
+  <data key="d4">R81</data>
+  <data key="d5">G20Pal -&gt; Gly + Pal</data>
+  <data key="d6">6.5975030622667e-05</data>
+  <data key="d7">28479.8390679857</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1480889448313</data>
+  <data key="d10">R81path</data>
+  <data key="d11">MGL</data>
+</edge>
+<edge source="G20Pal" target="Pal" id="164">
+  <data key="d4">R81</data>
+  <data key="d5">G20Pal -&gt; Gly + Pal</data>
+  <data key="d6">6.5975030622667e-05</data>
+  <data key="d7">28479.8390679857</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1480889448313</data>
+  <data key="d10">R81path</data>
+  <data key="d11">MGL</data>
+</edge>
+<edge source="G23PalPal" target="GlyPalPalPal" id="59">
+  <data key="d4">R29</data>
+  <data key="d5">G23PalPal + Pal + 2*ATP -&gt; GlyPalPalPal + 2*ADP</data>
+  <data key="d6">4.57424997790667e-05</data>
+  <data key="d7">10298.0720047823</data>
+  <data key="d8">0.0</data>
+  <data key="d9">1.77972823466587</data>
+  <data key="d10">R29path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G23PalPal" target="GlyPalPalPal" id="200">
+  <data key="d4">R126</data>
+  <data key="d5">G13PalPal + G23PalPal -&gt; GlyPalPalPal + G10Pal</data>
+  <data key="d6">5.6721359504408e-05</data>
+  <data key="d7">154187.606325325</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1475842653807</data>
+  <data key="d10">R126path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalPal" target="GlyPalPalPal" id="232">
+  <data key="d4">R134</data>
+  <data key="d5">G13PalOle + G23PalPal -&gt; GlyPalPalPal + G10Ole</data>
+  <data key="d6">1.35129614342588e-05</data>
+  <data key="d7">28105.9848132922</data>
+  <data key="d8">0.0</data>
+  <data key="d9">5.8974818276816</data>
+  <data key="d10">R134path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalPal" target="GlyOlePalPal" id="75">
+  <data key="d4">R37</data>
+  <data key="d5">G23PalPal + Ole + 2*ATP -&gt; GlyOlePalPal + 2*ADP</data>
+  <data key="d6">5.03669705267384e-05</data>
+  <data key="d7">73350.7109509585</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R37path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G23PalPal" target="GlyOlePalPal" id="264">
+  <data key="d4">R142</data>
+  <data key="d5">G13OlePal + G23PalPal -&gt; GlyOlePalPal + G10Pal</data>
+  <data key="d6">1.94612895541013e-05</data>
+  <data key="d7">136034.942150952</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1405009599873</data>
+  <data key="d10">R142path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalPal" target="GlyOlePalPal" id="296">
+  <data key="d4">R150</data>
+  <data key="d5">G13OleOle + G23PalPal -&gt; GlyOlePalPal + G10Ole</data>
+  <data key="d6">1.54401481893274e-05</data>
+  <data key="d7">28769.1891877692</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.4742846124545</data>
+  <data key="d10">R150path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalPal" target="G20Pal" id="139">
+  <data key="d4">R69</data>
+  <data key="d5">G23PalPal -&gt; G20Pal + Pal</data>
+  <data key="d6">64.1403411248285</data>
+  <data key="d7">47976.8088119472</data>
+  <data key="d8">3.02487856913558e-05</data>
+  <data key="d12">False</data>
+  <data key="d10">R69path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G23PalPal" target="Pal" id="140">
+  <data key="d4">R69</data>
+  <data key="d5">G23PalPal -&gt; G20Pal + Pal</data>
+  <data key="d6">64.1403411248285</data>
+  <data key="d7">47976.8088119472</data>
+  <data key="d8">3.02487856913558e-05</data>
+  <data key="d12">False</data>
+  <data key="d10">R69path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G23PalPal" target="Sink" id="185">
+  <data key="d4">R116</data>
+  <data key="d5">G23PalPal -&gt; Sink</data>
+  <data key="d6">100.000000000001</data>
+  <data key="d7">0.0</data>
+  <data key="d8">100.000000000001</data>
+  <data key="d9">100.000000000001</data>
+  <data key="d10">R116path</data>
+  <data key="d11">Sink_DG</data>
+</edge>
+<edge source="G23PalPal" target="G10Pal" id="201">
+  <data key="d4">R126</data>
+  <data key="d5">G13PalPal + G23PalPal -&gt; GlyPalPalPal + G10Pal</data>
+  <data key="d6">5.6721359504408e-05</data>
+  <data key="d7">154187.606325325</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1475842653807</data>
+  <data key="d10">R126path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalPal" target="G10Pal" id="265">
+  <data key="d4">R142</data>
+  <data key="d5">G13OlePal + G23PalPal -&gt; GlyOlePalPal + G10Pal</data>
+  <data key="d6">1.94612895541013e-05</data>
+  <data key="d7">136034.942150952</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1405009599873</data>
+  <data key="d10">R142path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalPal" target="G10Ole" id="233">
+  <data key="d4">R134</data>
+  <data key="d5">G13PalOle + G23PalPal -&gt; GlyPalPalPal + G10Ole</data>
+  <data key="d6">1.35129614342588e-05</data>
+  <data key="d7">28105.9848132922</data>
+  <data key="d8">0.0</data>
+  <data key="d9">5.8974818276816</data>
+  <data key="d10">R134path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalPal" target="G10Ole" id="297">
+  <data key="d4">R150</data>
+  <data key="d5">G13OleOle + G23PalPal -&gt; GlyOlePalPal + G10Ole</data>
+  <data key="d6">1.54401481893274e-05</data>
+  <data key="d7">28769.1891877692</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.4742846124545</data>
+  <data key="d10">R150path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalPal" target="G2xPalPal.mix" id="329">
+  <data key="d4">R164</data>
+  <data key="d5">0*G23PalPal -&gt; G2xPalPal.mix</data>
+  <data key="d6">99.6427524157168</data>
+  <data key="d7">23038.945700754</data>
+  <data key="d8">0.0</data>
+  <data key="d9">99.9999999999976</data>
+  <data key="d10">R164path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G23PalPal" target="GLYPalPal.mix" id="349">
+  <data key="d4">R184</data>
+  <data key="d5">0*G23PalPal -&gt; GLYPalPal.mix</data>
+  <data key="d6">99.9993288295146</data>
+  <data key="d7">13961.5431552659</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R184path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G20Ole" target="G12PalOle" id="45">
+  <data key="d4">R22</data>
+  <data key="d5">G20Ole + Pal + 2*ATP -&gt; G12PalOle + 2*ADP</data>
+  <data key="d6">18.8491580444601</data>
+  <data key="d7">19538.5658779565</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R22path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="G20Ole" target="G23OlePal" id="51">
+  <data key="d4">R25</data>
+  <data key="d5">G20Ole + Pal + 2*ATP -&gt; G23OlePal + 2*ADP</data>
+  <data key="d6">7.75564175938825e-05</data>
+  <data key="d7">43585.4480378699</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R25path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="G20Ole" target="G12OleOle" id="53">
+  <data key="d4">R26</data>
+  <data key="d5">G20Ole + Ole + 2*ATP -&gt; G12OleOle + 2*ADP</data>
+  <data key="d6">6.60467986541846e-05</data>
+  <data key="d7">61593.293641831</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3679.40689094118</data>
+  <data key="d10">R26path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="G20Ole" target="G23OleOle" id="55">
+  <data key="d4">R27</data>
+  <data key="d5">G20Ole + Ole + 2*ATP -&gt; G23OleOle + 2*ADP</data>
+  <data key="d6">6.38005054156565e-05</data>
+  <data key="d7">42353.056493368</data>
+  <data key="d8">0.0</data>
+  <data key="d9">175.774534703075</data>
+  <data key="d10">R27path</data>
+  <data key="d11">MGAT1</data>
+</edge>
+<edge source="G20Ole" target="Gly" id="167">
+  <data key="d4">R83</data>
+  <data key="d5">G20Ole -&gt; Gly + Ole</data>
+  <data key="d6">6.34783333310907e-05</data>
+  <data key="d7">26672.7381523054</data>
+  <data key="d8">0.0</data>
+  <data key="d9">49.2597319737756</data>
+  <data key="d10">R83path</data>
+  <data key="d11">MGL</data>
+</edge>
+<edge source="G20Ole" target="Ole" id="168">
+  <data key="d4">R83</data>
+  <data key="d5">G20Ole -&gt; Gly + Ole</data>
+  <data key="d6">6.34783333310907e-05</data>
+  <data key="d7">26672.7381523054</data>
+  <data key="d8">0.0</data>
+  <data key="d9">49.2597319737756</data>
+  <data key="d10">R83path</data>
+  <data key="d11">MGL</data>
+</edge>
+<edge source="G23PalOle" target="GlyPalPalOle" id="63">
+  <data key="d4">R31</data>
+  <data key="d5">G23PalOle + Pal + 2*ATP -&gt; GlyPalPalOle + 2*ADP</data>
+  <data key="d6">5.3742796769285e-05</data>
+  <data key="d7">19230.2890048787</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3792.60158593237</data>
+  <data key="d10">R31path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G23PalOle" target="GlyPalPalOle" id="208">
+  <data key="d4">R128</data>
+  <data key="d5">G13PalPal + G23PalOle -&gt; GlyPalPalOle + G10Pal</data>
+  <data key="d6">0.211611212132951</data>
+  <data key="d7">27258.5515361078</data>
+  <data key="d8">0.0</data>
+  <data key="d9">56.1676466929257</data>
+  <data key="d10">R128path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalOle" target="GlyPalPalOle" id="240">
+  <data key="d4">R136</data>
+  <data key="d5">G13PalOle + G23PalOle -&gt; GlyPalPalOle + G10Ole</data>
+  <data key="d6">1.52853977510858e-05</data>
+  <data key="d7">42969.7225777137</data>
+  <data key="d8">0.0</data>
+  <data key="d9">57.7559060045571</data>
+  <data key="d10">R136path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalOle" target="GlyOlePalOle" id="79">
+  <data key="d4">R39</data>
+  <data key="d5">G23PalOle + Ole + 2*ATP -&gt; GlyOlePalOle + 2*ADP</data>
+  <data key="d6">7.21783730455172e-05</data>
+  <data key="d7">36716.2366367304</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3795.74525678614</data>
+  <data key="d10">R39path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G23PalOle" target="GlyOlePalOle" id="272">
+  <data key="d4">R144</data>
+  <data key="d5">G13OlePal + G23PalOle -&gt; GlyOlePalOle + G10Pal</data>
+  <data key="d6">2.09213279802611e-05</data>
+  <data key="d7">27632.4758187264</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1334331686615</data>
+  <data key="d10">R144path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalOle" target="GlyOlePalOle" id="304">
+  <data key="d4">R152</data>
+  <data key="d5">G13OleOle + G23PalOle -&gt; GlyOlePalOle + G10Ole</data>
+  <data key="d6">1.94786651128709e-05</data>
+  <data key="d7">27755.6113413028</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6939099046853</data>
+  <data key="d10">R152path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalOle" target="G20Pal" id="145">
+  <data key="d4">R72</data>
+  <data key="d5">G23PalOle -&gt; G20Pal + Ole</data>
+  <data key="d6">6.84807170685531e-05</data>
+  <data key="d7">6.24807585214183</data>
+  <data key="d8">0.0</data>
+  <data key="d9">11.585686487262</data>
+  <data key="d10">R72path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G23PalOle" target="Ole" id="146">
+  <data key="d4">R72</data>
+  <data key="d5">G23PalOle -&gt; G20Pal + Ole</data>
+  <data key="d6">6.84807170685531e-05</data>
+  <data key="d7">6.24807585214183</data>
+  <data key="d8">0.0</data>
+  <data key="d9">11.585686487262</data>
+  <data key="d10">R72path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G23PalOle" target="Sink" id="186">
+  <data key="d4">R117</data>
+  <data key="d5">G23PalOle -&gt; Sink</data>
+  <data key="d6">100.000000000002</data>
+  <data key="d7">0.0</data>
+  <data key="d8">100.000000000002</data>
+  <data key="d9">100.000000000002</data>
+  <data key="d10">R117path</data>
+  <data key="d11">Sink_DG</data>
+</edge>
+<edge source="G23PalOle" target="G10Pal" id="209">
+  <data key="d4">R128</data>
+  <data key="d5">G13PalPal + G23PalOle -&gt; GlyPalPalOle + G10Pal</data>
+  <data key="d6">0.211611212132951</data>
+  <data key="d7">27258.5515361078</data>
+  <data key="d8">0.0</data>
+  <data key="d9">56.1676466929257</data>
+  <data key="d10">R128path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalOle" target="G10Pal" id="273">
+  <data key="d4">R144</data>
+  <data key="d5">G13OlePal + G23PalOle -&gt; GlyOlePalOle + G10Pal</data>
+  <data key="d6">2.09213279802611e-05</data>
+  <data key="d7">27632.4758187264</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1334331686615</data>
+  <data key="d10">R144path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalOle" target="G10Ole" id="241">
+  <data key="d4">R136</data>
+  <data key="d5">G13PalOle + G23PalOle -&gt; GlyPalPalOle + G10Ole</data>
+  <data key="d6">1.52853977510858e-05</data>
+  <data key="d7">42969.7225777137</data>
+  <data key="d8">0.0</data>
+  <data key="d9">57.7559060045571</data>
+  <data key="d10">R136path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalOle" target="G10Ole" id="305">
+  <data key="d4">R152</data>
+  <data key="d5">G13OleOle + G23PalOle -&gt; GlyOlePalOle + G10Ole</data>
+  <data key="d6">1.94786651128709e-05</data>
+  <data key="d7">27755.6113413028</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6939099046853</data>
+  <data key="d10">R152path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23PalOle" target="G2xPalOle.mix" id="325">
+  <data key="d4">R160</data>
+  <data key="d5">0*G23PalOle -&gt; G2xPalOle.mix</data>
+  <data key="d6">40.0993007049234</data>
+  <data key="d7">10992.2358833573</data>
+  <data key="d8">5.75675724811587</data>
+  <data key="d12">False</data>
+  <data key="d10">R160path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G23PalOle" target="GLYPalOle.mix" id="338">
+  <data key="d4">R173</data>
+  <data key="d5">0*G23PalOle -&gt; GLYPalOle.mix</data>
+  <data key="d6">3.35950069612068e-05</data>
+  <data key="d7">10309.3728193895</data>
+  <data key="d8">0.0</data>
+  <data key="d9">24.6809476153307</data>
+  <data key="d10">R173path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G23OlePal" target="GlyPalOlePal" id="67">
+  <data key="d4">R33</data>
+  <data key="d5">G23OlePal + Pal + 2*ATP -&gt; GlyPalOlePal + 2*ADP</data>
+  <data key="d6">4.79694953980925e-05</data>
+  <data key="d7">60177.0344321625</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R33path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G23OlePal" target="GlyPalOlePal" id="216">
+  <data key="d4">R130</data>
+  <data key="d5">G13PalPal + G23OlePal -&gt; GlyPalOlePal + G10Pal</data>
+  <data key="d6">5.89753204955912e-05</data>
+  <data key="d7">109070.501488859</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1472479297176</data>
+  <data key="d10">R130path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OlePal" target="GlyPalOlePal" id="248">
+  <data key="d4">R138</data>
+  <data key="d5">G13PalOle + G23OlePal -&gt; GlyPalOlePal + G10Ole</data>
+  <data key="d6">1.33266108335306e-05</data>
+  <data key="d7">29458.1318819797</data>
+  <data key="d8">0.0</data>
+  <data key="d9">43.6601156791884</data>
+  <data key="d10">R138path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OlePal" target="GlyOleOlePal" id="83">
+  <data key="d4">R41</data>
+  <data key="d5">G23OlePal + Ole + 2*ATP -&gt; GlyOleOlePal + 2*ADP</data>
+  <data key="d6">5.18366787218838e-05</data>
+  <data key="d7">31233.488128109</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3795.7440204493</data>
+  <data key="d10">R41path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G23OlePal" target="GlyOleOlePal" id="280">
+  <data key="d4">R146</data>
+  <data key="d5">G13OlePal + G23OlePal -&gt; GlyOleOlePal + G10Pal</data>
+  <data key="d6">1.72152214314991e-05</data>
+  <data key="d7">29849.6792367861</data>
+  <data key="d8">0.0</data>
+  <data key="d9">47.4060814903559</data>
+  <data key="d10">R146path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OlePal" target="GlyOleOlePal" id="312">
+  <data key="d4">R154</data>
+  <data key="d5">G13OleOle + G23OlePal -&gt; GlyOleOlePal + G10Ole</data>
+  <data key="d6">1.50057244470148e-05</data>
+  <data key="d7">28675.6246844253</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.437860130926</data>
+  <data key="d10">R154path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OlePal" target="G20Ole" id="151">
+  <data key="d4">R75</data>
+  <data key="d5">G23OlePal -&gt; G20Ole + Pal</data>
+  <data key="d6">0.488460963116388</data>
+  <data key="d7">28547.5265628173</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3875.86563954448</data>
+  <data key="d10">R75path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G23OlePal" target="Pal" id="152">
+  <data key="d4">R75</data>
+  <data key="d5">G23OlePal -&gt; G20Ole + Pal</data>
+  <data key="d6">0.488460963116388</data>
+  <data key="d7">28547.5265628173</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3875.86563954448</data>
+  <data key="d10">R75path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G23OlePal" target="Sink" id="187">
+  <data key="d4">R118</data>
+  <data key="d5">G23OlePal -&gt; Sink</data>
+  <data key="d6">100.000000000001</data>
+  <data key="d7">0.0</data>
+  <data key="d8">100.000000000001</data>
+  <data key="d9">100.000000000001</data>
+  <data key="d10">R118path</data>
+  <data key="d11">Sink_DG</data>
+</edge>
+<edge source="G23OlePal" target="G10Pal" id="217">
+  <data key="d4">R130</data>
+  <data key="d5">G13PalPal + G23OlePal -&gt; GlyPalOlePal + G10Pal</data>
+  <data key="d6">5.89753204955912e-05</data>
+  <data key="d7">109070.501488859</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1472479297176</data>
+  <data key="d10">R130path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OlePal" target="G10Pal" id="281">
+  <data key="d4">R146</data>
+  <data key="d5">G13OlePal + G23OlePal -&gt; GlyOleOlePal + G10Pal</data>
+  <data key="d6">1.72152214314991e-05</data>
+  <data key="d7">29849.6792367861</data>
+  <data key="d8">0.0</data>
+  <data key="d9">47.4060814903559</data>
+  <data key="d10">R146path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OlePal" target="G10Ole" id="249">
+  <data key="d4">R138</data>
+  <data key="d5">G13PalOle + G23OlePal -&gt; GlyPalOlePal + G10Ole</data>
+  <data key="d6">1.33266108335306e-05</data>
+  <data key="d7">29458.1318819797</data>
+  <data key="d8">0.0</data>
+  <data key="d9">43.6601156791884</data>
+  <data key="d10">R138path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OlePal" target="G10Ole" id="313">
+  <data key="d4">R154</data>
+  <data key="d5">G13OleOle + G23OlePal -&gt; GlyOleOlePal + G10Ole</data>
+  <data key="d6">1.50057244470148e-05</data>
+  <data key="d7">28675.6246844253</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.437860130926</data>
+  <data key="d10">R154path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OlePal" target="G2xPalOle.mix" id="327">
+  <data key="d4">R162</data>
+  <data key="d5">0*G23OlePal -&gt; G2xPalOle.mix</data>
+  <data key="d6">6.03974558046616e-05</data>
+  <data key="d7">11173.7343229109</data>
+  <data key="d8">0.0</data>
+  <data key="d9">36.4534358392412</data>
+  <data key="d10">R162path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G23OlePal" target="GLYPalOle.mix" id="341">
+  <data key="d4">R176</data>
+  <data key="d5">0*G23OlePal -&gt; GLYPalOle.mix</data>
+  <data key="d6">3.3595048996915e-05</data>
+  <data key="d7">26484.1783767256</data>
+  <data key="d8">0.0</data>
+  <data key="d9">95.6711713071412</data>
+  <data key="d10">R176path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G23OleOle" target="GlyPalOleOle" id="71">
+  <data key="d4">R35</data>
+  <data key="d5">G23OleOle + Pal + 2*ATP -&gt; GlyPalOleOle + 2*ADP</data>
+  <data key="d6">88.1475686641505</data>
+  <data key="d7">28973.0785196701</data>
+  <data key="d8">60.5047354477314</data>
+  <data key="d9">3865.59219614154</data>
+  <data key="d10">R35path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G23OleOle" target="GlyPalOleOle" id="224">
+  <data key="d4">R132</data>
+  <data key="d5">G13PalPal + G23OleOle -&gt; GlyPalOleOle + G10Pal</data>
+  <data key="d6">4.62331340642663e-05</data>
+  <data key="d7">26581.3445497587</data>
+  <data key="d8">0.0</data>
+  <data key="d9">45.8737489783841</data>
+  <data key="d10">R132path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OleOle" target="GlyPalOleOle" id="256">
+  <data key="d4">R140</data>
+  <data key="d5">G13PalOle + G23OleOle -&gt; GlyPalOleOle + G10Ole</data>
+  <data key="d6">1.60343681550046e-05</data>
+  <data key="d7">95185.9953029336</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1151399787341</data>
+  <data key="d10">R140path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OleOle" target="GlyOleOleOle" id="87">
+  <data key="d4">R43</data>
+  <data key="d5">G23OleOle + Ole + 2*ATP -&gt; GlyOleOleOle + 2*ADP</data>
+  <data key="d6">4.78277271582783e-05</data>
+  <data key="d7">29487.3270555565</data>
+  <data key="d8">0.0</data>
+  <data key="d9">116.697693447252</data>
+  <data key="d10">R43path</data>
+  <data key="d11">DGAT1</data>
+</edge>
+<edge source="G23OleOle" target="GlyOleOleOle" id="288">
+  <data key="d4">R148</data>
+  <data key="d5">G13OlePal + G23OleOle -&gt; GlyOleOleOle + G10Pal</data>
+  <data key="d6">1.70316449121799e-05</data>
+  <data key="d7">28012.1313957275</data>
+  <data key="d8">0.0</data>
+  <data key="d9">45.9572515271271</data>
+  <data key="d10">R148path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OleOle" target="GlyOleOleOle" id="320">
+  <data key="d4">R156</data>
+  <data key="d5">G13OleOle + G23OleOle -&gt; GlyOleOleOle + G10Ole</data>
+  <data key="d6">1.61066884558636e-05</data>
+  <data key="d7">93240.5873558251</data>
+  <data key="d8">0.0</data>
+  <data key="d9">43.8634458579265</data>
+  <data key="d10">R156path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OleOle" target="G20Ole" id="157">
+  <data key="d4">R78</data>
+  <data key="d5">G23OleOle -&gt; G20Ole + Ole</data>
+  <data key="d6">18.3606441999482</data>
+  <data key="d7">26785.7012065283</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3841.70382317981</data>
+  <data key="d10">R78path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G23OleOle" target="Ole" id="158">
+  <data key="d4">R78</data>
+  <data key="d5">G23OleOle -&gt; G20Ole + Ole</data>
+  <data key="d6">18.3606441999482</data>
+  <data key="d7">26785.7012065283</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3841.70382317981</data>
+  <data key="d10">R78path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G23OleOle" target="Sink" id="188">
+  <data key="d4">R119</data>
+  <data key="d5">G23OleOle -&gt; Sink</data>
+  <data key="d6">99.9999999999999</data>
+  <data key="d7">0.0</data>
+  <data key="d8">99.9999999999999</data>
+  <data key="d9">99.9999999999999</data>
+  <data key="d10">R119path</data>
+  <data key="d11">Sink_DG</data>
+</edge>
+<edge source="G23OleOle" target="G10Pal" id="225">
+  <data key="d4">R132</data>
+  <data key="d5">G13PalPal + G23OleOle -&gt; GlyPalOleOle + G10Pal</data>
+  <data key="d6">4.62331340642663e-05</data>
+  <data key="d7">26581.3445497587</data>
+  <data key="d8">0.0</data>
+  <data key="d9">45.8737489783841</data>
+  <data key="d10">R132path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OleOle" target="G10Pal" id="289">
+  <data key="d4">R148</data>
+  <data key="d5">G13OlePal + G23OleOle -&gt; GlyOleOleOle + G10Pal</data>
+  <data key="d6">1.70316449121799e-05</data>
+  <data key="d7">28012.1313957275</data>
+  <data key="d8">0.0</data>
+  <data key="d9">45.9572515271271</data>
+  <data key="d10">R148path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OleOle" target="G10Ole" id="257">
+  <data key="d4">R140</data>
+  <data key="d5">G13PalOle + G23OleOle -&gt; GlyPalOleOle + G10Ole</data>
+  <data key="d6">1.60343681550046e-05</data>
+  <data key="d7">95185.9953029336</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1151399787341</data>
+  <data key="d10">R140path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OleOle" target="G10Ole" id="321">
+  <data key="d4">R156</data>
+  <data key="d5">G13OleOle + G23OleOle -&gt; GlyOleOleOle + G10Ole</data>
+  <data key="d6">1.61066884558636e-05</data>
+  <data key="d7">93240.5873558251</data>
+  <data key="d8">0.0</data>
+  <data key="d9">43.8634458579265</data>
+  <data key="d10">R156path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G23OleOle" target="G2xOleOle.mix" id="323">
+  <data key="d4">R158</data>
+  <data key="d5">0*G23OleOle -&gt; G2xOleOle.mix</data>
+  <data key="d6">54.7165481907541</data>
+  <data key="d7">29414.5593785836</data>
+  <data key="d8">0.0</data>
+  <data key="d9">100.000000000001</data>
+  <data key="d10">R158path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G23OleOle" target="GLYOleOle.mix" id="332">
+  <data key="d4">R167</data>
+  <data key="d5">0*G23OleOle -&gt; GLYOleOle.mix</data>
+  <data key="d6">0.00154187787143201</data>
+  <data key="d7">24217.3758091672</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R167path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="GlyPalPalPal" target="G23PalPal" id="105">
+  <data key="d4">R52</data>
+  <data key="d5">GlyPalPalPal -&gt; G23PalPal + Pal</data>
+  <data key="d6">7.44042325138139e-05</data>
+  <data key="d7">27744.7349923377</data>
+  <data key="d8">0.0</data>
+  <data key="d9">132.195267863967</data>
+  <data key="d10">R52path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalPalPal" target="Pal" id="106">
+  <data key="d4">R52</data>
+  <data key="d5">GlyPalPalPal -&gt; G23PalPal + Pal</data>
+  <data key="d6">7.44042325138139e-05</data>
+  <data key="d7">27744.7349923377</data>
+  <data key="d8">0.0</data>
+  <data key="d9">132.195267863967</data>
+  <data key="d10">R52path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalPalPal" target="Pal" id="108">
+  <data key="d4">R53</data>
+  <data key="d5">GlyPalPalPal -&gt; G13PalPal + Pal</data>
+  <data key="d6">5.19180017285004</data>
+  <data key="d7">28259.2600730687</data>
+  <data key="d8">0.0</data>
+  <data key="d9">137.998682868583</data>
+  <data key="d10">R53path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalPalPal" target="G13PalPal" id="107">
+  <data key="d4">R53</data>
+  <data key="d5">GlyPalPalPal -&gt; G13PalPal + Pal</data>
+  <data key="d6">5.19180017285004</data>
+  <data key="d7">28259.2600730687</data>
+  <data key="d8">0.0</data>
+  <data key="d9">137.998682868583</data>
+  <data key="d10">R53path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalPalPal" target="GLYPalPalPal.mix" id="355">
+  <data key="d4">R190</data>
+  <data key="d5">0*GlyPalPalPal -&gt; GLYPalPalPal.mix</data>
+  <data key="d6">99.9999999999998</data>
+  <data key="d7">0.0</data>
+  <data key="d8">99.9999999999998</data>
+  <data key="d9">99.9999999999998</data>
+  <data key="d10">R190path</data>
+  <data key="d11">TG mix</data>
+</edge>
+<edge source="GlyPalPalOle" target="G23PalOle" id="109">
+  <data key="d4">R54</data>
+  <data key="d5">GlyPalPalOle -&gt; G23PalOle + Pal</data>
+  <data key="d6">0.379986042117032</data>
+  <data key="d7">26274.33965008</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R54path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalPalOle" target="Pal" id="110">
+  <data key="d4">R54</data>
+  <data key="d5">GlyPalPalOle -&gt; G23PalOle + Pal</data>
+  <data key="d6">0.379986042117032</data>
+  <data key="d7">26274.33965008</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R54path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalPalOle" target="Pal" id="112">
+  <data key="d4">R55</data>
+  <data key="d5">GlyPalPalOle -&gt; G13PalOle + Pal</data>
+  <data key="d6">0.000114715643167784</data>
+  <data key="d7">9.15910924933641</data>
+  <data key="d8">0.0</data>
+  <data key="d9">111.293282601445</data>
+  <data key="d10">R55path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalPalOle" target="G13PalOle" id="111">
+  <data key="d4">R55</data>
+  <data key="d5">GlyPalPalOle -&gt; G13PalOle + Pal</data>
+  <data key="d6">0.000114715643167784</data>
+  <data key="d7">9.15910924933641</data>
+  <data key="d8">0.0</data>
+  <data key="d9">111.293282601445</data>
+  <data key="d10">R55path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalPalOle" target="GLYPalPalOle.mix" id="351">
+  <data key="d4">R186</data>
+  <data key="d5">0*GlyPalPalOle -&gt; GLYPalPalOle.mix</data>
+  <data key="d6">6.57191378978406</data>
+  <data key="d7">37306.8717180145</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R186path</data>
+  <data key="d11">TG mix</data>
+</edge>
+<edge source="GlyPalOlePal" target="G23OlePal" id="113">
+  <data key="d4">R56</data>
+  <data key="d5">GlyPalOlePal -&gt; G23OlePal + Pal</data>
+  <data key="d6">7.44248998998387e-05</data>
+  <data key="d7">27324.4771243969</data>
+  <data key="d8">0.0</data>
+  <data key="d9">316.872197357337</data>
+  <data key="d10">R56path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalOlePal" target="Pal" id="114">
+  <data key="d4">R56</data>
+  <data key="d5">GlyPalOlePal -&gt; G23OlePal + Pal</data>
+  <data key="d6">7.44248998998387e-05</data>
+  <data key="d7">27324.4771243969</data>
+  <data key="d8">0.0</data>
+  <data key="d9">316.872197357337</data>
+  <data key="d10">R56path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalOlePal" target="G13PalPal" id="115">
+  <data key="d4">R57</data>
+  <data key="d5">GlyPalOlePal -&gt; G13PalPal + Ole</data>
+  <data key="d6">148.800750565271</data>
+  <data key="d7">28436.0641988377</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3846.73195353131</data>
+  <data key="d10">R57path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalOlePal" target="Ole" id="116">
+  <data key="d4">R57</data>
+  <data key="d5">GlyPalOlePal -&gt; G13PalPal + Ole</data>
+  <data key="d6">148.800750565271</data>
+  <data key="d7">28436.0641988377</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3846.73195353131</data>
+  <data key="d10">R57path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalOlePal" target="GLYPalPalOle.mix" id="352">
+  <data key="d4">R187</data>
+  <data key="d5">0*GlyPalOlePal -&gt; GLYPalPalOle.mix</data>
+  <data key="d6">93.4277911349177</data>
+  <data key="d7">28862.9226424313</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R187path</data>
+  <data key="d11">TG mix</data>
+</edge>
+<edge source="GlyPalOleOle" target="G23OleOle" id="117">
+  <data key="d4">R58</data>
+  <data key="d5">GlyPalOleOle -&gt; G23OleOle + Pal</data>
+  <data key="d6">206.508213562914</data>
+  <data key="d7">28327.7625726304</data>
+  <data key="d8">0.0</data>
+  <data key="d9">4044.06779207854</data>
+  <data key="d10">R58path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalOleOle" target="Pal" id="118">
+  <data key="d4">R58</data>
+  <data key="d5">GlyPalOleOle -&gt; G23OleOle + Pal</data>
+  <data key="d6">206.508213562914</data>
+  <data key="d7">28327.7625726304</data>
+  <data key="d8">0.0</data>
+  <data key="d9">4044.06779207854</data>
+  <data key="d10">R58path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalOleOle" target="G13PalOle" id="119">
+  <data key="d4">R59</data>
+  <data key="d5">GlyPalOleOle -&gt; G13PalOle + Ole</data>
+  <data key="d6">100.168363732634</data>
+  <data key="d7">28570.5752996385</data>
+  <data key="d8">25.0869734454493</data>
+  <data key="d9">3895.74649878099</data>
+  <data key="d10">R59path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalOleOle" target="Ole" id="120">
+  <data key="d4">R59</data>
+  <data key="d5">GlyPalOleOle -&gt; G13PalOle + Ole</data>
+  <data key="d6">100.168363732634</data>
+  <data key="d7">28570.5752996385</data>
+  <data key="d8">25.0869734454493</data>
+  <data key="d9">3895.74649878099</data>
+  <data key="d10">R59path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyPalOleOle" target="GLYPalOleOle.mix" id="343">
+  <data key="d4">R178</data>
+  <data key="d5">0*GlyPalOleOle -&gt; GLYPalOleOle.mix</data>
+  <data key="d6">8.46224198198797e-05</data>
+  <data key="d7">9.0928229657411</data>
+  <data key="d8">0.0</data>
+  <data key="d9">5.14926563453027</data>
+  <data key="d10">R178path</data>
+  <data key="d11">TG mix</data>
+</edge>
+<edge source="GlyOlePalPal" target="G23PalPal" id="121">
+  <data key="d4">R60</data>
+  <data key="d5">GlyOlePalPal -&gt; G23PalPal + Ole</data>
+  <data key="d6">164.140395137949</data>
+  <data key="d7">27970.1943159282</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R60path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOlePalPal" target="Ole" id="122">
+  <data key="d4">R60</data>
+  <data key="d5">GlyOlePalPal -&gt; G23PalPal + Ole</data>
+  <data key="d6">164.140395137949</data>
+  <data key="d7">27970.1943159282</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R60path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOlePalPal" target="G13OlePal" id="123">
+  <data key="d4">R61</data>
+  <data key="d5">GlyOlePalPal -&gt; G13OlePal + Pal</data>
+  <data key="d6">0.000140854681944802</data>
+  <data key="d7">27118.8533136095</data>
+  <data key="d8">0.0</data>
+  <data key="d9">163.67665530711</data>
+  <data key="d10">R61path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOlePalPal" target="Pal" id="124">
+  <data key="d4">R61</data>
+  <data key="d5">GlyOlePalPal -&gt; G13OlePal + Pal</data>
+  <data key="d6">0.000140854681944802</data>
+  <data key="d7">27118.8533136095</data>
+  <data key="d8">0.0</data>
+  <data key="d9">163.67665530711</data>
+  <data key="d10">R61path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOlePalPal" target="GLYPalPalOle.mix" id="353">
+  <data key="d4">R188</data>
+  <data key="d5">0*GlyOlePalPal -&gt; GLYPalPalOle.mix</data>
+  <data key="d6">0.000295075298872405</data>
+  <data key="d7">27241.5335505891</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R188path</data>
+  <data key="d11">TG mix</data>
+</edge>
+<edge source="GlyOlePalOle" target="G23PalOle" id="125">
+  <data key="d4">R62</data>
+  <data key="d5">GlyOlePalOle -&gt; G23PalOle + Ole</data>
+  <data key="d6">99.831681400029</data>
+  <data key="d7">15485.8693873307</data>
+  <data key="d8">11.2128696917041</data>
+  <data key="d9">2850.08627900936</data>
+  <data key="d10">R62path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOlePalOle" target="Ole" id="126">
+  <data key="d4">R62</data>
+  <data key="d5">GlyOlePalOle -&gt; G23PalOle + Ole</data>
+  <data key="d6">99.831681400029</data>
+  <data key="d7">15485.8693873307</data>
+  <data key="d8">11.2128696917041</data>
+  <data key="d9">2850.08627900936</data>
+  <data key="d10">R62path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOlePalOle" target="G13OleOle" id="127">
+  <data key="d4">R63</data>
+  <data key="d5">GlyOlePalOle -&gt; G13OleOle + Pal</data>
+  <data key="d6">6.74981225827764e-05</data>
+  <data key="d7">27859.3099675925</data>
+  <data key="d8">0.0</data>
+  <data key="d9">187.248448432735</data>
+  <data key="d10">R63path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOlePalOle" target="Pal" id="128">
+  <data key="d4">R63</data>
+  <data key="d5">GlyOlePalOle -&gt; G13OleOle + Pal</data>
+  <data key="d6">6.74981225827764e-05</data>
+  <data key="d7">27859.3099675925</data>
+  <data key="d8">0.0</data>
+  <data key="d9">187.248448432735</data>
+  <data key="d10">R63path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOlePalOle" target="GLYPalOleOle.mix" id="344">
+  <data key="d4">R179</data>
+  <data key="d5">0*GlyOlePalOle -&gt; GLYPalOleOle.mix</data>
+  <data key="d6">3.19006881192445</data>
+  <data key="d7">1141.24085637679</data>
+  <data key="d8">0.0</data>
+  <data key="d9">7.76655534306009</data>
+  <data key="d10">R179path</data>
+  <data key="d11">TG mix</data>
+</edge>
+<edge source="GlyOleOlePal" target="G23OlePal" id="129">
+  <data key="d4">R64</data>
+  <data key="d5">GlyOleOlePal -&gt; G23OlePal + Ole</data>
+  <data key="d6">100.488513310851</data>
+  <data key="d7">29060.4371525466</data>
+  <data key="d8">0.0</data>
+  <data key="d9">351.269992105099</data>
+  <data key="d10">R64path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOleOlePal" target="Ole" id="130">
+  <data key="d4">R64</data>
+  <data key="d5">GlyOleOlePal -&gt; G23OlePal + Ole</data>
+  <data key="d6">100.488513310851</data>
+  <data key="d7">29060.4371525466</data>
+  <data key="d8">0.0</data>
+  <data key="d9">351.269992105099</data>
+  <data key="d10">R64path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOleOlePal" target="Ole" id="132">
+  <data key="d4">R65</data>
+  <data key="d5">GlyOleOlePal -&gt; G13OlePal + Ole</data>
+  <data key="d6">100.000119464709</data>
+  <data key="d7">28514.7206261098</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R65path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOleOlePal" target="G13OlePal" id="131">
+  <data key="d4">R65</data>
+  <data key="d5">GlyOleOlePal -&gt; G13OlePal + Ole</data>
+  <data key="d6">100.000119464709</data>
+  <data key="d7">28514.7206261098</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R65path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOleOlePal" target="GLYPalOleOle.mix" id="345">
+  <data key="d4">R180</data>
+  <data key="d5">0*GlyOleOlePal -&gt; GLYPalOleOle.mix</data>
+  <data key="d6">96.8098465656554</data>
+  <data key="d7">1143.83923763867</data>
+  <data key="d8">90.153776972891</data>
+  <data key="d9">99.9999999999997</data>
+  <data key="d10">R180path</data>
+  <data key="d11">TG mix</data>
+</edge>
+<edge source="GlyOleOleOle" target="G23OleOle" id="133">
+  <data key="d4">R66</data>
+  <data key="d5">GlyOleOleOle -&gt; G23OleOle + Ole</data>
+  <data key="d6">7.87342428125726e-05</data>
+  <data key="d7">26879.7459348211</data>
+  <data key="d8">0.0</data>
+  <data key="d9">39.4085107800761</data>
+  <data key="d10">R66path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOleOleOle" target="Ole" id="134">
+  <data key="d4">R66</data>
+  <data key="d5">GlyOleOleOle -&gt; G23OleOle + Ole</data>
+  <data key="d6">7.87342428125726e-05</data>
+  <data key="d7">26879.7459348211</data>
+  <data key="d8">0.0</data>
+  <data key="d9">39.4085107800761</data>
+  <data key="d10">R66path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOleOleOle" target="Ole" id="136">
+  <data key="d4">R67</data>
+  <data key="d5">GlyOleOleOle -&gt; G13OleOle + Ole</data>
+  <data key="d6">3800.07254997856</data>
+  <data key="d7">28145.6173582387</data>
+  <data key="d8">111.20402919488</data>
+  <data key="d9">3917.51961754233</data>
+  <data key="d10">R67path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOleOleOle" target="G13OleOle" id="135">
+  <data key="d4">R67</data>
+  <data key="d5">GlyOleOleOle -&gt; G13OleOle + Ole</data>
+  <data key="d6">3800.07254997856</data>
+  <data key="d7">28145.6173582387</data>
+  <data key="d8">111.20402919488</data>
+  <data key="d9">3917.51961754233</data>
+  <data key="d10">R67path</data>
+  <data key="d11">ATGL</data>
+</edge>
+<edge source="GlyOleOleOle" target="GLYOleOleOle.mix" id="334">
+  <data key="d4">R169</data>
+  <data key="d5">0*GlyOleOleOle -&gt; GLYOleOleOle.mix</data>
+  <data key="d6">99.9999999999974</data>
+  <data key="d7">0.0</data>
+  <data key="d8">99.9999999999974</data>
+  <data key="d9">99.9999999999974</data>
+  <data key="d10">R169path</data>
+  <data key="d11">TG mix</data>
+</edge>
+<edge source="G13PalPal" target="GlyPalPalPal" id="89">
+  <data key="d4">R44</data>
+  <data key="d5">G13PalPal + Pal + 2*ATP -&gt; GlyPalPalPal + 2*ADP</data>
+  <data key="d6">7.94991958059654e-05</data>
+  <data key="d7">10026.4660745786</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R44path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="G13PalPal" target="GlyPalPalPal" id="194">
+  <data key="d4">R125</data>
+  <data key="d5">G13PalPal + G13PalPal -&gt; GlyPalPalPal + G10Pal</data>
+  <data key="d6">0.00195844314335858</data>
+  <data key="d7">113000.973480223</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R125path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="GlyPalPalPal" id="196">
+  <data key="d4">R125</data>
+  <data key="d5">G13PalPal + G13PalPal -&gt; GlyPalPalPal + G10Pal</data>
+  <data key="d6">0.00195844314335858</data>
+  <data key="d7">113000.973480223</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R125path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="GlyPalPalPal" id="198">
+  <data key="d4">R126</data>
+  <data key="d5">G13PalPal + G23PalPal -&gt; GlyPalPalPal + G10Pal</data>
+  <data key="d6">5.6721359504408e-05</data>
+  <data key="d7">154187.606325325</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1475842653807</data>
+  <data key="d10">R126path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="GlyPalPalPal" id="228">
+  <data key="d4">R133</data>
+  <data key="d5">G13PalOle + G13PalPal -&gt; GlyPalPalPal + G10Ole</data>
+  <data key="d6">1.59675902366985e-05</data>
+  <data key="d7">29161.0560132872</data>
+  <data key="d8">0.0</data>
+  <data key="d9">5.88890951574777</data>
+  <data key="d10">R133path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="GlyPalOlePal" id="93">
+  <data key="d4">R46</data>
+  <data key="d5">G13PalPal + Ole + 2*ATP -&gt; GlyPalOlePal + 2*ADP</data>
+  <data key="d6">8.29665257953138e-05</data>
+  <data key="d7">29043.8572602873</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3795.74729765225</data>
+  <data key="d10">R46path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="G13PalPal" target="GlyPalOlePal" id="214">
+  <data key="d4">R130</data>
+  <data key="d5">G13PalPal + G23OlePal -&gt; GlyPalOlePal + G10Pal</data>
+  <data key="d6">5.89753204955912e-05</data>
+  <data key="d7">109070.501488859</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1472479297176</data>
+  <data key="d10">R130path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="GlyPalOlePal" id="260">
+  <data key="d4">R141</data>
+  <data key="d5">G13OlePal + G13PalPal -&gt; GlyPalOlePal + G10Pal</data>
+  <data key="d6">2.13992324944456e-05</data>
+  <data key="d7">28432.8291357621</data>
+  <data key="d8">0.0</data>
+  <data key="d9">47.402904510826</data>
+  <data key="d10">R141path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="GlyPalOlePal" id="292">
+  <data key="d4">R149</data>
+  <data key="d5">G13OleOle + G13PalPal -&gt; GlyPalOlePal + G10Ole</data>
+  <data key="d6">1.82389128218219e-05</data>
+  <data key="d7">27520.8092019619</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6941303523208</data>
+  <data key="d10">R149path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="G10Pal" id="137">
+  <data key="d4">R68</data>
+  <data key="d5">G13PalPal -&gt; G10Pal + Pal</data>
+  <data key="d6">4.42547624892597e-05</data>
+  <data key="d7">28545.4564247737</data>
+  <data key="d8">0.0</data>
+  <data key="d9">45.9399281070359</data>
+  <data key="d10">R68path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G13PalPal" target="G10Pal" id="195">
+  <data key="d4">R125</data>
+  <data key="d5">G13PalPal + G13PalPal -&gt; GlyPalPalPal + G10Pal</data>
+  <data key="d6">0.00195844314335858</data>
+  <data key="d7">113000.973480223</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R125path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="G10Pal" id="197">
+  <data key="d4">R125</data>
+  <data key="d5">G13PalPal + G13PalPal -&gt; GlyPalPalPal + G10Pal</data>
+  <data key="d6">0.00195844314335858</data>
+  <data key="d7">113000.973480223</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R125path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="G10Pal" id="199">
+  <data key="d4">R126</data>
+  <data key="d5">G13PalPal + G23PalPal -&gt; GlyPalPalPal + G10Pal</data>
+  <data key="d6">5.6721359504408e-05</data>
+  <data key="d7">154187.606325325</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1475842653807</data>
+  <data key="d10">R126path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="G10Pal" id="203">
+  <data key="d4">R127</data>
+  <data key="d5">G13PalPal + G13PalOle -&gt; GlyPalPalOle + G10Pal</data>
+  <data key="d6">2.58726427753153e-05</data>
+  <data key="d7">28109.8997247529</data>
+  <data key="d8">0.0</data>
+  <data key="d9">44.0966064796539</data>
+  <data key="d10">R127path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="G10Pal" id="207">
+  <data key="d4">R128</data>
+  <data key="d5">G13PalPal + G23PalOle -&gt; GlyPalPalOle + G10Pal</data>
+  <data key="d6">0.211611212132951</data>
+  <data key="d7">27258.5515361078</data>
+  <data key="d8">0.0</data>
+  <data key="d9">56.1676466929257</data>
+  <data key="d10">R128path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="G10Pal" id="211">
+  <data key="d4">R129</data>
+  <data key="d5">G13PalPal + G13OlePal -&gt; GlyOlePalPal + G10Pal</data>
+  <data key="d6">2.1418568001863e-05</data>
+  <data key="d7">26581.5939169602</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1412002254972</data>
+  <data key="d10">R129path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="G10Pal" id="215">
+  <data key="d4">R130</data>
+  <data key="d5">G13PalPal + G23OlePal -&gt; GlyPalOlePal + G10Pal</data>
+  <data key="d6">5.89753204955912e-05</data>
+  <data key="d7">109070.501488859</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1472479297176</data>
+  <data key="d10">R130path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="G10Pal" id="219">
+  <data key="d4">R131</data>
+  <data key="d5">G13PalPal + G13OleOle -&gt; GlyOlePalOle + G10Pal</data>
+  <data key="d6">53.7765510924551</data>
+  <data key="d7">28893.7023993318</data>
+  <data key="d8">0.0</data>
+  <data key="d9">82.2756944029148</data>
+  <data key="d10">R131path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="G10Pal" id="223">
+  <data key="d4">R132</data>
+  <data key="d5">G13PalPal + G23OleOle -&gt; GlyPalOleOle + G10Pal</data>
+  <data key="d6">4.62331340642663e-05</data>
+  <data key="d7">26581.3445497587</data>
+  <data key="d8">0.0</data>
+  <data key="d9">45.8737489783841</data>
+  <data key="d10">R132path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="G10Pal" id="261">
+  <data key="d4">R141</data>
+  <data key="d5">G13OlePal + G13PalPal -&gt; GlyPalOlePal + G10Pal</data>
+  <data key="d6">2.13992324944456e-05</data>
+  <data key="d7">28432.8291357621</data>
+  <data key="d8">0.0</data>
+  <data key="d9">47.402904510826</data>
+  <data key="d10">R141path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="Pal" id="138">
+  <data key="d4">R68</data>
+  <data key="d5">G13PalPal -&gt; G10Pal + Pal</data>
+  <data key="d6">4.42547624892597e-05</data>
+  <data key="d7">28545.4564247737</data>
+  <data key="d8">0.0</data>
+  <data key="d9">45.9399281070359</data>
+  <data key="d10">R68path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G13PalPal" target="Sink" id="189">
+  <data key="d4">R120</data>
+  <data key="d5">G13PalPal -&gt; Sink</data>
+  <data key="d6">100.000000000001</data>
+  <data key="d7">0.0</data>
+  <data key="d8">100.000000000001</data>
+  <data key="d9">100.000000000001</data>
+  <data key="d10">R120path</data>
+  <data key="d11">Sink_DG</data>
+</edge>
+<edge source="G13PalPal" target="GlyPalPalOle" id="202">
+  <data key="d4">R127</data>
+  <data key="d5">G13PalPal + G13PalOle -&gt; GlyPalPalOle + G10Pal</data>
+  <data key="d6">2.58726427753153e-05</data>
+  <data key="d7">28109.8997247529</data>
+  <data key="d8">0.0</data>
+  <data key="d9">44.0966064796539</data>
+  <data key="d10">R127path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="GlyPalPalOle" id="206">
+  <data key="d4">R128</data>
+  <data key="d5">G13PalPal + G23PalOle -&gt; GlyPalPalOle + G10Pal</data>
+  <data key="d6">0.211611212132951</data>
+  <data key="d7">27258.5515361078</data>
+  <data key="d8">0.0</data>
+  <data key="d9">56.1676466929257</data>
+  <data key="d10">R128path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="GlyOlePalPal" id="210">
+  <data key="d4">R129</data>
+  <data key="d5">G13PalPal + G13OlePal -&gt; GlyOlePalPal + G10Pal</data>
+  <data key="d6">2.1418568001863e-05</data>
+  <data key="d7">26581.5939169602</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1412002254972</data>
+  <data key="d10">R129path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="GlyOlePalOle" id="218">
+  <data key="d4">R131</data>
+  <data key="d5">G13PalPal + G13OleOle -&gt; GlyOlePalOle + G10Pal</data>
+  <data key="d6">53.7765510924551</data>
+  <data key="d7">28893.7023993318</data>
+  <data key="d8">0.0</data>
+  <data key="d9">82.2756944029148</data>
+  <data key="d10">R131path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="GlyPalOleOle" id="222">
+  <data key="d4">R132</data>
+  <data key="d5">G13PalPal + G23OleOle -&gt; GlyPalOleOle + G10Pal</data>
+  <data key="d6">4.62331340642663e-05</data>
+  <data key="d7">26581.3445497587</data>
+  <data key="d8">0.0</data>
+  <data key="d9">45.8737489783841</data>
+  <data key="d10">R132path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="G10Ole" id="229">
+  <data key="d4">R133</data>
+  <data key="d5">G13PalOle + G13PalPal -&gt; GlyPalPalPal + G10Ole</data>
+  <data key="d6">1.59675902366985e-05</data>
+  <data key="d7">29161.0560132872</data>
+  <data key="d8">0.0</data>
+  <data key="d9">5.88890951574777</data>
+  <data key="d10">R133path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="G10Ole" id="293">
+  <data key="d4">R149</data>
+  <data key="d5">G13OleOle + G13PalPal -&gt; GlyPalOlePal + G10Ole</data>
+  <data key="d6">1.82389128218219e-05</data>
+  <data key="d7">27520.8092019619</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6941303523208</data>
+  <data key="d10">R149path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalPal" target="GLYPalPal.mix" id="348">
+  <data key="d4">R183</data>
+  <data key="d5">0*G13PalPal -&gt; GLYPalPal.mix</data>
+  <data key="d6">0.000588545952581399</data>
+  <data key="d7">27068.729422389</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R183path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G13PalOle" target="GlyPalPalOle" id="91">
+  <data key="d4">R45</data>
+  <data key="d5">G13PalOle + Pal + 2*ATP -&gt; GlyPalPalOle + 2*ADP</data>
+  <data key="d6">0.168237116183446</data>
+  <data key="d7">20605.1879207628</data>
+  <data key="d8">0.0</data>
+  <data key="d9">77.9110462933575</data>
+  <data key="d10">R45path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="G13PalOle" target="GlyPalPalOle" id="204">
+  <data key="d4">R127</data>
+  <data key="d5">G13PalPal + G13PalOle -&gt; GlyPalPalOle + G10Pal</data>
+  <data key="d6">2.58726427753153e-05</data>
+  <data key="d7">28109.8997247529</data>
+  <data key="d8">0.0</data>
+  <data key="d9">44.0966064796539</data>
+  <data key="d10">R127path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="GlyPalPalOle" id="234">
+  <data key="d4">R135</data>
+  <data key="d5">G13PalOle + G13PalOle -&gt; GlyPalPalOle + G10Ole</data>
+  <data key="d6">1.10509741162446e-05</data>
+  <data key="d7">28818.3814254557</data>
+  <data key="d8">0.0</data>
+  <data key="d9">39.5302360576803</data>
+  <data key="d10">R135path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="GlyPalPalOle" id="236">
+  <data key="d4">R135</data>
+  <data key="d5">G13PalOle + G13PalOle -&gt; GlyPalPalOle + G10Ole</data>
+  <data key="d6">1.10509741162446e-05</data>
+  <data key="d7">28818.3814254557</data>
+  <data key="d8">0.0</data>
+  <data key="d9">39.5302360576803</data>
+  <data key="d10">R135path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="GlyPalPalOle" id="238">
+  <data key="d4">R136</data>
+  <data key="d5">G13PalOle + G23PalOle -&gt; GlyPalPalOle + G10Ole</data>
+  <data key="d6">1.52853977510858e-05</data>
+  <data key="d7">42969.7225777137</data>
+  <data key="d8">0.0</data>
+  <data key="d9">57.7559060045571</data>
+  <data key="d10">R136path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="GlyPalOleOle" id="95">
+  <data key="d4">R47</data>
+  <data key="d5">G13PalOle + Ole + 2*ATP -&gt; GlyPalOleOle + 2*ADP</data>
+  <data key="d6">4.19758195933095e-05</data>
+  <data key="d7">33952.0003677696</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R47path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="G13PalOle" target="GlyPalOleOle" id="254">
+  <data key="d4">R140</data>
+  <data key="d5">G13PalOle + G23OleOle -&gt; GlyPalOleOle + G10Ole</data>
+  <data key="d6">1.60343681550046e-05</data>
+  <data key="d7">95185.9953029336</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1151399787341</data>
+  <data key="d10">R140path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="GlyPalOleOle" id="268">
+  <data key="d4">R143</data>
+  <data key="d5">G13OlePal + G13PalOle -&gt; GlyPalOleOle + G10Pal</data>
+  <data key="d6">1.54117164221645e-05</data>
+  <data key="d7">28265.6739641709</data>
+  <data key="d8">0.0</data>
+  <data key="d9">47.4154829663296</data>
+  <data key="d10">R143path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="GlyPalOleOle" id="300">
+  <data key="d4">R151</data>
+  <data key="d5">G13OleOle + G13PalOle -&gt; GlyPalOleOle + G10Ole</data>
+  <data key="d6">1.36148975524719e-05</data>
+  <data key="d7">27557.1188220837</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.4350819949045</data>
+  <data key="d10">R151path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="G10Pal" id="143">
+  <data key="d4">R71</data>
+  <data key="d5">G13PalOle -&gt; G10Pal + Ole</data>
+  <data key="d6">2.46249588222724e-05</data>
+  <data key="d7">7.80071503894982</data>
+  <data key="d8">0.0</data>
+  <data key="d9">9.52709955016071</data>
+  <data key="d10">R71path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G13PalOle" target="G10Pal" id="205">
+  <data key="d4">R127</data>
+  <data key="d5">G13PalPal + G13PalOle -&gt; GlyPalPalOle + G10Pal</data>
+  <data key="d6">2.58726427753153e-05</data>
+  <data key="d7">28109.8997247529</data>
+  <data key="d8">0.0</data>
+  <data key="d9">44.0966064796539</data>
+  <data key="d10">R127path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="G10Pal" id="269">
+  <data key="d4">R143</data>
+  <data key="d5">G13OlePal + G13PalOle -&gt; GlyPalOleOle + G10Pal</data>
+  <data key="d6">1.54117164221645e-05</data>
+  <data key="d7">28265.6739641709</data>
+  <data key="d8">0.0</data>
+  <data key="d9">47.4154829663296</data>
+  <data key="d10">R143path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="Ole" id="144">
+  <data key="d4">R71</data>
+  <data key="d5">G13PalOle -&gt; G10Pal + Ole</data>
+  <data key="d6">2.46249588222724e-05</data>
+  <data key="d7">7.80071503894982</data>
+  <data key="d8">0.0</data>
+  <data key="d9">9.52709955016071</data>
+  <data key="d10">R71path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G13PalOle" target="Sink" id="190">
+  <data key="d4">R121</data>
+  <data key="d5">G13PalOle -&gt; Sink</data>
+  <data key="d6">99.999999999999</data>
+  <data key="d7">0.0</data>
+  <data key="d8">99.999999999999</data>
+  <data key="d9">99.999999999999</data>
+  <data key="d10">R121path</data>
+  <data key="d11">Sink_DG</data>
+</edge>
+<edge source="G13PalOle" target="GlyPalPalPal" id="226">
+  <data key="d4">R133</data>
+  <data key="d5">G13PalOle + G13PalPal -&gt; GlyPalPalPal + G10Ole</data>
+  <data key="d6">1.59675902366985e-05</data>
+  <data key="d7">29161.0560132872</data>
+  <data key="d8">0.0</data>
+  <data key="d9">5.88890951574777</data>
+  <data key="d10">R133path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="GlyPalPalPal" id="230">
+  <data key="d4">R134</data>
+  <data key="d5">G13PalOle + G23PalPal -&gt; GlyPalPalPal + G10Ole</data>
+  <data key="d6">1.35129614342588e-05</data>
+  <data key="d7">28105.9848132922</data>
+  <data key="d8">0.0</data>
+  <data key="d9">5.8974818276816</data>
+  <data key="d10">R134path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="G10Ole" id="227">
+  <data key="d4">R133</data>
+  <data key="d5">G13PalOle + G13PalPal -&gt; GlyPalPalPal + G10Ole</data>
+  <data key="d6">1.59675902366985e-05</data>
+  <data key="d7">29161.0560132872</data>
+  <data key="d8">0.0</data>
+  <data key="d9">5.88890951574777</data>
+  <data key="d10">R133path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="G10Ole" id="231">
+  <data key="d4">R134</data>
+  <data key="d5">G13PalOle + G23PalPal -&gt; GlyPalPalPal + G10Ole</data>
+  <data key="d6">1.35129614342588e-05</data>
+  <data key="d7">28105.9848132922</data>
+  <data key="d8">0.0</data>
+  <data key="d9">5.8974818276816</data>
+  <data key="d10">R134path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="G10Ole" id="235">
+  <data key="d4">R135</data>
+  <data key="d5">G13PalOle + G13PalOle -&gt; GlyPalPalOle + G10Ole</data>
+  <data key="d6">1.10509741162446e-05</data>
+  <data key="d7">28818.3814254557</data>
+  <data key="d8">0.0</data>
+  <data key="d9">39.5302360576803</data>
+  <data key="d10">R135path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="G10Ole" id="237">
+  <data key="d4">R135</data>
+  <data key="d5">G13PalOle + G13PalOle -&gt; GlyPalPalOle + G10Ole</data>
+  <data key="d6">1.10509741162446e-05</data>
+  <data key="d7">28818.3814254557</data>
+  <data key="d8">0.0</data>
+  <data key="d9">39.5302360576803</data>
+  <data key="d10">R135path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="G10Ole" id="239">
+  <data key="d4">R136</data>
+  <data key="d5">G13PalOle + G23PalOle -&gt; GlyPalPalOle + G10Ole</data>
+  <data key="d6">1.52853977510858e-05</data>
+  <data key="d7">42969.7225777137</data>
+  <data key="d8">0.0</data>
+  <data key="d9">57.7559060045571</data>
+  <data key="d10">R136path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="G10Ole" id="243">
+  <data key="d4">R137</data>
+  <data key="d5">G13PalOle + G13OlePal -&gt; GlyOlePalPal + G10Ole</data>
+  <data key="d6">9.98054786915947e-06</data>
+  <data key="d7">26046.2834079295</data>
+  <data key="d8">0.0</data>
+  <data key="d9">22.4013830091907</data>
+  <data key="d10">R137path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="G10Ole" id="247">
+  <data key="d4">R138</data>
+  <data key="d5">G13PalOle + G23OlePal -&gt; GlyPalOlePal + G10Ole</data>
+  <data key="d6">1.33266108335306e-05</data>
+  <data key="d7">29458.1318819797</data>
+  <data key="d8">0.0</data>
+  <data key="d9">43.6601156791884</data>
+  <data key="d10">R138path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="G10Ole" id="251">
+  <data key="d4">R139</data>
+  <data key="d5">G13PalOle + G13OleOle -&gt; GlyOlePalOle + G10Ole</data>
+  <data key="d6">1.36226336824308e-05</data>
+  <data key="d7">27928.9558761179</data>
+  <data key="d8">0.0</data>
+  <data key="d9">80.895551299942</data>
+  <data key="d10">R139path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="G10Ole" id="255">
+  <data key="d4">R140</data>
+  <data key="d5">G13PalOle + G23OleOle -&gt; GlyPalOleOle + G10Ole</data>
+  <data key="d6">1.60343681550046e-05</data>
+  <data key="d7">95185.9953029336</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1151399787341</data>
+  <data key="d10">R140path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="G10Ole" id="301">
+  <data key="d4">R151</data>
+  <data key="d5">G13OleOle + G13PalOle -&gt; GlyPalOleOle + G10Ole</data>
+  <data key="d6">1.36148975524719e-05</data>
+  <data key="d7">27557.1188220837</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.4350819949045</data>
+  <data key="d10">R151path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="GlyOlePalPal" id="242">
+  <data key="d4">R137</data>
+  <data key="d5">G13PalOle + G13OlePal -&gt; GlyOlePalPal + G10Ole</data>
+  <data key="d6">9.98054786915947e-06</data>
+  <data key="d7">26046.2834079295</data>
+  <data key="d8">0.0</data>
+  <data key="d9">22.4013830091907</data>
+  <data key="d10">R137path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="GlyPalOlePal" id="246">
+  <data key="d4">R138</data>
+  <data key="d5">G13PalOle + G23OlePal -&gt; GlyPalOlePal + G10Ole</data>
+  <data key="d6">1.33266108335306e-05</data>
+  <data key="d7">29458.1318819797</data>
+  <data key="d8">0.0</data>
+  <data key="d9">43.6601156791884</data>
+  <data key="d10">R138path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="GlyOlePalOle" id="250">
+  <data key="d4">R139</data>
+  <data key="d5">G13PalOle + G13OleOle -&gt; GlyOlePalOle + G10Ole</data>
+  <data key="d6">1.36226336824308e-05</data>
+  <data key="d7">27928.9558761179</data>
+  <data key="d8">0.0</data>
+  <data key="d9">80.895551299942</data>
+  <data key="d10">R139path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13PalOle" target="GLYPalOle.mix" id="337">
+  <data key="d4">R172</data>
+  <data key="d5">0*G13PalOle -&gt; GLYPalOle.mix</data>
+  <data key="d6">3.3594718853891e-05</data>
+  <data key="d7">26140.8251951514</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.7906218009064</data>
+  <data key="d10">R172path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G13OlePal" target="GlyOlePalPal" id="97">
+  <data key="d4">R48</data>
+  <data key="d5">G13OlePal + Pal + 2*ATP -&gt; GlyOlePalPal + 2*ADP</data>
+  <data key="d6">2.63348916078598e-05</data>
+  <data key="d7">7486.84560557178</data>
+  <data key="d8">0.0</data>
+  <data key="d9">7.38159125687237</data>
+  <data key="d10">R48path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="G13OlePal" target="GlyOlePalPal" id="212">
+  <data key="d4">R129</data>
+  <data key="d5">G13PalPal + G13OlePal -&gt; GlyOlePalPal + G10Pal</data>
+  <data key="d6">2.1418568001863e-05</data>
+  <data key="d7">26581.5939169602</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1412002254972</data>
+  <data key="d10">R129path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="GlyOlePalPal" id="244">
+  <data key="d4">R137</data>
+  <data key="d5">G13PalOle + G13OlePal -&gt; GlyOlePalPal + G10Ole</data>
+  <data key="d6">9.98054786915947e-06</data>
+  <data key="d7">26046.2834079295</data>
+  <data key="d8">0.0</data>
+  <data key="d9">22.4013830091907</data>
+  <data key="d10">R137path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="GlyOlePalPal" id="262">
+  <data key="d4">R142</data>
+  <data key="d5">G13OlePal + G23PalPal -&gt; GlyOlePalPal + G10Pal</data>
+  <data key="d6">1.94612895541013e-05</data>
+  <data key="d7">136034.942150952</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1405009599873</data>
+  <data key="d10">R142path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="GlyOleOlePal" id="101">
+  <data key="d4">R50</data>
+  <data key="d5">G13OlePal + Ole + 2*ATP -&gt; GlyOleOlePal + 2*ADP</data>
+  <data key="d6">2.73102976997563e-05</data>
+  <data key="d7">74170.3705028351</data>
+  <data key="d8">0.0</data>
+  <data key="d12">False</data>
+  <data key="d10">R50path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="G13OlePal" target="GlyOleOlePal" id="274">
+  <data key="d4">R145</data>
+  <data key="d5">G13OlePal + G13OlePal -&gt; GlyOleOlePal + G10Pal</data>
+  <data key="d6">1.20660073994472e-05</data>
+  <data key="d7">29363.9757287196</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1668089230687</data>
+  <data key="d10">R145path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="GlyOleOlePal" id="276">
+  <data key="d4">R145</data>
+  <data key="d5">G13OlePal + G13OlePal -&gt; GlyOleOlePal + G10Pal</data>
+  <data key="d6">1.20660073994472e-05</data>
+  <data key="d7">29363.9757287196</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1668089230687</data>
+  <data key="d10">R145path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="GlyOleOlePal" id="278">
+  <data key="d4">R146</data>
+  <data key="d5">G13OlePal + G23OlePal -&gt; GlyOleOlePal + G10Pal</data>
+  <data key="d6">1.72152214314991e-05</data>
+  <data key="d7">29849.6792367861</data>
+  <data key="d8">0.0</data>
+  <data key="d9">47.4060814903559</data>
+  <data key="d10">R146path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="GlyOleOlePal" id="308">
+  <data key="d4">R153</data>
+  <data key="d5">G13OleOle + G13OlePal -&gt; GlyOleOlePal + G10Ole</data>
+  <data key="d6">1.08269542131723e-05</data>
+  <data key="d7">29103.8036139353</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6930284386171</data>
+  <data key="d10">R153path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="G10Ole" id="149">
+  <data key="d4">R74</data>
+  <data key="d5">G13OlePal -&gt; G10Ole + Pal</data>
+  <data key="d6">1.27177898372466e-05</data>
+  <data key="d7">64267.0817905398</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1336139452557</data>
+  <data key="d10">R74path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G13OlePal" target="G10Ole" id="245">
+  <data key="d4">R137</data>
+  <data key="d5">G13PalOle + G13OlePal -&gt; GlyOlePalPal + G10Ole</data>
+  <data key="d6">9.98054786915947e-06</data>
+  <data key="d7">26046.2834079295</data>
+  <data key="d8">0.0</data>
+  <data key="d9">22.4013830091907</data>
+  <data key="d10">R137path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="G10Ole" id="309">
+  <data key="d4">R153</data>
+  <data key="d5">G13OleOle + G13OlePal -&gt; GlyOleOlePal + G10Ole</data>
+  <data key="d6">1.08269542131723e-05</data>
+  <data key="d7">29103.8036139353</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6930284386171</data>
+  <data key="d10">R153path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="Pal" id="150">
+  <data key="d4">R74</data>
+  <data key="d5">G13OlePal -&gt; G10Ole + Pal</data>
+  <data key="d6">1.27177898372466e-05</data>
+  <data key="d7">64267.0817905398</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1336139452557</data>
+  <data key="d10">R74path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G13OlePal" target="Sink" id="191">
+  <data key="d4">R122</data>
+  <data key="d5">G13OlePal -&gt; Sink</data>
+  <data key="d6">100.000000000001</data>
+  <data key="d7">0.0</data>
+  <data key="d8">100.000000000001</data>
+  <data key="d9">100.000000000001</data>
+  <data key="d10">R122path</data>
+  <data key="d11">Sink_DG</data>
+</edge>
+<edge source="G13OlePal" target="G10Pal" id="213">
+  <data key="d4">R129</data>
+  <data key="d5">G13PalPal + G13OlePal -&gt; GlyOlePalPal + G10Pal</data>
+  <data key="d6">2.1418568001863e-05</data>
+  <data key="d7">26581.5939169602</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1412002254972</data>
+  <data key="d10">R129path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="G10Pal" id="259">
+  <data key="d4">R141</data>
+  <data key="d5">G13OlePal + G13PalPal -&gt; GlyPalOlePal + G10Pal</data>
+  <data key="d6">2.13992324944456e-05</data>
+  <data key="d7">28432.8291357621</data>
+  <data key="d8">0.0</data>
+  <data key="d9">47.402904510826</data>
+  <data key="d10">R141path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="G10Pal" id="263">
+  <data key="d4">R142</data>
+  <data key="d5">G13OlePal + G23PalPal -&gt; GlyOlePalPal + G10Pal</data>
+  <data key="d6">1.94612895541013e-05</data>
+  <data key="d7">136034.942150952</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1405009599873</data>
+  <data key="d10">R142path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="G10Pal" id="267">
+  <data key="d4">R143</data>
+  <data key="d5">G13OlePal + G13PalOle -&gt; GlyPalOleOle + G10Pal</data>
+  <data key="d6">1.54117164221645e-05</data>
+  <data key="d7">28265.6739641709</data>
+  <data key="d8">0.0</data>
+  <data key="d9">47.4154829663296</data>
+  <data key="d10">R143path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="G10Pal" id="271">
+  <data key="d4">R144</data>
+  <data key="d5">G13OlePal + G23PalOle -&gt; GlyOlePalOle + G10Pal</data>
+  <data key="d6">2.09213279802611e-05</data>
+  <data key="d7">27632.4758187264</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1334331686615</data>
+  <data key="d10">R144path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="G10Pal" id="275">
+  <data key="d4">R145</data>
+  <data key="d5">G13OlePal + G13OlePal -&gt; GlyOleOlePal + G10Pal</data>
+  <data key="d6">1.20660073994472e-05</data>
+  <data key="d7">29363.9757287196</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1668089230687</data>
+  <data key="d10">R145path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="G10Pal" id="277">
+  <data key="d4">R145</data>
+  <data key="d5">G13OlePal + G13OlePal -&gt; GlyOleOlePal + G10Pal</data>
+  <data key="d6">1.20660073994472e-05</data>
+  <data key="d7">29363.9757287196</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1668089230687</data>
+  <data key="d10">R145path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="G10Pal" id="279">
+  <data key="d4">R146</data>
+  <data key="d5">G13OlePal + G23OlePal -&gt; GlyOleOlePal + G10Pal</data>
+  <data key="d6">1.72152214314991e-05</data>
+  <data key="d7">29849.6792367861</data>
+  <data key="d8">0.0</data>
+  <data key="d9">47.4060814903559</data>
+  <data key="d10">R146path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="G10Pal" id="283">
+  <data key="d4">R147</data>
+  <data key="d5">G13OlePal + G13OleOle -&gt; GlyOleOleOle + G10Pal</data>
+  <data key="d6">1.61578938744356e-05</data>
+  <data key="d7">28703.495458346</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1341153279416</data>
+  <data key="d10">R147path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="G10Pal" id="287">
+  <data key="d4">R148</data>
+  <data key="d5">G13OlePal + G23OleOle -&gt; GlyOleOleOle + G10Pal</data>
+  <data key="d6">1.70316449121799e-05</data>
+  <data key="d7">28012.1313957275</data>
+  <data key="d8">0.0</data>
+  <data key="d9">45.9572515271271</data>
+  <data key="d10">R148path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="GlyPalOlePal" id="258">
+  <data key="d4">R141</data>
+  <data key="d5">G13OlePal + G13PalPal -&gt; GlyPalOlePal + G10Pal</data>
+  <data key="d6">2.13992324944456e-05</data>
+  <data key="d7">28432.8291357621</data>
+  <data key="d8">0.0</data>
+  <data key="d9">47.402904510826</data>
+  <data key="d10">R141path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="GlyPalOleOle" id="266">
+  <data key="d4">R143</data>
+  <data key="d5">G13OlePal + G13PalOle -&gt; GlyPalOleOle + G10Pal</data>
+  <data key="d6">1.54117164221645e-05</data>
+  <data key="d7">28265.6739641709</data>
+  <data key="d8">0.0</data>
+  <data key="d9">47.4154829663296</data>
+  <data key="d10">R143path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="GlyOlePalOle" id="270">
+  <data key="d4">R144</data>
+  <data key="d5">G13OlePal + G23PalOle -&gt; GlyOlePalOle + G10Pal</data>
+  <data key="d6">2.09213279802611e-05</data>
+  <data key="d7">27632.4758187264</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1334331686615</data>
+  <data key="d10">R144path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="GlyOleOleOle" id="282">
+  <data key="d4">R147</data>
+  <data key="d5">G13OlePal + G13OleOle -&gt; GlyOleOleOle + G10Pal</data>
+  <data key="d6">1.61578938744356e-05</data>
+  <data key="d7">28703.495458346</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1341153279416</data>
+  <data key="d10">R147path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="GlyOleOleOle" id="286">
+  <data key="d4">R148</data>
+  <data key="d5">G13OlePal + G23OleOle -&gt; GlyOleOleOle + G10Pal</data>
+  <data key="d6">1.70316449121799e-05</data>
+  <data key="d7">28012.1313957275</data>
+  <data key="d8">0.0</data>
+  <data key="d9">45.9572515271271</data>
+  <data key="d10">R148path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OlePal" target="GLYPalOle.mix" id="340">
+  <data key="d4">R175</data>
+  <data key="d5">0*G13OlePal -&gt; GLYPalOle.mix</data>
+  <data key="d6">30.8738063378217</data>
+  <data key="d7">20620.2018151406</data>
+  <data key="d8">0.0</data>
+  <data key="d9">33.9547228994982</data>
+  <data key="d10">R175path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G13OleOle" target="GlyOlePalOle" id="99">
+  <data key="d4">R49</data>
+  <data key="d5">G13OleOle + Pal + 2*ATP -&gt; GlyOlePalOle + 2*ADP</data>
+  <data key="d6">5.3690061712075e-05</data>
+  <data key="d7">27702.5971529271</data>
+  <data key="d8">0.0</data>
+  <data key="d9">190.588861346042</data>
+  <data key="d10">R49path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="G13OleOle" target="GlyOlePalOle" id="220">
+  <data key="d4">R131</data>
+  <data key="d5">G13PalPal + G13OleOle -&gt; GlyOlePalOle + G10Pal</data>
+  <data key="d6">53.7765510924551</data>
+  <data key="d7">28893.7023993318</data>
+  <data key="d8">0.0</data>
+  <data key="d9">82.2756944029148</data>
+  <data key="d10">R131path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="GlyOlePalOle" id="252">
+  <data key="d4">R139</data>
+  <data key="d5">G13PalOle + G13OleOle -&gt; GlyOlePalOle + G10Ole</data>
+  <data key="d6">1.36226336824308e-05</data>
+  <data key="d7">27928.9558761179</data>
+  <data key="d8">0.0</data>
+  <data key="d9">80.895551299942</data>
+  <data key="d10">R139path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="GlyOlePalOle" id="302">
+  <data key="d4">R152</data>
+  <data key="d5">G13OleOle + G23PalOle -&gt; GlyOlePalOle + G10Ole</data>
+  <data key="d6">1.94786651128709e-05</data>
+  <data key="d7">27755.6113413028</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6939099046853</data>
+  <data key="d10">R152path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="GlyOleOleOle" id="103">
+  <data key="d4">R51</data>
+  <data key="d5">G13OleOle + Ole + 2*ATP -&gt; GlyOleOleOle + 2*ADP</data>
+  <data key="d6">3646.29582761496</data>
+  <data key="d7">27779.823592563</data>
+  <data key="d8">0.0</data>
+  <data key="d9">3795.75205736894</data>
+  <data key="d10">R51path</data>
+  <data key="d11">DGAT2</data>
+</edge>
+<edge source="G13OleOle" target="GlyOleOleOle" id="284">
+  <data key="d4">R147</data>
+  <data key="d5">G13OlePal + G13OleOle -&gt; GlyOleOleOle + G10Pal</data>
+  <data key="d6">1.61578938744356e-05</data>
+  <data key="d7">28703.495458346</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1341153279416</data>
+  <data key="d10">R147path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="GlyOleOleOle" id="314">
+  <data key="d4">R155</data>
+  <data key="d5">G13OleOle + G13OleOle -&gt; GlyOleOleOle + G10Ole</data>
+  <data key="d6">1.50921356798506e-05</data>
+  <data key="d7">78428.9473204132</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6935530626022</data>
+  <data key="d10">R155path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="GlyOleOleOle" id="316">
+  <data key="d4">R155</data>
+  <data key="d5">G13OleOle + G13OleOle -&gt; GlyOleOleOle + G10Ole</data>
+  <data key="d6">1.50921356798506e-05</data>
+  <data key="d7">78428.9473204132</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6935530626022</data>
+  <data key="d10">R155path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="GlyOleOleOle" id="318">
+  <data key="d4">R156</data>
+  <data key="d5">G13OleOle + G23OleOle -&gt; GlyOleOleOle + G10Ole</data>
+  <data key="d6">1.61066884558636e-05</data>
+  <data key="d7">93240.5873558251</data>
+  <data key="d8">0.0</data>
+  <data key="d9">43.8634458579265</data>
+  <data key="d10">R156path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="G10Ole" id="155">
+  <data key="d4">R77</data>
+  <data key="d5">G13OleOle -&gt; G10Ole + Ole</data>
+  <data key="d6">1.64024091766635e-05</data>
+  <data key="d7">27310.8382736339</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6931100989773</data>
+  <data key="d10">R77path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G13OleOle" target="G10Ole" id="253">
+  <data key="d4">R139</data>
+  <data key="d5">G13PalOle + G13OleOle -&gt; GlyOlePalOle + G10Ole</data>
+  <data key="d6">1.36226336824308e-05</data>
+  <data key="d7">27928.9558761179</data>
+  <data key="d8">0.0</data>
+  <data key="d9">80.895551299942</data>
+  <data key="d10">R139path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="G10Ole" id="291">
+  <data key="d4">R149</data>
+  <data key="d5">G13OleOle + G13PalPal -&gt; GlyPalOlePal + G10Ole</data>
+  <data key="d6">1.82389128218219e-05</data>
+  <data key="d7">27520.8092019619</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6941303523208</data>
+  <data key="d10">R149path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="G10Ole" id="295">
+  <data key="d4">R150</data>
+  <data key="d5">G13OleOle + G23PalPal -&gt; GlyOlePalPal + G10Ole</data>
+  <data key="d6">1.54401481893274e-05</data>
+  <data key="d7">28769.1891877692</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.4742846124545</data>
+  <data key="d10">R150path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="G10Ole" id="299">
+  <data key="d4">R151</data>
+  <data key="d5">G13OleOle + G13PalOle -&gt; GlyPalOleOle + G10Ole</data>
+  <data key="d6">1.36148975524719e-05</data>
+  <data key="d7">27557.1188220837</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.4350819949045</data>
+  <data key="d10">R151path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="G10Ole" id="303">
+  <data key="d4">R152</data>
+  <data key="d5">G13OleOle + G23PalOle -&gt; GlyOlePalOle + G10Ole</data>
+  <data key="d6">1.94786651128709e-05</data>
+  <data key="d7">27755.6113413028</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6939099046853</data>
+  <data key="d10">R152path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="G10Ole" id="307">
+  <data key="d4">R153</data>
+  <data key="d5">G13OleOle + G13OlePal -&gt; GlyOleOlePal + G10Ole</data>
+  <data key="d6">1.08269542131723e-05</data>
+  <data key="d7">29103.8036139353</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6930284386171</data>
+  <data key="d10">R153path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="G10Ole" id="311">
+  <data key="d4">R154</data>
+  <data key="d5">G13OleOle + G23OlePal -&gt; GlyOleOlePal + G10Ole</data>
+  <data key="d6">1.50057244470148e-05</data>
+  <data key="d7">28675.6246844253</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.437860130926</data>
+  <data key="d10">R154path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="G10Ole" id="315">
+  <data key="d4">R155</data>
+  <data key="d5">G13OleOle + G13OleOle -&gt; GlyOleOleOle + G10Ole</data>
+  <data key="d6">1.50921356798506e-05</data>
+  <data key="d7">78428.9473204132</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6935530626022</data>
+  <data key="d10">R155path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="G10Ole" id="317">
+  <data key="d4">R155</data>
+  <data key="d5">G13OleOle + G13OleOle -&gt; GlyOleOleOle + G10Ole</data>
+  <data key="d6">1.50921356798506e-05</data>
+  <data key="d7">78428.9473204132</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6935530626022</data>
+  <data key="d10">R155path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="G10Ole" id="319">
+  <data key="d4">R156</data>
+  <data key="d5">G13OleOle + G23OleOle -&gt; GlyOleOleOle + G10Ole</data>
+  <data key="d6">1.61066884558636e-05</data>
+  <data key="d7">93240.5873558251</data>
+  <data key="d8">0.0</data>
+  <data key="d9">43.8634458579265</data>
+  <data key="d10">R156path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="Ole" id="156">
+  <data key="d4">R77</data>
+  <data key="d5">G13OleOle -&gt; G10Ole + Ole</data>
+  <data key="d6">1.64024091766635e-05</data>
+  <data key="d7">27310.8382736339</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6931100989773</data>
+  <data key="d10">R77path</data>
+  <data key="d11">HSL</data>
+</edge>
+<edge source="G13OleOle" target="Sink" id="192">
+  <data key="d4">R123</data>
+  <data key="d5">G13OleOle -&gt; Sink</data>
+  <data key="d6">100.000000000003</data>
+  <data key="d7">0.0</data>
+  <data key="d8">100.000000000003</data>
+  <data key="d9">100.000000000003</data>
+  <data key="d10">R123path</data>
+  <data key="d11">Sink_DG</data>
+</edge>
+<edge source="G13OleOle" target="G10Pal" id="221">
+  <data key="d4">R131</data>
+  <data key="d5">G13PalPal + G13OleOle -&gt; GlyOlePalOle + G10Pal</data>
+  <data key="d6">53.7765510924551</data>
+  <data key="d7">28893.7023993318</data>
+  <data key="d8">0.0</data>
+  <data key="d9">82.2756944029148</data>
+  <data key="d10">R131path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="G10Pal" id="285">
+  <data key="d4">R147</data>
+  <data key="d5">G13OlePal + G13OleOle -&gt; GlyOleOleOle + G10Pal</data>
+  <data key="d6">1.61578938744356e-05</data>
+  <data key="d7">28703.495458346</data>
+  <data key="d8">0.0</data>
+  <data key="d9">46.1341153279416</data>
+  <data key="d10">R147path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="GlyPalOlePal" id="290">
+  <data key="d4">R149</data>
+  <data key="d5">G13OleOle + G13PalPal -&gt; GlyPalOlePal + G10Ole</data>
+  <data key="d6">1.82389128218219e-05</data>
+  <data key="d7">27520.8092019619</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6941303523208</data>
+  <data key="d10">R149path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="GlyOlePalPal" id="294">
+  <data key="d4">R150</data>
+  <data key="d5">G13OleOle + G23PalPal -&gt; GlyOlePalPal + G10Ole</data>
+  <data key="d6">1.54401481893274e-05</data>
+  <data key="d7">28769.1891877692</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.4742846124545</data>
+  <data key="d10">R150path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="GlyPalOleOle" id="298">
+  <data key="d4">R151</data>
+  <data key="d5">G13OleOle + G13PalOle -&gt; GlyPalOleOle + G10Ole</data>
+  <data key="d6">1.36148975524719e-05</data>
+  <data key="d7">27557.1188220837</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.4350819949045</data>
+  <data key="d10">R151path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="GlyOleOlePal" id="306">
+  <data key="d4">R153</data>
+  <data key="d5">G13OleOle + G13OlePal -&gt; GlyOleOlePal + G10Ole</data>
+  <data key="d6">1.08269542131723e-05</data>
+  <data key="d7">29103.8036139353</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.6930284386171</data>
+  <data key="d10">R153path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="GlyOleOlePal" id="310">
+  <data key="d4">R154</data>
+  <data key="d5">G13OleOle + G23OlePal -&gt; GlyOleOlePal + G10Ole</data>
+  <data key="d6">1.50057244470148e-05</data>
+  <data key="d7">28675.6246844253</data>
+  <data key="d8">0.0</data>
+  <data key="d9">62.437860130926</data>
+  <data key="d10">R154path</data>
+  <data key="d11">DGDG on G13</data>
+</edge>
+<edge source="G13OleOle" target="GLYOleOle.mix" id="331">
+  <data key="d4">R166</data>
+  <data key="d5">0*G13OleOle -&gt; GLYOleOle.mix</data>
+  <data key="d6">0.00456132978294477</data>
+  <data key="d7">25712.43774229</data>
+  <data key="d8">0.0</data>
+  <data key="d9">100.0</data>
+  <data key="d10">R166path</data>
+  <data key="d11">DG mix</data>
+</edge>
+<edge source="G10Pal" target="Gly" id="161">
+  <data key="d4">R80</data>
+  <data key="d5">G10Pal -&gt; Gly + Pal</data>
+  <data key="d6">53.9905385128116</data>
+  <data key="d7">22552.2705435993</data>
+  <data key="d13">False</data>
+  <data key="d9">82.3623715203504</data>
+  <data key="d10">R80path</data>
+  <data key="d11">MGL</data>
+</edge>
+<edge source="G10Pal" target="Pal" id="162">
+  <data key="d4">R80</data>
+  <data key="d5">G10Pal -&gt; Gly + Pal</data>
+  <data key="d6">53.9905385128116</data>
+  <data key="d7">22552.2705435993</data>
+  <data key="d13">False</data>
+  <data key="d9">82.3623715203504</data>
+  <data key="d10">R80path</data>
+  <data key="d11">MGL</data>
+</edge>
+<edge source="G10Ole" target="Gly" id="165">
+  <data key="d4">R82</data>
+  <data key="d5">G10Ole -&gt; Gly + Ole</data>
+  <data key="d6">0.000261705409812407</data>
+  <data key="d7">27282.1889804764</data>
+  <data key="d8">0.00026170473232412</data>
+  <data key="d9">81.6757949360035</data>
+  <data key="d10">R82path</data>
+  <data key="d11">MGL</data>
+</edge>
+<edge source="G10Ole" target="Ole" id="166">
+  <data key="d4">R82</data>
+  <data key="d5">G10Ole -&gt; Gly + Ole</data>
+  <data key="d6">0.000261705409812407</data>
+  <data key="d7">27282.1889804764</data>
+  <data key="d8">0.00026170473232412</data>
+  <data key="d9">81.6757949360035</data>
+  <data key="d10">R82path</data>
+  <data key="d11">MGL</data>
+</edge>
+<edge source="GlyPalPalPal.Pre" target="GlyPalPalPal" id="169">
+  <data key="d4">R84</data>
+  <data key="d5">GlyPalPalPal.Pre -&gt; GlyPalPalPal</data>
+  <data key="d6">5.18965487871444</data>
+  <data key="d7">103154.79224358</data>
+  <data key="d8">0.0</data>
+  <data key="d9">163.970870408985</data>
+  <data key="d10">R84path</data>
+  <data key="d11">Pre_TG</data>
+</edge>
+<edge source="GlyPalPalOle.Pre" target="GlyPalPalOle" id="170">
+  <data key="d4">R85</data>
+  <data key="d5">GlyPalPalOle.Pre -&gt; GlyPalPalOle</data>
+  <data key="d6">0.000102363664893801</data>
+  <data key="d7">26171.5877360887</data>
+  <data key="d8">0.0</data>
+  <data key="d9">154.56169643131</data>
+  <data key="d10">R85path</data>
+  <data key="d11">Pre_TG</data>
+</edge>
+<edge source="GlyPalOlePal.Pre" target="GlyPalOlePal" id="171">
+  <data key="d4">R86</data>
+  <data key="d5">GlyPalOlePal.Pre -&gt; GlyPalOlePal</data>
+  <data key="d6">148.800527531156</data>
+  <data key="d7">104065.423252378</data>
+  <data key="d8">0.0</data>
+  <data key="d9">284.430560028645</data>
+  <data key="d10">R86path</data>
+  <data key="d11">Pre_TG</data>
+</edge>
+<edge source="GlyPalOleOle.Pre" target="GlyPalOleOle" id="172">
+  <data key="d4">R87</data>
+  <data key="d5">GlyPalOleOle.Pre -&gt; GlyPalOleOle</data>
+  <data key="d6">218.524020410239</data>
+  <data key="d7">69862.1946186724</data>
+  <data key="d8">0.0</data>
+  <data key="d9">349.0868020709</data>
+  <data key="d10">R87path</data>
+  <data key="d11">Pre_TG</data>
+</edge>
+<edge source="GlyOlePalPal.Pre" target="GlyOlePalPal" id="173">
+  <data key="d4">R88</data>
+  <data key="d5">GlyOlePalPal.Pre -&gt; GlyOlePalPal</data>
+  <data key="d6">164.140338585316</data>
+  <data key="d7">153644.393108531</data>
+  <data key="d8">0.0</data>
+  <data key="d9">285.99727980991</data>
+  <data key="d10">R88path</data>
+  <data key="d11">Pre_TG</data>
+</edge>
+<edge source="GlyOlePalOle.Pre" target="GlyOlePalOle" id="174">
+  <data key="d4">R89</data>
+  <data key="d5">GlyOlePalOle.Pre -&gt; GlyOlePalOle</data>
+  <data key="d6">46.0549582692081</data>
+  <data key="d7">46578.7135408778</data>
+  <data key="d8">0.0</data>
+  <data key="d9">89.22510250513</data>
+  <data key="d10">R89path</data>
+  <data key="d11">Pre_TG</data>
+</edge>
+<edge source="GlyOleOlePal.Pre" target="GlyOleOlePal" id="175">
+  <data key="d4">R90</data>
+  <data key="d5">GlyOleOlePal.Pre -&gt; GlyOleOlePal</data>
+  <data key="d6">200.48843870648</data>
+  <data key="d7">88099.9060884581</data>
+  <data key="d8">36.0038477661918</data>
+  <data key="d9">451.540883703482</data>
+  <data key="d10">R90path</data>
+  <data key="d11">Pre_TG</data>
+</edge>
+<edge source="GlyOleOleOle.Pre" target="GlyOleOleOle" id="176">
+  <data key="d4">R91</data>
+  <data key="d5">GlyOleOleOle.Pre -&gt; GlyOleOleOle</data>
+  <data key="d6">9.50420526919515e-05</data>
+  <data key="d7">73359.353992622</data>
+  <data key="d8">0.0</data>
+  <data key="d9">105.045332688959</data>
+  <data key="d10">R91path</data>
+  <data key="d11">Pre_TG</data>
+</edge>
+<edge source="Ole.Pre" target="Ole" id="177">
+  <data key="d4">R100</data>
+  <data key="d5">Ole.Pre -&gt; Ole</data>
+  <data key="d6">0.00050299454980518</data>
+  <data key="d7">121613.700267133</data>
+  <data key="d8">0.0</data>
+  <data key="d9">42.4780989110979</data>
+  <data key="d10">R100path</data>
+  <data key="d11">Pre_FA</data>
+</edge>
+<edge source="G2xPalPal.mix" target="Sink" id="178">
+  <data key="d4">R101</data>
+  <data key="d5">G2xPalPal.mix -&gt; Sink</data>
+  <data key="d6">99.9999999999977</data>
+  <data key="d7">0.0</data>
+  <data key="d8">99.9999999999977</data>
+  <data key="d9">99.9999999999977</data>
+  <data key="d10">R101path</data>
+  <data key="d11">DG mix Sink</data>
+</edge>
+<edge source="G2xPalOle.mix" target="Sink" id="179">
+  <data key="d4">R102</data>
+  <data key="d5">G2xPalOle.mix -&gt; Sink</data>
+  <data key="d6">99.9999999999996</data>
+  <data key="d7">0.0</data>
+  <data key="d8">99.9999999999996</data>
+  <data key="d9">99.9999999999996</data>
+  <data key="d10">R102path</data>
+  <data key="d11">DG mix Sink</data>
+</edge>
+<edge source="G2xOleOle.mix" target="Sink" id="180">
+  <data key="d4">R103</data>
+  <data key="d5">G2xOleOle.mix -&gt; Sink</data>
+  <data key="d6">100.000000000001</data>
+  <data key="d7">0.0</data>
+  <data key="d8">100.000000000001</data>
+  <data key="d9">100.000000000001</data>
+  <data key="d10">R103path</data>
+  <data key="d11">DG mix Sink</data>
+</edge>
+<edge source="GLYOleOle.mix" target="Sink" id="333">
+  <data key="d4">R168</data>
+  <data key="d5">GLYOleOle.mix -&gt; Sink</data>
+  <data key="d6">100.0</data>
+  <data key="d7">0.0</data>
+  <data key="d8">100.0</data>
+  <data key="d9">100.0</data>
+  <data key="d10">R168path</data>
+  <data key="d11">DG mix Sink</data>
+</edge>
+<edge source="GLYOleOleOle.mix" target="Sink" id="335">
+  <data key="d4">R170</data>
+  <data key="d5">GLYOleOleOle.mix -&gt; Sink</data>
+  <data key="d6">99.9999999999975</data>
+  <data key="d7">0.0</data>
+  <data key="d8">99.9999999999975</data>
+  <data key="d9">99.9999999999975</data>
+  <data key="d10">R170path</data>
+  <data key="d11">TG mix Sink</data>
+</edge>
+<edge source="GLYPalOle.mix" target="Sink" id="342">
+  <data key="d4">R177</data>
+  <data key="d5">GLYPalOle.mix -&gt; Sink</data>
+  <data key="d6">99.9999999999996</data>
+  <data key="d7">0.0</data>
+  <data key="d8">99.9999999999996</data>
+  <data key="d9">99.9999999999996</data>
+  <data key="d10">R177path</data>
+  <data key="d11">DG mix Sink</data>
+</edge>
+<edge source="GLYPalOleOle.mix" target="Sink" id="346">
+  <data key="d4">R181</data>
+  <data key="d5">GLYPalOleOle.mix -&gt; Sink</data>
+  <data key="d6">99.9999999999997</data>
+  <data key="d7">0.0</data>
+  <data key="d8">99.9999999999997</data>
+  <data key="d9">99.9999999999997</data>
+  <data key="d10">R181path</data>
+  <data key="d11">TG mix Sink</data>
+</edge>
+<edge source="GLYPalPal.mix" target="Sink" id="350">
+  <data key="d4">R185</data>
+  <data key="d5">GLYPalPal.mix -&gt; Sink</data>
+  <data key="d6">100.000000000001</data>
+  <data key="d7">0.0</data>
+  <data key="d8">100.000000000001</data>
+  <data key="d9">100.000000000001</data>
+  <data key="d10">R185path</data>
+  <data key="d11">DG mix Sink</data>
+</edge>
+<edge source="GLYPalPalOle.mix" target="Sink" id="354">
+  <data key="d4">R189</data>
+  <data key="d5">GLYPalPalOle.mix -&gt; Sink</data>
+  <data key="d6">100.000000000001</data>
+  <data key="d7">0.0</data>
+  <data key="d8">100.000000000001</data>
+  <data key="d9">100.000000000001</data>
+  <data key="d10">R189path</data>
+  <data key="d11">TG mix Sink</data>
+</edge>
+<edge source="GLYPalPalPal.mix" target="Sink" id="356">
+  <data key="d4">R191</data>
+  <data key="d5">GLYPalPalPal.mix -&gt; Sink</data>
+  <data key="d6">99.9999999999998</data>
+  <data key="d7">0.0</data>
+  <data key="d8">99.9999999999998</data>
+  <data key="d9">99.9999999999998</data>
+  <data key="d10">R191path</data>
+  <data key="d11">TG mix Sink</data>
+</edge>
+</graph></graphml>
