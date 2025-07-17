@@ -2,191 +2,51 @@ import collections
 import pandas as pd
 from enum import Enum
 import math
+import graphml_parser as gp
 
-# enum according to the relevance of the measured values
-class measurement_relevance(Enum):
-    UNDECIDED = 'UNDECIDED'
-    UNMEASURED = 'UNMEASURED'    # unmeasured
-    LOW = 'LOW'                  # the measurements lower than treshold
-    HIGH = 'HIGH'                # these measurements are above the treshold
-    
-class statistical_relevance(Enum):
-    UNDECIDED = 'UNDECIDED'
-    LOW = 'LOW'                  # the standard deviation is way too high or the interval is too broad
-    HIGH = 'HIGH'                # the measurements bear relevance
-    
-# enum according to the chemical/biological relevance for the system
-class chemical_relevance(Enum):
-    UNDECIDED = 'UNDECIDED'
-    LOW = 'LOW'                 # these reactions/molecules (?) are not likely to bear importance
-    HIGH = 'HIGH'               # likely to be important
-    CERTAIN = 'CERTAIN'         # certain, must be kept
-    
-class pruning_mode(Enum):
-    MIN_FOREST = 'Minimum spanning forest'
+import importlib
+
+importlib.reload(gp)
 
 
-class molecule:
-    def __init__(self, name):
-        self.name = name
-    def __str__(self):
-        return f"{self.name}"
-    def __eq__(self, other):
-        if not isinstance(self, other):
-            return NotImplemented
-        else:
-            return self.name == other.name
-        
-class reaction:
-    def __init__(self, reactants, products, value, stderr):
-        self.reactants = reactants
-        self.products = products
-        self.value = value
-        self.stderr = stderr
-        self.isRelevant = True  # at the beginning, all reactions are considered to be relevant
-        self.measure_rel = measurement_relevance.UNDECIDED
-        self.chem_rel = chemical_relevance.UNDECIDED
-        self.stat_rel = statistical_relevance.UNDECIDED
-    def __str__(self):
-        first = True
-        reaction_string = f""
-        for reactant in self.reactants:
-            if first:
-                reaction_string += f"{str(reactant)}"
-                first = False
-            else: 
-                reaction_string += f" + {str(reactant)}"
-        reaction_string += f" -> "
-        first = True
-        for product in self.products:
-            if first:
-                reaction_string += f"{str(product)}"
-                first = False
-            else: 
-                reaction_string += f" + {str(product)}"
-        # With or without value?
-        reaction_string += f"\t\t value = {self.value}"
-        #reaction_string += f", stat_rel: {self.stat_rel.value}"
-        reaction_string += '\n'
-        #reaction_string += f", measure_rel = {self.measure_rel}"
-        return reaction_string
-
-    def __repr__(self):
-        return self.__str__()
-    
-    def __eq__(self, other):
-        if collections.Counter(self.reactants) == collections.Counter(other.reactants) and \
-            collections.Counter(self.products) == collections.Counter(other.products):
-            return True
-        else:
-            return False
-    # is the compound (reactant) part of the reaction?
-    def hasReactant(self, reactant):
-        for mol in self.reactants:
-            if reactant == mol:
-                return True
-        return False
-    # is the compound (product) part of the reaction?
-    def hasProduct(self, product):
-        for mol in self.products:
-            if product == mol:
-                return True
-        return False
-    
-# gets panda dataset of reactions, returns List of reaction objects
-def get_reactions(pd_dataset):
-    reactions = []
-    for index, row in pd_dataset.iterrows():
-        react, prod = row['Equation'].split(" -> ")
-        reactants = [r.strip() for r in react.split(" + ")]
-        products = [p.strip() for p in prod.split(" + ")]
-        react_val = row['Value']
-        reacterr = row['StdErr']
-        single_reaction = reaction(reactants, products, react_val, reacterr)
-        reactions.append(single_reaction)
-    return reactions
-    
-    
-   
-#def simple_trial(data_localization):
-    
-    # trial
-    #reactant1 = molecule("Glc")
-    #reactant2 = molecule("ATP")
-    #product1 = molecule("GlcP")
-    #product2 = molecule("ADP")
-    #print(product1)
-    #print(reactant2)
-    #reactants = [reactant1, reactant2]
-    #products = [product1, product2]
-    #reaction1 = reaction(reactants, products, 100)
-    #print(reaction1)
-    
-    #data = pd.read_excel("metabolic_networks/data/Final_data_theoretical_lowR13_withDG.xls")
-    #data = pd.read_excel(data_localization)
-    #print(data.head())
-    #reactions = []
-    #for index, row in data.iterrows():
-    #    react, prod = row['Equation'].split(" -> ")
-    #    reactants = [r.strip() for r in react.split(" + ")]
-    #    products = [p.strip() for p in prod.split(" + ")]
-    #    react_val = row['Value']
-    #    reacterr = row['StdErr']
-    #    single_reaction = reaction(reactants, products, react_val, reacterr)
-    #    reactions.append(single_reaction)
-    #    
-    ##for react in reactions:
-    ##    print(react) 
-    #return reactions
-        
-# gets list of reactions
-# returns a set reactants and set of products
-    
-
-# gets list of reactions
 # returns a set of precursors and set of final products AND returns a set of precursors and final products
-def identify_precs_and_final_prod(reactions):
+def identify_precs_and_final_prod(reactions): # TODO TODO TODO
+    """
+    Identifies, which of the molecules are the initial reactants
+    (there is no reaction leading TO them)
+    and which of them are the final products
+    (there is no reacction leading FROM them)
+    Args:
+        ractions: List of reaction objects
+    Returns:
+        Set: tSet molecules (initial reactants)
+        Set: Set of molecules (final products)
+        Set: Set of molecules (all molecules)
+    """
     precursors = set()
     final_products = set()
+    all_mols = set()
     # adding all the reactants into the set of precursors
     for reaction in reactions:
-        for reactant in reaction.reactants:
-            precursors.add(reactant)
-        for product in reaction.products:
-            final_products.add(product)
-    # removing all the products from the list of precursors
-    all_precs = precursors
-    all_prods = final_products
-    
-    for precursor in precursors.copy():
-        if "ATP" in precursor or "ADP" in precursor:
-            precursors.discard(precursor)
-    for fin_product in final_products.copy():
-        if "ATP" in fin_product or "ADP" in fin_product:
-            final_products.discard(fin_product)
-            
-            
+        precursors.add(reaction.source)
+        final_products.add(reaction.target)
+        
+    all_mols = precursors.union(final_products)
+       
     for reaction in reactions:
-        for product in reaction.products:
-            precursors.discard(product)
-        for reactant in reaction.reactants:
-            final_products.discard(reactant)
-    # removing everything staring with 0* or having .*ATP/ADP 
-    #for precursor in precursors.copy():
-    #    if precursor.startswith("0*") or \
-    #        "ATP" in precursor or \
-    #        "ADP" in precursor:
-    #        precursors.discard(precursor)
+        precursors.discard(reaction.target)
+        final_products.discard(reaction.source)
     
-    # removing atp, adp etc
-    
-    
-    
-    print("PRINTING PRECURSORS:")
-    print(precursors)
-    print("PRINTING FINAL PRODUCTS:")
-    print(final_products)
-    return precursors, final_products, all_precs, all_prods
+
+    for precursor in precursors:
+        precursor.is_initial_reactant = True
+    for final_prod in final_products:
+        final_prod.is_final_product = True
+    #print("PRINTING PRECURSORS:")
+    #print(precursors)
+    #print("PRINTING FINAL PRODUCTS:")
+    #print(final_products)
+    return precursors, final_products, all_mols
     
     
 def calculate_rel_error(value, stderr):
@@ -197,9 +57,9 @@ def calculate_stat_relevance(reactions):
     for react in reactions:
         rel_error = calculate_rel_error(react.value, react.stderr)
         if rel_error > RELATIVE_ERROR_TRESHOLD:
-            react.stat_rel = statistical_relevance.LOW
+            react.stat_rel = gp.statistical_relevance.LOW
         else:
-            react.stat_rel = statistical_relevance.HIGH
+            react.stat_rel = gp.statistical_relevance.HIGH
             
 def print_relevant(reactions):
     #print("PRINTING THE STATISTICALY RELEVANT DATA")
@@ -209,8 +69,9 @@ def print_relevant(reactions):
             if "Sink" in product:
                 doPrint = False
         if doPrint:
-            if react.stat_rel == statistical_relevance.HIGH:
-                print(react)
+            if react.stat_rel == gp.statistical_relevance.HIGH:
+                pass
+                #print(react)
                 
 def print_all(reactions):
     print("PRINTING ALL THE REACTIONS")
@@ -218,61 +79,254 @@ def print_all(reactions):
         print(react)
         
                 
+def prov_sort(reactions):
+    sorted_reactions = sorted(reactions, key=lambda react: react.value, reverse=True)
+    print("PRINTING THE SORTED LIST OF REACTIONS")
+    print(sorted_reactions)
+    return sorted_reactions   
+                
+                
 class Pruning:
-    def __init__(self, reactions, first_reactants, final_products, all_reacts, all_prods, treshold=None, mode='First??'):
+    """
+    Represents an instance of the pruning algorithm
+    Attributes:
+        reactions: List of reaction objects
+        first_reactants: List of molecules, which are not (intermediate) products
+        final_products: List of molecules, which are not (initial) reactants
+        ...TODO
+    """
+    def __init__(self, reactions, first_reactants, final_products, all_mols, treshold=None, mode='First??'):
+        """
+        Initializes the pruning algorithm class.
+        Args:
+            ractions: List of reaction objects
+            first_reactants: List of molecules, which are not (intermediate) products
+            final_products: List of molecules, which are not (initial) reactants
+            ...TODO
+        Returns:
+            str: A greeting message.
+        """
         self.reactions = reactions
         self.first_reactants = first_reactants
         self.final_products = final_products
         self.treshold = treshold
         self.mode = mode
-        self.all_reactants = all_reacts
-        self.all_products = all_prods
-        
+        self.all_molecules = all_mols
+        self.pruned_reactions = None
+  
     def sort(self):
-        sorted_reactions = sorted(self.reactions, key=lambda react: react.value)
-        print("PRINTING THE SORTED LIST OF REACTIONS")
-        print(sorted_reactions)
+        """
+        Sorts the attribute 'reactions' in the descending order according to the value
+        of each reaction.
+        """
+        sorted_reactions = sorted(self.reactions, key=lambda react: react.value, reverse=True)
         return sorted_reactions
         
     # tady dat Kruskala    
     def prune(self):
-        pruned_reactions = []
-        # postupne prochazet, pridat, kdyz jeste neni
-        # + bude treba zajistit, ze cely graf bude spojity!!!
+        """
+        Conducts pruning - a distant 'variant' of Kruskal algorithm.
+        Returns:
+            set: set of reaction objects, which represent the 
+            reactions, which were decided to be kept
+        """
+        sorted_reactions = self.sort()
+        #print("PRINTING THE SORTED REACTION >>>>>>>>>>>>>>>>>>>>>>>>")
+        #for react in sorted_reactions:
+        #    print(f">>>{react.equation, react.value, react.source, react.target} <<<\n")
+        #    if (react.target.name == 'Pal.out'):
+        #        print("TADY BYL!!!")
+        #print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
         
         
+        #sorted_reactions = self.reactions
+        pruned_reactions = set()
         
-        
-        
-        ...
-       
+        last_reaction_value = 0
+        for reaction in sorted_reactions:
+            
+
+            if (reaction.source.is_initial_reactant == False):  # reaktant není počáteční - musí vést do něj i z něj
+                if (reaction.source.hasSource == False):
+                    reaction.source.hasSource = True
+                    pruned_reactions.add(reaction)
+                    #try: 
+                    #    sorted_reactions.remove(reaction)
+                    #except ValueError as e:
+                    #    pass
+                        #print("Reaction has already been removed.")
+                    #last_reaction_value = reaction.value
+            if (reaction.source.hasTarget == False):  # ať už reaktant je či není počáteční, musí z něj vést hrana
+                reaction.source.hasTarget = True
+                pruned_reactions.add(reaction)
+                #try: 
+                #    sorted_reactions.remove(reaction)
+                #except ValueError as e:
+                #    pass
+                    #print("Reaction has already been removed.")
+                #last_reaction_value = reaction.value
+
+            if (reaction.target.is_final_product == False):
+                if (reaction.target.hasTarget == False):
+                    reaction.target.hasTarget = True
+                    pruned_reactions.add(reaction)
+                    #try: 
+                    #    sorted_reactions.remove(reaction)
+                    #except ValueError as e:
+                    #    pass
+                        #print("Reaction has already been removed.")
+                    #last_reaction_value = reaction.value   
+            if (reaction.target.hasSource == False):
+                reaction.target.hasSource = True
+                pruned_reactions.add(reaction)
+                #try: 
+                #    sorted_reactions.remove(reaction)
+                #except ValueError as e:
+                #    pass
+                    #print("Reaction has already been removed.")
+                #last_reaction_value = reaction.value
+
+        self.pruned_reactions = pruned_reactions
+        return pruned_reactions#, sorted_reactions
+    
+
+    def doBFS(self, molecule):
+        """
+        Does a variation of Breadth-First Search (BFS) - all reached molecules
+        have their attribute 'isPartOfConnectedGraph' set to 'True'
+        Args:
+            molecule: Molecule object, start of BFS
+        Returns:
+            set: set of visited molecules
+        """
+        molecules_visited = set()
+        molecules_queue = []
+        molecules_queue.append(molecule)
+        #print(f"DOING BFS FOR MOLECULE: {molecule}")
+        molecule.isPartOfConnectedGraph = True
+        while (len(molecules_queue) != 0):
+            mol = molecules_queue.pop()
+            molecules_visited.add(mol)
+            for reaction in self.pruned_reactions:
+                if (reaction.source == mol and reaction.target.isPartOfConnectedGraph == False):
+                    reaction.target.isPartOfConnectedGraph = True
+                    molecules_queue.append(reaction.target)
+                if (reaction.target == mol and reaction.source.isPartOfConnectedGraph == False):
+                    reaction.source.isPartOfConnectedGraph = True
+                    molecules_queue.append(reaction.source)
+        return molecules_visited
+    
+    def connect(self):
+        """
+        Conducts the act of 'connecting' the components of the graph.
+        Returns:
+            molecule: the molecule, which is part of a yet undiscovered component is
+            returned. The molecule is part of the reaction (source or target) which
+            'connects' the two components. If no reaction is to be added, the 
+            function return 'None'.
+            
+        """
+        sorted_reactions = self.sort()
+        for reaction in sorted_reactions:
+            if reaction.source.isPartOfConnectedGraph == True \
+                and reaction.target.isPartOfConnectedGraph == False:
+                    self.pruned_reactions.add(reaction)
+                    #print(f"RETURNING FROM CONNECT (target): {reaction.target}")
+                    return reaction.target
+            if reaction.source.isPartOfConnectedGraph == False \
+                and reaction.target.isPartOfConnectedGraph == True:
+                    self.pruned_reactions.add(reaction)
+                    #print(f"RETURNING FROM CONNECT (source): {reaction.source}")
+                    return reaction.source    
+        return None
+          
+    def ensure_connectivity(self):
+        """
+        Ensures that the graph is a connected graph.
+        - first molecule is taken, for which BFS is conducted
+        - through BFS, all the molecules, which are 'reachable' from
+        the first molecule are marked as seen (attribute isPartOfConnectedGraph)
+        - then a check is conducted, whether all the molecules are 
+        per of the connected graph
+        - if some are not, one of them is chosen by the function connect,
+        and through BFS, all the other molecules in the component are marked as 
+        connected (attribut isPartOfConnectedGraph)
+        """
+        list_of_molecules = self.all_molecules.copy()
+        set_of_all_molecules = set(list_of_molecules)
+        molecule = list_of_molecules.pop() 
+        molecules_visited = set()
+        i = 0
+        search = True
+        while (search):
+            i += 1
+            molecules_newly_visited = self.doBFS(molecule)
+            molecules_visited.union(molecules_newly_visited)
+            if (molecules_visited == set_of_all_molecules):
+                search = False
+            molecule = self.connect()
+            if molecule is None:
+                #print("We are connected!!!")
+                break
+                
+            #molecule = set_of_all_molecules.difference(molecules_visited)
+            if i > 1000:
+                #print("Zacyklení ve while!!!")
+                break
+            
+    def addBeyondTreshold(self, threshold=0.75):
+        """
+        Adds more potentially relevant reactions (edges) to the graph.
+        Args:
+            threshold: decides the quantile, which determines which
+            reactions (according to their reaction value) are to be 
+            added.
+        """
+        values = []
+        for react in self.reactions:
+            values.append(react.value)
+            
+        data_frame = pd.DataFrame(values)
+        quantile = float(data_frame.quantile(threshold))
+        for react in self.reactions:
+            if react.value > quantile:
+                self.pruned_reactions.add(react)
    
 def run_script(data_address):
-    #reactions = simple_trial(data_address)
-    data = pd.read_excel(data_address)
-    reactions = get_reactions(data)
+    molecules, reactions, _ = gp.data_parser(data_address)
+    #print(f"length: {len(reactions)}")
     calculate_stat_relevance(reactions)
-    first_reactants, final_products, all_reacts, all_prods = identify_precs_and_final_prod(reactions)
-    first_algorithm = Pruning(reactions, first_reactants, final_products, all_reacts, all_prods)
-    first_algorithm.sort()
+    first_reactants, final_products, all_mols = identify_precs_and_final_prod(reactions)
+    #for react in reactions:
+    #    print(f"{react.equation, react.value, react.source, react.target} \n")
+
+    first_algorithm = Pruning(reactions, first_reactants, final_products, all_mols)
     
-    #print_all(reactions)
+    first_algorithm.prune()
+    
+    pruned_reactions = first_algorithm.pruned_reactions
+    print(f"Number of pruned reactions after PRUNING: {len(pruned_reactions)}")
+    
+    gp.to_graphml(data_address, "./pruned.graphml", pruned_reactions)
+    
+    first_algorithm.ensure_connectivity()
+    pruned_reactions = first_algorithm.pruned_reactions
+    print(f"Number of pruned reactions after PRUNING + CONNECTING: {len(pruned_reactions)}")
+    #
+    gp.to_graphml(data_address, "./connected.graphml", pruned_reactions)
+    
+    first_algorithm.addBeyondTreshold()
+    pruned_reactions = first_algorithm.pruned_reactions
+    print(f"Number of pruned reactions after PRUNING + CONNECTING + ADDING QUANTILES: {len(pruned_reactions)}")
+    #
+    gp.to_graphml(data_address, "./quantiles.graphml", pruned_reactions)
+
     
 #run_script("/Users/martinpycha/Desktop/Job_AV/metabolic_networks/data/Final_data_theoretical_lowR13_withDG.xlsx")
 # tady je puvodni adresa
 #run_script("/Users/martinpycha/Desktop/Job_AV/metabolic_networks/data/Final_data_theoretical_lowR13_withDG.xlsx")
 # a tady je nova
-run_script("/Users/martinpycha/Desktop/Job_AV/metabolomic_optimization/Final_data_theoretical_lowR13_withDG.xlsx")
+#run_script("/Users/martinpycha/Desktop/Job_AV/metabolomic_optimization/Final_data_theoretical_lowR13_withDG.xlsx")
 
-
-
-    #print_relevant(reactions)
-#identify_precs(reactions)
-
-
-
-
-
-#def BFS_filter(reactions):
-#    queue = []
-#    queue.append
+# PARSOVANI GRAPHML
+run_script("/Users/martinpycha/Desktop/Job_AV/metabolomic_optimization/threepath.graphml")
