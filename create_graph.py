@@ -37,7 +37,6 @@ def identify_precs_and_final_prod(reactions): # TODO TODO TODO
         precursors.discard(reaction.target)
         final_products.discard(reaction.source)
     
-
     for precursor in precursors:
         precursor.is_initial_reactant = True
     for final_prod in final_products:
@@ -71,21 +70,18 @@ def print_relevant(reactions):
         if doPrint:
             if react.stat_rel == gp.statistical_relevance.HIGH:
                 pass
-                #print(react)
                 
 def print_all(reactions):
     print("PRINTING ALL THE REACTIONS")
     for react in reactions:
         print(react)
-        
-                
+             
 def prov_sort(reactions):
     sorted_reactions = sorted(reactions, key=lambda react: react.value, reverse=True)
     print("PRINTING THE SORTED LIST OF REACTIONS")
     print(sorted_reactions)
     return sorted_reactions   
-                
-                
+                   
 class Pruning:
     """
     Represents an instance of the pruning algorithm
@@ -286,8 +282,10 @@ class Pruning:
         for react in self.reactions:
             values.append(react.value)
             
-        data_frame = pd.DataFrame(values)
-        quantile = float(data_frame.quantile(threshold))
+        data_frame = pd.DataFrame(values, columns=["value"])
+        #quantile = float(data_frame.iloc[0].quantile(threshold))
+        #print(data_frame.iloc[1])
+        quantile = float(data_frame["value"].quantile(threshold))
         for react in self.reactions:
             if react.value > quantile:
                 self.pruned_reactions.add(react)
@@ -315,11 +313,13 @@ def run_script(data_address_input, data_adress_output):
     #
     gp.to_graphml(data_address_input, "./metabolomic_optimization/connected.graphml", pruned_reactions)
     
-    first_algorithm.addBeyondTreshold()
+    first_algorithm.addBeyondTreshold(threshold=0.75)
     pruned_reactions = first_algorithm.pruned_reactions
     print(f"Number of pruned reactions after PRUNING + CONNECTING + ADDING QUANTILES: {len(pruned_reactions)}")
     #
-    gp.to_graphml(data_address_input, "./metabolomic_optimization/quantiles.graphml", pruned_reactions)
+    gp.to_graphml(data_address_input, "./metabolomic_optimization/quantiles75.graphml", pruned_reactions)
+    
+    
 
     
 #run_script("/Users/martinpycha/Desktop/Job_AV/metabolic_networks/data/Final_data_theoretical_lowR13_withDG.xlsx")

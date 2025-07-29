@@ -182,7 +182,7 @@ def to_graphml(input_file_path, output_path, pruned_reactions):
             except ValueError:
                 print(f"error")
 
-    print(f"Total edges removed: {removed}")
+    #print(f"Total edges removed: {removed}")
 
     # Write the pruned GraphML to file
     tree.write(output_path, encoding='utf-8', xml_declaration=True)
