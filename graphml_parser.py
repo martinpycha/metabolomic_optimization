@@ -104,6 +104,7 @@ class reaction:
 
 
 
+
 def data_parser(file_path):
     # due to namespace stuff, this line is important:
     ns = {"graphml": "http://graphml.graphdrawing.org/xmlns"}
@@ -148,7 +149,7 @@ def data_parser(file_path):
         reactions.append(reac)
         
         
-    print(f"NUMBER OF PARSED REACTIONS: {len(reactions)}")
+    print(f"Number of parsed reactions: {len(reactions)}")
         
     return molecules, reactions, node_id_to_mol
     

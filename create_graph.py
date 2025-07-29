@@ -289,6 +289,11 @@ class Pruning:
         for react in self.reactions:
             if react.value > quantile:
                 self.pruned_reactions.add(react)
+                
+def prepare_mols_reacs(data_address_input):
+    molecules, reactions, _ = gp.data_parser(data_address_input)
+    first_reactants, final_products, all_mols = identify_precs_and_final_prod(reactions)
+    return all_mols, reactions, first_reactants, final_products
    
 def run_script(data_address_input, data_adress_output):
     molecules, reactions, _ = gp.data_parser(data_address_input)
@@ -305,19 +310,19 @@ def run_script(data_address_input, data_adress_output):
     pruned_reactions = first_algorithm.pruned_reactions
     print(f"Number of pruned reactions after PRUNING: {len(pruned_reactions)}")
     
-    gp.to_graphml(data_address_input, "./metabolomic_optimization/pruned.graphml", pruned_reactions)
+    gp.to_graphml(data_address_input, "pruned.graphml", pruned_reactions)
     
     first_algorithm.ensure_connectivity()
     pruned_reactions = first_algorithm.pruned_reactions
     print(f"Number of pruned reactions after PRUNING + CONNECTING: {len(pruned_reactions)}")
     #
-    gp.to_graphml(data_address_input, "./metabolomic_optimization/connected.graphml", pruned_reactions)
+    gp.to_graphml(data_address_input, "connected.graphml", pruned_reactions)
     
     first_algorithm.addBeyondTreshold(threshold=0.75)
     pruned_reactions = first_algorithm.pruned_reactions
     print(f"Number of pruned reactions after PRUNING + CONNECTING + ADDING QUANTILES: {len(pruned_reactions)}")
     #
-    gp.to_graphml(data_address_input, "./metabolomic_optimization/quantiles75.graphml", pruned_reactions)
+    gp.to_graphml(data_address_input, "quantiles75.graphml", pruned_reactions)
     
     
 
@@ -329,5 +334,5 @@ def run_script(data_address_input, data_adress_output):
 #run_script("/Users/martinpycha/Desktop/Job_AV/metabolomic_optimization/Final_data_theoretical_lowR13_withDG.xlsx")
 
 # PARSOVANI GRAPHML
-run_script("/Users/martinpycha/Desktop/Job_AV/metabolomic_optimization/threepath.graphml"
-           ,"/Users/martinpycha/Desktop/Job_AV/metabolomic_optimization")
+
+#run_script("/Users/martinpycha/Desktop/Job_AV/metabolomic_optimization/threepath.graphml" ,"/Users/martinpycha/Desktop/Job_AV/metabolomic_optimization")
