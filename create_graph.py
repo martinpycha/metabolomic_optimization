@@ -3,7 +3,7 @@ import pandas as pd
 from enum import Enum
 import math
 import graphml_parser as gp
-
+import alter_files as ax
 import importlib
 
 importlib.reload(gp)
@@ -109,7 +109,8 @@ class Pruning:
         self.mode = mode
         self.all_molecules = all_mols
         self.pruned_reactions = None
-  
+        self.mode = None
+          
     def sort(self):
         """
         Sorts the attribute 'reactions' in the descending order according to the value
@@ -183,6 +184,7 @@ class Pruning:
                 #last_reaction_value = reaction.value
 
         self.pruned_reactions = pruned_reactions
+        self.mode = "Basic_pruning"
         return pruned_reactions#, sorted_reactions
     
 
@@ -233,7 +235,7 @@ class Pruning:
                 and reaction.target.isPartOfConnectedGraph == True:
                     self.pruned_reactions.add(reaction)
                     #print(f"RETURNING FROM CONNECT (source): {reaction.source}")
-                    return reaction.source    
+                    return reaction.source  
         return None
           
     def ensure_connectivity(self):
@@ -254,6 +256,7 @@ class Pruning:
         molecules_visited = set()
         i = 0
         search = True
+        self.mode = "Connected_pruning" 
         while (search):
             i += 1
             molecules_newly_visited = self.doBFS(molecule)
@@ -278,6 +281,7 @@ class Pruning:
             reactions (according to their reaction value) are to be 
             added.
         """
+        self.treshold = threshold
         values = []
         for react in self.reactions:
             values.append(react.value)
@@ -289,50 +293,47 @@ class Pruning:
         for react in self.reactions:
             if react.value > quantile:
                 self.pruned_reactions.add(react)
+        self.mode = "threshold_" + str(int(threshold * 100))
                 
 def prepare_mols_reacs(data_address_input):
     molecules, reactions, _ = gp.data_parser(data_address_input)
     first_reactants, final_products, all_mols = identify_precs_and_final_prod(reactions)
     return all_mols, reactions, first_reactants, final_products
    
-def run_script(data_address_input, data_adress_output):
-    molecules, reactions, _ = gp.data_parser(data_address_input)
-    #print(f"length: {len(reactions)}")
-    calculate_stat_relevance(reactions)
+def run_script(INPUT_PATH_GRAPHML, INPUT_PATH_TXT, OUTPUT_PATH, name="output"):
+    # PREPARING THE ALGORITHM
+    molecules, reactions, _ = gp.data_parser(INPUT_PATH_GRAPHML)
+    calculate_stat_relevance(reactions) # can be omitted
     first_reactants, final_products, all_mols = identify_precs_and_final_prod(reactions)
-    #for react in reactions:
-    #    print(f"{react.equation, react.value, react.source, react.target} \n")
-
     first_algorithm = Pruning(reactions, first_reactants, final_products, all_mols)
     
+    # CONDUCTING THE PRUNING
     first_algorithm.prune()
-    
     pruned_reactions = first_algorithm.pruned_reactions
     print(f"Number of pruned reactions after PRUNING: {len(pruned_reactions)}")
     
-    gp.to_graphml(data_address_input, "pruned.graphml", pruned_reactions)
-    
+    # CONNECTING 
     first_algorithm.ensure_connectivity()
     pruned_reactions = first_algorithm.pruned_reactions
     print(f"Number of pruned reactions after PRUNING + CONNECTING: {len(pruned_reactions)}")
-    #
-    gp.to_graphml(data_address_input, "connected.graphml", pruned_reactions)
     
-    first_algorithm.addBeyondTreshold(threshold=0.75)
+    # ADDING BEYOND THRESHOLD
+    first_algorithm.addBeyondTreshold(threshold=0.50)   # deciding the threshold
     pruned_reactions = first_algorithm.pruned_reactions
     print(f"Number of pruned reactions after PRUNING + CONNECTING + ADDING QUANTILES: {len(pruned_reactions)}")
-    #
-    gp.to_graphml(data_address_input, "quantiles75.graphml", pruned_reactions)
     
+    # SAVING TO .GRAPHML FILE
+    OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
+    gp.to_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, pruned_reactions)
+    
+    # SAVING TO .TXT FILE
+    OUTPUT_PATH_TXT = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".txt"
+    ax.run_the_script(pruned_reactions, first_algorithm.reactions, INPUT_PATH_TXT, OUTPUT_PATH_TXT)
     
 
-    
-#run_script("/Users/martinpycha/Desktop/Job_AV/metabolic_networks/data/Final_data_theoretical_lowR13_withDG.xlsx")
-# tady je puvodni adresa
-#run_script("/Users/martinpycha/Desktop/Job_AV/metabolic_networks/data/Final_data_theoretical_lowR13_withDG.xlsx")
-# a tady je nova
-#run_script("/Users/martinpycha/Desktop/Job_AV/metabolomic_optimization/Final_data_theoretical_lowR13_withDG.xlsx")
+INPUT_PATH_GRAPHML = "./metabolomic_optimization/assets/input/threepath.graphml"
+INPUT_PATH_TXT = "./metabolomic_optimization/assets/input/PalPaoSteOle_regular.txt"
+OUTPUT_PATH = "./metabolomic_optimization/assets/output"
 
-# PARSOVANI GRAPHML
+run_script(INPUT_PATH_GRAPHML,INPUT_PATH_TXT, OUTPUT_PATH)
 
-#run_script("/Users/martinpycha/Desktop/Job_AV/metabolomic_optimization/threepath.graphml" ,"/Users/martinpycha/Desktop/Job_AV/metabolomic_optimization")
