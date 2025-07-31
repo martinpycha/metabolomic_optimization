@@ -100,8 +100,8 @@ class Pruning:
                  basic_pruning=False,
                  connecting=False,
                  adding_beyond_treshold=False,
-                 threshold=0.75, 
-                 mode='First??'):
+                 threshold=0.75,
+                 proportion=False):
         """
         Initializes the pruning algorithm class.
         Args:
@@ -116,7 +116,7 @@ class Pruning:
         self.first_reactants = copy.deepcopy(first_reactants)
         self.final_products = copy.deepcopy(final_products)
         self.threshold = threshold
-        self.mode = mode
+        self.proportion = proportion
         self.all_molecules = copy.deepcopy(molecules)
         self.basic_pruning = basic_pruning
         self.connecting = connecting
@@ -299,8 +299,15 @@ class Pruning:
         Args:
             threshold: decides the quantile, which determines which
             reactions (according to their reaction value) are to be 
-            added.
+            added. If self.proportion == True, it adds reactions until the 
+             percentage of pruned_reactions matches the threshold
         """
+        if self.proportion == True:
+            for react in self.reactions:
+                if len(self.pruned_reactions) < len(self.reactions) * self.threshold:
+                    self.pruned_reactions.add(react)
+                else:
+                    return
         if self.adding_beyond_treshold_done:
             print("You have already added reactions beyond certain treshold. \n\
                 If you want to add more reactions, please initiate \
@@ -318,6 +325,7 @@ class Pruning:
             if react.value > quantile:
                 self.pruned_reactions.add(react)
         self.mode = "threshold_" + str(int(threshold * 100))
+        self.adding_beyond_treshold_done = True
         
     def print_statement(self):
         num_kept = len(self.reactions)
