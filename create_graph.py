@@ -287,7 +287,6 @@ class Pruning:
             if molecule is None:
                 #print("We are connected!!!")
                 break
-                
             #molecule = set_of_all_molecules.difference(molecules_visited)
             if i > 1000:
                 #print("Zacyklení ve while!!!")
