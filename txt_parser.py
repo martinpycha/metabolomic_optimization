@@ -18,45 +18,34 @@ def add_header(file_location):
 def read_txt_reaction_file(file_location):
     reactions_dict = {}
     with open(file_location) as file:
-        reactions = [line.rstrip() for line in file]
-        num_lines = len(reactions)
-        
-    set_of_reactions = set()
+        reactions = [line.rstrip() for line in file]        
     for original_react in reactions:
         react = re.sub(r'\s*\([^)]*\)', '', original_react)
         react = react.split(';')[0]
         react = react.strip("'\"").strip()
         reactions_dict[react] = original_react
-        set_of_reactions.add(react)
     return reactions_dict
 
 def keep_only_relevant(reactions_dict, pruned_reactions, all_reactions, output_file_path):
-    reactions_to_write = set()
+    reactions_to_write = list()
+    #print("Writing the reactions:")
     for reaction, original_reaction in reactions_dict.items():
+        #print(f"Reaction: {original_reaction}")
         for reaction_p in pruned_reactions:
             if reaction.strip() == reaction_p.equation.strip():
-                reactions_to_write.add(original_reaction)
-    pruned_reactions_equations = set()
-    all_reactions_equations = set()
-    for r in pruned_reactions:
-        if r.equation in pruned_reactions_equations:
-            continue
-        else:
-            pruned_reactions_equations.add(r.equation)
-        pruned_reactions_equations.add(r.equation)
-    for r in all_reactions:
-        all_reactions_equations.add(r.equation)
-    pruned_reactions_equations = set()
-    all_reactions_equations = set()
-    for r in pruned_reactions:
-        if r.equation in pruned_reactions_equations:
-            continue
-        else:
-            pruned_reactions_equations.add(r.equation)
-        pruned_reactions_equations.add(r.equation)
-    for r in all_reactions:
-        all_reactions_equations.add(r.equation)
-    print(f"{len(pruned_reactions_equations)}")
+                reactions_to_write.append(original_reaction)
+    #print("End of writing the reactions")
+    #pruned_reactions_equations = set()
+    #all_reactions_equations = set()
+    #for r in pruned_reactions:
+    #    if r.equation in pruned_reactions_equations:
+    #        continue
+    #    else:
+    #        pruned_reactions_equations.add(r.equation)
+    #    pruned_reactions_equations.add(r.equation)
+    #for r in all_reactions:
+    #    all_reactions_equations.add(r.equation)
+    #print(f"{len(pruned_reactions_equations)}")
     reactions_dict_keys = set(reactions_dict.keys())
     with open(output_file_path, 'w') as file:
         for equation in reactions_to_write:

@@ -8,6 +8,7 @@ import importlib
 import copy
 
 importlib.reload(gp)
+importlib.reload(tp)
 
 
 # returns a set of precursors and set of final products AND returns a set of precursors and final products
