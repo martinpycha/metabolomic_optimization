@@ -3,8 +3,9 @@ import pandas as pd
 from enum import Enum
 import math
 import graphml_parser as gp
-import alter_files as ax
+import txt_parser as tp
 import importlib
+import copy
 
 importlib.reload(gp)
 
@@ -46,7 +47,6 @@ def identify_precs_and_final_prod(reactions): # TODO TODO TODO
     #print("PRINTING FINAL PRODUCTS:")
     #print(final_products)
     return precursors, final_products, all_mols
-    
     
 def calculate_rel_error(value, stderr):
     return math.inf if value == 0 else stderr/value
@@ -91,7 +91,16 @@ class Pruning:
         final_products: List of molecules, which are not (initial) reactants
         ...TODO
     """
-    def __init__(self, reactions, first_reactants, final_products, all_mols, treshold=None, mode='First??'):
+    def __init__(self, 
+                 reactions, 
+                 first_reactants, 
+                 final_products, 
+                 molecules, 
+                 basic_pruning=False,
+                 connecting=False,
+                 adding_beyond_treshold=False,
+                 threshold=0.75, 
+                 mode='First??'):
         """
         Initializes the pruning algorithm class.
         Args:
@@ -102,15 +111,21 @@ class Pruning:
         Returns:
             str: A greeting message.
         """
-        self.reactions = reactions
-        self.first_reactants = first_reactants
-        self.final_products = final_products
-        self.treshold = treshold
+        self.reactions = copy.deepcopy(reactions)
+        self.first_reactants = copy.deepcopy(first_reactants)
+        self.final_products = copy.deepcopy(final_products)
+        self.threshold = threshold
         self.mode = mode
-        self.all_molecules = all_mols
+        self.all_molecules = copy.deepcopy(molecules)
+        self.basic_pruning = basic_pruning
+        self.connecting = connecting
+        self.adding_beyond_treshold = adding_beyond_treshold
+        self.basic_pruning_done = False
+        self.connecting_done = False
+        self.adding_beyond_treshold_done = False
         self.pruned_reactions = None
         self.mode = None
-          
+              
     def sort(self):
         """
         Sorts the attribute 'reactions' in the descending order according to the value
@@ -127,6 +142,9 @@ class Pruning:
             set: set of reaction objects, which represent the 
             reactions, which were decided to be kept
         """
+        if self.basic_pruning_done:
+            print("Basic pruning has already been conducted!")
+            return 
         sorted_reactions = self.sort()
         #print("PRINTING THE SORTED REACTION >>>>>>>>>>>>>>>>>>>>>>>>")
         #for react in sorted_reactions:
@@ -250,6 +268,8 @@ class Pruning:
         and through BFS, all the other molecules in the component are marked as 
         connected (attribut isPartOfConnectedGraph)
         """
+        if self.connecting_done:
+            print("Connectivity has already been ensured!")
         list_of_molecules = self.all_molecules.copy()
         set_of_all_molecules = set(list_of_molecules)
         molecule = list_of_molecules.pop() 
@@ -281,6 +301,10 @@ class Pruning:
             reactions (according to their reaction value) are to be 
             added.
         """
+        if self.adding_beyond_treshold_done:
+            print("You have already added reactions beyond certain treshold. \n\
+                If you want to add more reactions, please initiate \
+                new instance of algorithm with a different threshold.")
         self.treshold = threshold
         values = []
         for react in self.reactions:
@@ -294,46 +318,109 @@ class Pruning:
             if react.value > quantile:
                 self.pruned_reactions.add(react)
         self.mode = "threshold_" + str(int(threshold * 100))
+        
+    def print_statement(self):
+        num_kept = len(self.reactions)
+        if self.pruned_reactions != None:
+            num_kept = len(self.pruned_reactions)
+        percentage = num_kept/len(self.reactions) * 100
+        print(f"Number of reactions kept: {num_kept}, which is {percentage:.2f}% of all reactions.")
+        
+        
+    def run(self):
+        if self.basic_pruning:
+            if self.basic_pruning_done:
+                print("Basic pruning has already been conducted!")
+            else:
+                self.prune()
+                self.basic_pruning_done = True
+                print("Basic pruning has been conducted.")
+                self.print_statement()
+        if self.connecting:
+            if self.connecting_done:
+                print("Connectivity has already been ensured!")
+            else:
+                self.ensure_connectivity()
+                self.connecting_done = True
+                print("Connectivity has been ensured.")
+                self.print_statement()
+        if self.adding_beyond_treshold:
+            if self.adding_beyond_treshold_done:
+                print("You have already added reactions beyond certain treshold. \n\
+                    If you want to add more reactions, please initiate \
+                    new instance of algorithm with a different threshold.")
+            else:
+                self.addBeyondTreshold(self.threshold)
+                self.adding_beyond_treshold_done = True
+                print(f"All reactions beyond threshold {self.threshold} have been added.")
+                self.print_statement()
                 
 def prepare_mols_reacs(data_address_input):
     molecules, reactions, _ = gp.data_parser(data_address_input)
     first_reactants, final_products, all_mols = identify_precs_and_final_prod(reactions)
     return all_mols, reactions, first_reactants, final_products
    
+def save_result_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH, first_algorithm, name="output"):
+    OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
+    gp.to_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, first_algorithm.pruned_reactions)
+    
+def save_result_txt(INPUT_PATH_TXT, OUTPUT_PATH, first_algorithm, name="output"):
+    OUTPUT_PATH_TXT = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".txt"
+    tp.run_the_script(first_algorithm.pruned_reactions, first_algorithm.reactions, INPUT_PATH_TXT, OUTPUT_PATH_TXT)
+    
+
+    
 def run_script(INPUT_PATH_GRAPHML, INPUT_PATH_TXT, OUTPUT_PATH, name="output"):
     # PREPARING THE ALGORITHM
     molecules, reactions, _ = gp.data_parser(INPUT_PATH_GRAPHML)
     calculate_stat_relevance(reactions) # can be omitted
     first_reactants, final_products, all_mols = identify_precs_and_final_prod(reactions)
-    first_algorithm = Pruning(reactions, first_reactants, final_products, all_mols)
+    first_algorithm = Pruning(reactions, 
+                              first_reactants, 
+                              final_products, 
+                              all_mols,
+                              basic_pruning=True,
+                              connecting=True,
+                              adding_beyond_treshold=True,
+                              threshold=0.75
+                              )
+    first_algorithm.run()
     
     # CONDUCTING THE PRUNING
-    first_algorithm.prune()
-    pruned_reactions = first_algorithm.pruned_reactions
-    print(f"Number of pruned reactions after PRUNING: {len(pruned_reactions)}")
+    #first_algorithm.prune()
+    #pruned_reactions = first_algorithm.pruned_reactions
+    #print(f"Number of pruned reactions after PRUNING: {len(pruned_reactions)}")
+    #
+    ## CONNECTING 
+    #first_algorithm.ensure_connectivity()
+    #pruned_reactions = first_algorithm.pruned_reactions
+    #print(f"Number of pruned reactions after PRUNING + CONNECTING: {len(pruned_reactions)}")
+    #
+    ## ADDING BEYOND THRESHOLD
+    #first_algorithm.addBeyondTreshold(threshold=0.50)   # deciding the threshold
+    #pruned_reactions = first_algorithm.pruned_reactions
+    #print(f"Number of pruned reactions after PRUNING + CONNECTING + ADDING QUANTILES: {len(pruned_reactions)}")
     
-    # CONNECTING 
-    first_algorithm.ensure_connectivity()
-    pruned_reactions = first_algorithm.pruned_reactions
-    print(f"Number of pruned reactions after PRUNING + CONNECTING: {len(pruned_reactions)}")
-    
-    # ADDING BEYOND THRESHOLD
-    first_algorithm.addBeyondTreshold(threshold=0.50)   # deciding the threshold
-    pruned_reactions = first_algorithm.pruned_reactions
-    print(f"Number of pruned reactions after PRUNING + CONNECTING + ADDING QUANTILES: {len(pruned_reactions)}")
-    
-    # SAVING TO .GRAPHML FILE
-    OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
-    gp.to_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, pruned_reactions)
-    
-    # SAVING TO .TXT FILE
-    OUTPUT_PATH_TXT = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".txt"
-    ax.run_the_script(pruned_reactions, first_algorithm.reactions, INPUT_PATH_TXT, OUTPUT_PATH_TXT)
-    
+    ## SAVING TO .GRAPHML FILE
+    save_result_graphml(OUTPUT_PATH, first_algorithm, name="testing")
+    #OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
+    #gp.to_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, pruned_reactions)
+    #
+    ## SAVING TO .TXT FILE
+    save_result_txt(INPUT_PATH_TXT, OUTPUT_PATH, first_algorithm, name="testing")
+    #OUTPUT_PATH_TXT = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".txt"
+    #ax.run_the_script(pruned_reactions, first_algorithm.reactions, INPUT_PATH_TXT, OUTPUT_PATH_TXT)
 
+
+# COMMENT THE FOLOOWING IN ORDER FOR THE SCRIPT TO WORK!
+"""
+# path to the source graphml file - the graph to be pruned
 INPUT_PATH_GRAPHML = "./metabolomic_optimization/assets/input/threepath.graphml"
+# path to the original reactions - reactions to be selected
 INPUT_PATH_TXT = "./metabolomic_optimization/assets/input/PalPaoSteOle_regular.txt"
+# path to the output, where both the resulting .graphml file and .txt file is stored
 OUTPUT_PATH = "./metabolomic_optimization/assets/output"
 
 run_script(INPUT_PATH_GRAPHML,INPUT_PATH_TXT, OUTPUT_PATH)
 
+"""
