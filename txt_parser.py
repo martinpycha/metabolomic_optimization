@@ -28,12 +28,15 @@ def read_txt_reaction_file(file_location):
 
 def keep_only_relevant(reactions_dict, pruned_reactions, all_reactions, output_file_path):
     reactions_to_write = list()
+    already_added = set()
     #print("Writing the reactions:")
     for reaction, original_reaction in reactions_dict.items():
         #print(f"Reaction: {original_reaction}")
         for reaction_p in pruned_reactions:
-            if reaction.strip() == reaction_p.equation.strip():
+            if reaction.strip() == reaction_p.equation.strip() and original_reaction not in already_added:
                 reactions_to_write.append(original_reaction)
+                already_added.add(original_reaction)
+                
     #print("End of writing the reactions")
     #pruned_reactions_equations = set()
     #all_reactions_equations = set()
