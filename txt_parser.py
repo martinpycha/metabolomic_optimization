@@ -11,9 +11,9 @@ def add_header(file_location):
     df.columns = new_header  # assign as column names
     df.dropna(subset=['Equation'], inplace=True)
     # Save the new file (overwrite or save separately)
-    df.to_excel("PalPaoSteOle_regular_1279_flux_v2_withHeader.xlsx", index=False)
+    df.to_excel("A4GALT_flux_withHeader.xlsx", index=False)
 
-#add_header("./metabolomic_optimization/PalPaoSteOle_regular_1279_flux_v2.xlsx")
+#add_header("./metabolomic_optimization/A4GALT_flux.xlsx")
 
 def read_txt_reaction_file(file_location):
     reactions_dict = {}
