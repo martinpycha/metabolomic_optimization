@@ -13,7 +13,37 @@ def add_header(file_location):
     # Save the new file (overwrite or save separately)
     df = df[~df['ID'].astype(str).str.contains('net', case=False, na=False)]
     df.to_excel("A4GALT_flux_withHeader.xlsx", index=False)
+    
+def compare_two_txt_files(file1_location, file2_location):
+    list1, list2 = list(), list()
+    file1 = open(file1_location, 'r')
+    for line in file1:
+        list1.append(line)
+    file2 = open(file2_location, 'r')
+    for line in file2:
+        list2.append(line)
+    diff1 = [item for item in list1 if item not in list2]
+    diff2 = [item for item in list2 if item not in list1]
+    print("-------------------------------------------------------------------------")
+    print(f"First file has {len(list1)} rows, Second file has {len(list2)} rows.")
+    print("-------------------------------------------------------------------------")
+    print(f"The following reactions are in the first file and not in the second one:")
+    if len(diff1) == 0:
+        print("All reactions in second file are also in the first line.")
+    for react in diff1:
+        print(f"React: {react}")
+    #print(diff1)
+    print("-------------------------------------------------------------------------")
+    print(f"The following reactions are in the second file and not in the first one:")
+    if len(diff2) == 0:
+        print("All reactions in first file are also in the second line.")
+    for react in diff2:
+        print(f"React: {react}")
+    #print(diff2)
+    print("-------------------------------------------------------------------------")
 
+#compare_two_txt_files("./metabolomic_optimization/assets/input/model_202r_output.txt", "./metabolomic_optimization/assets/output/A4GALT_threshold_0.txt")
+#compare_two_txt_files("./metabolomic_optimization/assets/input/PalPaoSteOle_regular_new.txt", "./metabolomic_optimization/assets/output/PalPaoSteOle_regular_new_threshold_0.txt")
 #add_header("./metabolomic_optimization/A4GALT_flux.xlsx")
 
 def read_txt_reaction_file(file_location):
