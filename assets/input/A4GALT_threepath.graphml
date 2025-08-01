@@ -214,31 +214,31 @@
   <data key="d0">CER2Pal</data>
   <data key="d1">square</data>
   <data key="d2"></data>
-  <data key="d3">9</data>
+  <data key="d3">7</data>
 </node>
 <node id="HEXCER2Pal">
   <data key="d0">HEXCER2Pal</data>
   <data key="d1">square</data>
   <data key="d2"></data>
-  <data key="d3">15</data>
+  <data key="d3">9</data>
 </node>
 <node id="Glc">
   <data key="d0">Glc</data>
   <data key="d1">square</data>
   <data key="d2">Glc</data>
-  <data key="d3">20</data>
+  <data key="d3">14</data>
 </node>
 <node id="HEXXCER2Pal">
   <data key="d0">HEXXCER2Pal</data>
   <data key="d1">square</data>
   <data key="d2"></data>
-  <data key="d3">12</data>
+  <data key="d3">6</data>
 </node>
 <node id="HEXXXCER2Pal">
   <data key="d0">HEXXXCER2Pal</data>
   <data key="d1">square</data>
   <data key="d2">ER2,XXC,HEX</data>
-  <data key="d3">11</data>
+  <data key="d3">7</data>
 </node>
 <node id="Pal.lab">
   <data key="d0">Pal.lab</data>
@@ -592,13 +592,13 @@
   <data key="d0">DHAP</data>
   <data key="d1">square</data>
   <data key="d2"></data>
-  <data key="d3">7</data>
+  <data key="d3">5</data>
 </node>
 <node id="GAP">
   <data key="d0">GAP</data>
   <data key="d1">square</data>
   <data key="d2">GAP</data>
-  <data key="d3">6</data>
+  <data key="d3">4</data>
 </node>
 <node id="G3P.New">
   <data key="d0">G3P.New</data>
@@ -640,55 +640,55 @@
   <data key="d0">Oac.m</data>
   <data key="d1">square</data>
   <data key="d2">Oac</data>
-  <data key="d3">8</data>
+  <data key="d3">6</data>
 </node>
 <node id="Cit.m">
   <data key="d0">Cit.m</data>
   <data key="d1">square</data>
   <data key="d2">Cit</data>
-  <data key="d3">8</data>
+  <data key="d3">6</data>
 </node>
 <node id="Acon">
   <data key="d0">Acon</data>
   <data key="d1">square</data>
   <data key="d2"></data>
-  <data key="d3">8</data>
+  <data key="d3">4</data>
 </node>
 <node id="Isocit">
   <data key="d0">Isocit</data>
   <data key="d1">square</data>
   <data key="d2">Iso</data>
-  <data key="d3">6</data>
+  <data key="d3">4</data>
 </node>
 <node id="aKG.m">
   <data key="d0">aKG.m</data>
   <data key="d1">square</data>
   <data key="d2">aKG</data>
-  <data key="d3">12</data>
+  <data key="d3">8</data>
 </node>
 <node id="Suc">
   <data key="d0">Suc</data>
   <data key="d1">square</data>
   <data key="d2">Suc</data>
-  <data key="d3">5</data>
+  <data key="d3">3</data>
 </node>
 <node id="Fum.m">
   <data key="d0">Fum.m</data>
   <data key="d1">square</data>
   <data key="d2">Fum</data>
-  <data key="d3">8</data>
+  <data key="d3">4</data>
 </node>
 <node id="Mal.m">
   <data key="d0">Mal.m</data>
   <data key="d1">square</data>
   <data key="d2">Mal</data>
-  <data key="d3">15</data>
+  <data key="d3">9</data>
 </node>
 <node id="Glu">
   <data key="d0">Glu</data>
   <data key="d1">square</data>
   <data key="d2">Glu</data>
-  <data key="d3">6</data>
+  <data key="d3">4</data>
 </node>
 <node id="FFA">
   <data key="d0">FFA</data>
@@ -700,7 +700,7 @@
   <data key="d0">aKG.c</data>
   <data key="d1">square</data>
   <data key="d2">aKG</data>
-  <data key="d3">6</data>
+  <data key="d3">4</data>
 </node>
 <node id="Cit.c">
   <data key="d0">Cit.c</data>
@@ -778,7 +778,7 @@
   <data key="d0">Mal.c</data>
   <data key="d1">square</data>
   <data key="d2">Mal</data>
-  <data key="d3">6</data>
+  <data key="d3">4</data>
 </node>
 <node id="Mal">
   <data key="d0">Mal</data>
@@ -884,7 +884,7 @@
   <data key="d10">R2path</data>
   <data key="d11">GPAM</data>
 </edge>
-<edge source="G3P" target="Sink" id="233">
+<edge source="G3P" target="Sink" id="219">
   <data key="d4">R140</data>
   <data key="d5">G3P -&gt; Sink</data>
   <data key="d6">2.522687800876611e-06</data>
@@ -1044,7 +1044,7 @@
   <data key="d10">R33path</data>
   <data key="d11">PE_to_PS</data>
 </edge>
-<edge source="Pal" target="Pal.out" id="107">
+<edge source="Pal" target="Pal.out" id="95">
   <data key="d4">R42</data>
   <data key="d5">Pal -&gt; Pal.out</data>
   <data key="d6">-9.155175888508893e-07</data>
@@ -1054,7 +1054,7 @@
   <data key="d10">R42path</data>
   <data key="d11">DG_to_PE</data>
 </edge>
-<edge source="Pal" target="Sink" id="316">
+<edge source="Pal" target="Sink" id="286">
   <data key="d4">R190</data>
   <data key="d5">Pal -&gt; Sink</data>
   <data key="d6">836.6459247125998</data>
@@ -1174,7 +1174,7 @@
   <data key="d10">R30path</data>
   <data key="d11">PC_to_PS</data>
 </edge>
-<edge source="Ole" target="Ole.out" id="110">
+<edge source="Ole" target="Ole.out" id="98">
   <data key="d4">R45</data>
   <data key="d5">Ole -&gt; Ole.out</data>
   <data key="d6">1.000003280182682e-07</data>
@@ -1184,7 +1184,7 @@
   <data key="d10">R45path</data>
   <data key="d11">PE_to_LPE</data>
 </edge>
-<edge source="Ole" target="Sink" id="330">
+<edge source="Ole" target="Sink" id="300">
   <data key="d4">R202</data>
   <data key="d5">Ole -&gt; Sink</data>
   <data key="d6">1.000000011686097e-07</data>
@@ -1194,7 +1194,7 @@
   <data key="d10">R202path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="PA12PalPal" target="DG12PalPal" id="176">
+<edge source="PA12PalPal" target="DG12PalPal" id="164">
   <data key="d4">R103</data>
   <data key="d5">PA12PalPal -&gt; DG12PalPal</data>
   <data key="d6">12.17625015296051</data>
@@ -1204,7 +1204,7 @@
   <data key="d10">R103path</data>
   <data key="d11">PC to Sink</data>
 </edge>
-<edge source="PA12PalOle" target="DG12PalOle" id="175">
+<edge source="PA12PalOle" target="DG12PalOle" id="163">
   <data key="d4">R102</data>
   <data key="d5">PA12PalOle -&gt; DG12PalOle</data>
   <data key="d6">134.5910494355889</data>
@@ -1214,7 +1214,7 @@
   <data key="d10">R102path</data>
   <data key="d11">PS mix</data>
 </edge>
-<edge source="PA12OlePal" target="DG12OlePal" id="174">
+<edge source="PA12OlePal" target="DG12OlePal" id="162">
   <data key="d4">R101</data>
   <data key="d5">PA12OlePal -&gt; DG12OlePal</data>
   <data key="d6">138.7330639802397</data>
@@ -1224,7 +1224,7 @@
   <data key="d10">R101path</data>
   <data key="d11">PE mix</data>
 </edge>
-<edge source="PA12OleOle" target="DG12OleOle" id="173">
+<edge source="PA12OleOle" target="DG12OleOle" id="161">
   <data key="d4">R100</data>
   <data key="d5">PA12OleOle -&gt; DG12OleOle</data>
   <data key="d6">65.41054453235353</data>
@@ -1254,7 +1254,7 @@
   <data key="d10">R8path</data>
   <data key="d11">PA_to_DG</data>
 </edge>
-<edge source="LPC1Pal" target="LPC0Pal.mix" id="170">
+<edge source="LPC1Pal" target="LPC0Pal.mix" id="158">
   <data key="d4">R97</data>
   <data key="d5">0*LPC1Pal -&gt; LPC0Pal.mix</data>
   <data key="d6">0.0002492578109603002</data>
@@ -1264,7 +1264,7 @@
   <data key="d10">R97path</data>
   <data key="d11">PC pre</data>
 </edge>
-<edge source="PC12PalPal" target="PC00PalPal.mix" id="180">
+<edge source="PC12PalPal" target="PC00PalPal.mix" id="168">
   <data key="d4">R107</data>
   <data key="d5">0*PC12PalPal -&gt; PC00PalPal.mix</data>
   <data key="d6">-3.693688820203139e-05</data>
@@ -1274,7 +1274,7 @@
   <data key="d10">R107path</data>
   <data key="d11">PE pre</data>
 </edge>
-<edge source="PC12PalPal" target="PS12PalPal" id="205">
+<edge source="PC12PalPal" target="PS12PalPal" id="193">
   <data key="d4">R120</data>
   <data key="d5">PC12PalPal + Ser -&gt; PS12PalPal + Cho</data>
   <data key="d6">1.865789080568447e-06</data>
@@ -1284,7 +1284,7 @@
   <data key="d10">R120path</data>
   <data key="d11">LPC mix</data>
 </edge>
-<edge source="PC12PalPal" target="Cho" id="206">
+<edge source="PC12PalPal" target="Cho" id="194">
   <data key="d4">R120</data>
   <data key="d5">PC12PalPal + Ser -&gt; PS12PalPal + Cho</data>
   <data key="d6">1.865789080568447e-06</data>
@@ -1294,7 +1294,7 @@
   <data key="d10">R120path</data>
   <data key="d11">LPC mix</data>
 </edge>
-<edge source="PC12PalPal" target="LPC1Pal" id="209">
+<edge source="PC12PalPal" target="LPC1Pal" id="197">
   <data key="d4">R121</data>
   <data key="d5">PC12PalPal -&gt; LPC1Pal + Pal</data>
   <data key="d6">2.603403926215719e-06</data>
@@ -1304,7 +1304,7 @@
   <data key="d10">R121path</data>
   <data key="d11">LPC mix</data>
 </edge>
-<edge source="PC12PalPal" target="Pal" id="210">
+<edge source="PC12PalPal" target="Pal" id="198">
   <data key="d4">R121</data>
   <data key="d5">PC12PalPal -&gt; LPC1Pal + Pal</data>
   <data key="d6">2.603403926215719e-06</data>
@@ -1314,7 +1314,7 @@
   <data key="d10">R121path</data>
   <data key="d11">LPC mix</data>
 </edge>
-<edge source="PC12PalPal" target="Sink" id="211">
+<edge source="PC12PalPal" target="Sink" id="199">
   <data key="d4">R122</data>
   <data key="d5">PC12PalPal -&gt; Sink</data>
   <data key="d6">100.0000000000001</data>
@@ -1324,7 +1324,7 @@
   <data key="d10">R122path</data>
   <data key="d11">HEXCER pre</data>
 </edge>
-<edge source="PC12PalOle" target="PC00PalOle.mix" id="178">
+<edge source="PC12PalOle" target="PC00PalOle.mix" id="166">
   <data key="d4">R105</data>
   <data key="d5">0*PC12PalOle -&gt; PC00PalOle.mix</data>
   <data key="d6">104.7606093827923</data>
@@ -1334,7 +1334,7 @@
   <data key="d10">R105path</data>
   <data key="d11">PS to Sink</data>
 </edge>
-<edge source="PC12PalOle" target="PS12PalOle" id="197">
+<edge source="PC12PalOle" target="PS12PalOle" id="185">
   <data key="d4">R116</data>
   <data key="d5">PC12PalOle + Ser -&gt; PS12PalOle + Cho</data>
   <data key="d6">1.831755664483126e-06</data>
@@ -1344,7 +1344,7 @@
   <data key="d10">R116path</data>
   <data key="d11">PE pre</data>
 </edge>
-<edge source="PC12PalOle" target="Cho" id="198">
+<edge source="PC12PalOle" target="Cho" id="186">
   <data key="d4">R116</data>
   <data key="d5">PC12PalOle + Ser -&gt; PS12PalOle + Cho</data>
   <data key="d6">1.831755664483126e-06</data>
@@ -1354,7 +1354,7 @@
   <data key="d10">R116path</data>
   <data key="d11">PE pre</data>
 </edge>
-<edge source="PC12PalOle" target="LPC1Pal" id="201">
+<edge source="PC12PalOle" target="LPC1Pal" id="189">
   <data key="d4">R117</data>
   <data key="d5">PC12PalOle -&gt; LPC1Pal + Ole</data>
   <data key="d6">422.012983653394</data>
@@ -1364,7 +1364,7 @@
   <data key="d10">R117path</data>
   <data key="d11">PS pre</data>
 </edge>
-<edge source="PC12PalOle" target="Ole" id="202">
+<edge source="PC12PalOle" target="Ole" id="190">
   <data key="d4">R117</data>
   <data key="d5">PC12PalOle -&gt; LPC1Pal + Ole</data>
   <data key="d6">422.012983653394</data>
@@ -1374,7 +1374,7 @@
   <data key="d10">R117path</data>
   <data key="d11">PS pre</data>
 </edge>
-<edge source="PC12PalOle" target="Sink" id="203">
+<edge source="PC12PalOle" target="Sink" id="191">
   <data key="d4">R118</data>
   <data key="d5">PC12PalOle -&gt; Sink</data>
   <data key="d6">99.99999999999994</data>
@@ -1404,7 +1404,7 @@
   <data key="d10">R10path</data>
   <data key="d11">PA_to_DG</data>
 </edge>
-<edge source="LPC1Ole" target="LPC0Ole.mix" id="169">
+<edge source="LPC1Ole" target="LPC0Ole.mix" id="157">
   <data key="d4">R96</data>
   <data key="d5">0*LPC1Ole -&gt; LPC0Ole.mix</data>
   <data key="d6">0.0002814299958006764</data>
@@ -1414,7 +1414,7 @@
   <data key="d10">R96path</data>
   <data key="d11">PS to Sink</data>
 </edge>
-<edge source="PC12OlePal" target="PC00PalOle.mix" id="179">
+<edge source="PC12OlePal" target="PC00PalOle.mix" id="167">
   <data key="d4">R106</data>
   <data key="d5">0*PC12OlePal -&gt; PC00PalOle.mix</data>
   <data key="d6">19.97559615773747</data>
@@ -1424,7 +1424,7 @@
   <data key="d10">R106path</data>
   <data key="d11">PC pre</data>
 </edge>
-<edge source="PC12OlePal" target="PS12OlePal" id="189">
+<edge source="PC12OlePal" target="PS12OlePal" id="177">
   <data key="d4">R112</data>
   <data key="d5">PC12OlePal + Ser -&gt; PS12OlePal + Cho</data>
   <data key="d6">145.4351864591671</data>
@@ -1434,7 +1434,7 @@
   <data key="d10">R112path</data>
   <data key="d11">PC to Sink</data>
 </edge>
-<edge source="PC12OlePal" target="Cho" id="190">
+<edge source="PC12OlePal" target="Cho" id="178">
   <data key="d4">R112</data>
   <data key="d5">PC12OlePal + Ser -&gt; PS12OlePal + Cho</data>
   <data key="d6">145.4351864591671</data>
@@ -1444,7 +1444,7 @@
   <data key="d10">R112path</data>
   <data key="d11">PC to Sink</data>
 </edge>
-<edge source="PC12OlePal" target="LPC1Ole" id="193">
+<edge source="PC12OlePal" target="LPC1Ole" id="181">
   <data key="d4">R113</data>
   <data key="d5">PC12OlePal -&gt; LPC1Ole + Pal</data>
   <data key="d6">9999999.999999998</data>
@@ -1454,7 +1454,7 @@
   <data key="d10">R113path</data>
   <data key="d11">PE to Sink</data>
 </edge>
-<edge source="PC12OlePal" target="Pal" id="194">
+<edge source="PC12OlePal" target="Pal" id="182">
   <data key="d4">R113</data>
   <data key="d5">PC12OlePal -&gt; LPC1Ole + Pal</data>
   <data key="d6">9999999.999999998</data>
@@ -1464,7 +1464,7 @@
   <data key="d10">R113path</data>
   <data key="d11">PE to Sink</data>
 </edge>
-<edge source="PC12OlePal" target="Sink" id="195">
+<edge source="PC12OlePal" target="Sink" id="183">
   <data key="d4">R114</data>
   <data key="d5">PC12OlePal -&gt; Sink</data>
   <data key="d6">100.0</data>
@@ -1474,7 +1474,7 @@
   <data key="d10">R114path</data>
   <data key="d11">PS to Sink</data>
 </edge>
-<edge source="PC12OleOle" target="PC00OleOle.mix" id="177">
+<edge source="PC12OleOle" target="PC00OleOle.mix" id="165">
   <data key="d4">R104</data>
   <data key="d5">0*PC12OleOle -&gt; PC00OleOle.mix</data>
   <data key="d6">0.000504723915603254</data>
@@ -1484,7 +1484,7 @@
   <data key="d10">R104path</data>
   <data key="d11">PE to Sink</data>
 </edge>
-<edge source="PC12OleOle" target="PS12OleOle" id="181">
+<edge source="PC12OleOle" target="PS12OleOle" id="169">
   <data key="d4">R108</data>
   <data key="d5">PC12OleOle + Ser -&gt; PS12OleOle + Cho</data>
   <data key="d6">54.56481009451019</data>
@@ -1494,7 +1494,7 @@
   <data key="d10">R108path</data>
   <data key="d11">PS pre</data>
 </edge>
-<edge source="PC12OleOle" target="Cho" id="182">
+<edge source="PC12OleOle" target="Cho" id="170">
   <data key="d4">R108</data>
   <data key="d5">PC12OleOle + Ser -&gt; PS12OleOle + Cho</data>
   <data key="d6">54.56481009451019</data>
@@ -1504,7 +1504,7 @@
   <data key="d10">R108path</data>
   <data key="d11">PS pre</data>
 </edge>
-<edge source="PC12OleOle" target="LPC1Ole" id="185">
+<edge source="PC12OleOle" target="LPC1Ole" id="173">
   <data key="d4">R109</data>
   <data key="d5">PC12OleOle -&gt; LPC1Ole + Ole</data>
   <data key="d6">0.001009753599348073</data>
@@ -1514,7 +1514,7 @@
   <data key="d10">R109path</data>
   <data key="d11">PC mix</data>
 </edge>
-<edge source="PC12OleOle" target="Ole" id="186">
+<edge source="PC12OleOle" target="Ole" id="174">
   <data key="d4">R109</data>
   <data key="d5">PC12OleOle -&gt; LPC1Ole + Ole</data>
   <data key="d6">0.001009753599348073</data>
@@ -1524,7 +1524,7 @@
   <data key="d10">R109path</data>
   <data key="d11">PC mix</data>
 </edge>
-<edge source="PC12OleOle" target="Sink" id="187">
+<edge source="PC12OleOle" target="Sink" id="175">
   <data key="d4">R110</data>
   <data key="d5">PC12OleOle -&gt; Sink</data>
   <data key="d6">99.99999999999999</data>
@@ -1574,7 +1574,7 @@
   <data key="d10">R23path</data>
   <data key="d11">LPC_to_PC</data>
 </edge>
-<edge source="PE12PalPal" target="Sink" id="114">
+<edge source="PE12PalPal" target="Sink" id="102">
   <data key="d4">R49</data>
   <data key="d5">PE12PalPal -&gt; Sink</data>
   <data key="d6">99.99999999999997</data>
@@ -1584,7 +1584,7 @@
   <data key="d10">R49path</data>
   <data key="d11">LPE_to_PE</data>
 </edge>
-<edge source="PE12PalPal" target="PE00PalPal.mix" id="216">
+<edge source="PE12PalPal" target="PE00PalPal.mix" id="204">
   <data key="d4">R127</data>
   <data key="d5">0*PE12PalPal -&gt; PE00PalPal.mix</data>
   <data key="d6">9.999999999994822e-08</data>
@@ -1614,7 +1614,7 @@
   <data key="d10">R15path</data>
   <data key="d11">DG_to_PC</data>
 </edge>
-<edge source="PS12PalPal" target="Sink" id="115">
+<edge source="PS12PalPal" target="Sink" id="103">
   <data key="d4">R50</data>
   <data key="d5">PS12PalPal -&gt; Sink</data>
   <data key="d6">100.0</data>
@@ -1624,7 +1624,7 @@
   <data key="d10">R50path</data>
   <data key="d11">LPE_to_PE</data>
 </edge>
-<edge source="PS12PalPal" target="PS00PalPal.mix" id="220">
+<edge source="PS12PalPal" target="PS00PalPal.mix" id="208">
   <data key="d4">R131</data>
   <data key="d5">0*PS12PalPal -&gt; PS00PalPal.mix</data>
   <data key="d6">0.004027523464099172</data>
@@ -1634,7 +1634,7 @@
   <data key="d10">R131path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Eta" target="PE12OleOle" id="150">
+<edge source="Eta" target="PE12OleOle" id="138">
   <data key="d4">R83</data>
   <data key="d5">DG12OleOle + Eta -&gt; PE12OleOle</data>
   <data key="d6">9.999991945619513e-08</data>
@@ -1644,7 +1644,7 @@
   <data key="d10">R83path</data>
   <data key="d11">PE mix</data>
 </edge>
-<edge source="Eta" target="PE12OlePal" id="155">
+<edge source="Eta" target="PE12OlePal" id="143">
   <data key="d4">R86</data>
   <data key="d5">DG12OlePal + Eta -&gt; PE12OlePal</data>
   <data key="d6">138.733061896951</data>
@@ -1654,7 +1654,7 @@
   <data key="d10">R86path</data>
   <data key="d11">PE to Sink</data>
 </edge>
-<edge source="Eta" target="PE12PalOle" id="160">
+<edge source="Eta" target="PE12PalOle" id="148">
   <data key="d4">R89</data>
   <data key="d5">DG12PalOle + Eta -&gt; PE12PalOle</data>
   <data key="d6">1.900564713164243e-06</data>
@@ -1664,7 +1664,7 @@
   <data key="d10">R89path</data>
   <data key="d11">PE pre</data>
 </edge>
-<edge source="Eta" target="PE12PalPal" id="165">
+<edge source="Eta" target="PE12PalPal" id="153">
   <data key="d4">R92</data>
   <data key="d5">DG12PalPal + Eta -&gt; PE12PalPal</data>
   <data key="d6">12.17624567740818</data>
@@ -1684,7 +1684,7 @@
   <data key="d10">R11path</data>
   <data key="d11">DG_to_PA</data>
 </edge>
-<edge source="Ser" target="PS12PalPal" id="207">
+<edge source="Ser" target="PS12PalPal" id="195">
   <data key="d4">R120</data>
   <data key="d5">PC12PalPal + Ser -&gt; PS12PalPal + Cho</data>
   <data key="d6">1.865789080568447e-06</data>
@@ -1744,7 +1744,7 @@
   <data key="d10">R12path</data>
   <data key="d11">DG_to_PA</data>
 </edge>
-<edge source="Ser" target="PS12PalOle" id="199">
+<edge source="Ser" target="PS12PalOle" id="187">
   <data key="d4">R116</data>
   <data key="d5">PC12PalOle + Ser -&gt; PS12PalOle + Cho</data>
   <data key="d6">1.831755664483126e-06</data>
@@ -1764,7 +1764,7 @@
   <data key="d10">R13path</data>
   <data key="d11">DG_to_PA</data>
 </edge>
-<edge source="Ser" target="PS12OlePal" id="191">
+<edge source="Ser" target="PS12OlePal" id="179">
   <data key="d4">R112</data>
   <data key="d5">PC12OlePal + Ser -&gt; PS12OlePal + Cho</data>
   <data key="d6">145.4351864591671</data>
@@ -1784,7 +1784,7 @@
   <data key="d10">R14path</data>
   <data key="d11">DG_to_PA</data>
 </edge>
-<edge source="Ser" target="PS12OleOle" id="183">
+<edge source="Ser" target="PS12OleOle" id="171">
   <data key="d4">R108</data>
   <data key="d5">PC12OleOle + Ser -&gt; PS12OleOle + Cho</data>
   <data key="d6">54.56481009451019</data>
@@ -1814,7 +1814,7 @@
   <data key="d10">R31path</data>
   <data key="d11">PE_to_PS</data>
 </edge>
-<edge source="Ser" target="Cho" id="184">
+<edge source="Ser" target="Cho" id="172">
   <data key="d4">R108</data>
   <data key="d5">PC12OleOle + Ser -&gt; PS12OleOle + Cho</data>
   <data key="d6">54.56481009451019</data>
@@ -1824,7 +1824,7 @@
   <data key="d10">R108path</data>
   <data key="d11">PS pre</data>
 </edge>
-<edge source="Ser" target="Cho" id="192">
+<edge source="Ser" target="Cho" id="180">
   <data key="d4">R112</data>
   <data key="d5">PC12OlePal + Ser -&gt; PS12OlePal + Cho</data>
   <data key="d6">145.4351864591671</data>
@@ -1834,7 +1834,7 @@
   <data key="d10">R112path</data>
   <data key="d11">PC to Sink</data>
 </edge>
-<edge source="Ser" target="Cho" id="200">
+<edge source="Ser" target="Cho" id="188">
   <data key="d4">R116</data>
   <data key="d5">PC12PalOle + Ser -&gt; PS12PalOle + Cho</data>
   <data key="d6">1.831755664483126e-06</data>
@@ -1844,7 +1844,7 @@
   <data key="d10">R116path</data>
   <data key="d11">PE pre</data>
 </edge>
-<edge source="Ser" target="Cho" id="208">
+<edge source="Ser" target="Cho" id="196">
   <data key="d4">R120</data>
   <data key="d5">PC12PalPal + Ser -&gt; PS12PalPal + Cho</data>
   <data key="d6">1.865789080568447e-06</data>
@@ -1894,7 +1894,7 @@
   <data key="d10">R24path</data>
   <data key="d11">LPC_to_PC</data>
 </edge>
-<edge source="PE12PalOle" target="Sink" id="118">
+<edge source="PE12PalOle" target="Sink" id="106">
   <data key="d4">R53</data>
   <data key="d5">PE12PalOle -&gt; Sink</data>
   <data key="d6">99.99999999999994</data>
@@ -1904,7 +1904,7 @@
   <data key="d10">R53path</data>
   <data key="d11">Sphingo</data>
 </edge>
-<edge source="PE12PalOle" target="PE00PalOle.mix" id="214">
+<edge source="PE12PalOle" target="PE00PalOle.mix" id="202">
   <data key="d4">R125</data>
   <data key="d5">0*PE12PalOle -&gt; PE00PalOle.mix</data>
   <data key="d6">2.958729975827822e-07</data>
@@ -1934,7 +1934,7 @@
   <data key="d10">R16path</data>
   <data key="d11">DG_to_PC</data>
 </edge>
-<edge source="PS12PalOle" target="Sink" id="119">
+<edge source="PS12PalOle" target="Sink" id="107">
   <data key="d4">R54</data>
   <data key="d5">PS12PalOle -&gt; Sink</data>
   <data key="d6">100.0000000000001</data>
@@ -1944,7 +1944,7 @@
   <data key="d10">R54path</data>
   <data key="d11">Sphingo</data>
 </edge>
-<edge source="PS12PalOle" target="PS00PalOle.mix" id="218">
+<edge source="PS12PalOle" target="PS00PalOle.mix" id="206">
   <data key="d4">R129</data>
   <data key="d5">0*PS12PalOle -&gt; PS00PalOle.mix</data>
   <data key="d6">0.0001074442798504145</data>
@@ -1994,7 +1994,7 @@
   <data key="d10">R25path</data>
   <data key="d11">LPC_to_PC</data>
 </edge>
-<edge source="PE12OlePal" target="Sink" id="122">
+<edge source="PE12OlePal" target="Sink" id="110">
   <data key="d4">R57</data>
   <data key="d5">PE12OlePal -&gt; Sink</data>
   <data key="d6">100.0</data>
@@ -2004,7 +2004,7 @@
   <data key="d10">R57path</data>
   <data key="d11">Sphingo</data>
 </edge>
-<edge source="PE12OlePal" target="PE00PalOle.mix" id="215">
+<edge source="PE12OlePal" target="PE00PalOle.mix" id="203">
   <data key="d4">R126</data>
   <data key="d5">0*PE12OlePal -&gt; PE00PalOle.mix</data>
   <data key="d6">1e-07</data>
@@ -2034,7 +2034,7 @@
   <data key="d10">R17path</data>
   <data key="d11">DG_to_PC</data>
 </edge>
-<edge source="PS12OlePal" target="Sink" id="123">
+<edge source="PS12OlePal" target="Sink" id="111">
   <data key="d4">R58</data>
   <data key="d5">PS12OlePal -&gt; Sink</data>
   <data key="d6">99.99999999999984</data>
@@ -2044,7 +2044,7 @@
   <data key="d10">R58path</data>
   <data key="d11">Sphingo</data>
 </edge>
-<edge source="PS12OlePal" target="PS00PalOle.mix" id="219">
+<edge source="PS12OlePal" target="PS00PalOle.mix" id="207">
   <data key="d4">R130</data>
   <data key="d5">0*PS12OlePal -&gt; PS00PalOle.mix</data>
   <data key="d6">0.006887996200126449</data>
@@ -2094,7 +2094,7 @@
   <data key="d10">R26path</data>
   <data key="d11">LPC_to_PC</data>
 </edge>
-<edge source="PE12OleOle" target="Sink" id="126">
+<edge source="PE12OleOle" target="Sink" id="114">
   <data key="d4">R61</data>
   <data key="d5">PE12OleOle -&gt; Sink</data>
   <data key="d6">99.9999999999999</data>
@@ -2104,7 +2104,7 @@
   <data key="d10">R61path</data>
   <data key="d11">tracer</data>
 </edge>
-<edge source="PE12OleOle" target="PE00OleOle.mix" id="213">
+<edge source="PE12OleOle" target="PE00OleOle.mix" id="201">
   <data key="d4">R124</data>
   <data key="d5">0*PE12OleOle -&gt; PE00OleOle.mix</data>
   <data key="d6">0.004061967424794302</data>
@@ -2134,7 +2134,7 @@
   <data key="d10">R18path</data>
   <data key="d11">DG_to_PC</data>
 </edge>
-<edge source="PS12OleOle" target="Sink" id="127">
+<edge source="PS12OleOle" target="Sink" id="115">
   <data key="d4">R62</data>
   <data key="d5">PS12OleOle -&gt; Sink</data>
   <data key="d6">99.99999999999986</data>
@@ -2144,7 +2144,7 @@
   <data key="d10">R62path</data>
   <data key="d11">tracer</data>
 </edge>
-<edge source="PS12OleOle" target="PS00OleOle.mix" id="217">
+<edge source="PS12OleOle" target="PS00OleOle.mix" id="205">
   <data key="d4">R128</data>
   <data key="d5">0*PS12OleOle -&gt; PS00OleOle.mix</data>
   <data key="d6">1.000000000000024e-07</data>
@@ -2214,7 +2214,7 @@
   <data key="d10">R28path</data>
   <data key="d11">PC_to_PS</data>
 </edge>
-<edge source="LPE1Pal" target="LPE0Pal.mix" id="172">
+<edge source="LPE1Pal" target="LPE0Pal.mix" id="160">
   <data key="d4">R99</data>
   <data key="d5">0*LPE1Pal -&gt; LPE0Pal.mix</data>
   <data key="d6">0.007406651897125187</data>
@@ -2244,7 +2244,7 @@
   <data key="d10">R30path</data>
   <data key="d11">PC_to_PS</data>
 </edge>
-<edge source="LPE1Ole" target="LPE0Ole.mix" id="171">
+<edge source="LPE1Ole" target="LPE0Ole.mix" id="159">
   <data key="d4">R98</data>
   <data key="d5">0*LPE1Ole -&gt; LPE0Ole.mix</data>
   <data key="d6">1.000000000002735e-07</data>
@@ -2254,7 +2254,7 @@
   <data key="d10">R98path</data>
   <data key="d11">PE pre</data>
 </edge>
-<edge source="COO" target="Oac.m" id="240">
+<edge source="COO" target="Oac.m" id="226">
   <data key="d4">R145</data>
   <data key="d5">Pyr.m + COO -&gt; Oac.m</data>
   <data key="d6">0.0008128185815294842</data>
@@ -2264,7 +2264,7 @@
   <data key="d10">R145path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="COO" target="Cit.c" id="279">
+<edge source="COO" target="Cit.c" id="251">
   <data key="d4">R158</data>
   <data key="d5">aKG.c + COO -&gt; Cit.c</data>
   <data key="d6">1.233169430792103e-06</data>
@@ -2274,7 +2274,7 @@
   <data key="d10">R158path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="COO" target="Bicarb.sink" id="285">
+<edge source="COO" target="Bicarb.sink" id="257">
   <data key="d4">R163</data>
   <data key="d5">COO -&gt; Bicarb.sink</data>
   <data key="d6">15.27409717746818</data>
@@ -2355,16 +2355,6 @@
   <data key="d11">PS_to_LPS</data>
 </edge>
 <edge source="CER2Pal" target="HEXCER2Pal" id="81">
-  <data key="d4">R37 net</data>
-  <data key="d5">CER2Pal + Glc &lt;-&gt; HEXCER2Pal</data>
-  <data key="d6">15.27407886244464</data>
-  <data key="d7">0.1036261681024465</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R37 netpath</data>
-  <data key="d11">PS_to_LPS</data>
-</edge>
-<edge source="CER2Pal" target="HEXCER2Pal" id="85">
   <data key="d4">R37 exch</data>
   <data key="d5">CER2Pal + Glc &lt;-&gt; HEXCER2Pal</data>
   <data key="d6">422.3037108332148</data>
@@ -2375,16 +2365,6 @@
   <data key="d11">PS_to_LPS</data>
 </edge>
 <edge source="HEXCER2Pal" target="CER2Pal" id="83">
-  <data key="d4">R37 net</data>
-  <data key="d5">CER2Pal + Glc &lt;-&gt; HEXCER2Pal</data>
-  <data key="d6">15.27407886244464</data>
-  <data key="d7">0.1036261681024465</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R37 netpath</data>
-  <data key="d11">PS_to_LPS</data>
-</edge>
-<edge source="HEXCER2Pal" target="CER2Pal" id="87">
   <data key="d4">R37 exch</data>
   <data key="d5">CER2Pal + Glc &lt;-&gt; HEXCER2Pal</data>
   <data key="d6">422.3037108332148</data>
@@ -2395,16 +2375,6 @@
   <data key="d11">PS_to_LPS</data>
 </edge>
 <edge source="HEXCER2Pal" target="Glc" id="84">
-  <data key="d4">R37 net</data>
-  <data key="d5">CER2Pal + Glc &lt;-&gt; HEXCER2Pal</data>
-  <data key="d6">15.27407886244464</data>
-  <data key="d7">0.1036261681024465</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R37 netpath</data>
-  <data key="d11">PS_to_LPS</data>
-</edge>
-<edge source="HEXCER2Pal" target="Glc" id="88">
   <data key="d4">R37 exch</data>
   <data key="d5">CER2Pal + Glc &lt;-&gt; HEXCER2Pal</data>
   <data key="d6">422.3037108332148</data>
@@ -2414,17 +2384,7 @@
   <data key="d10">R37 exchpath</data>
   <data key="d11">PS_to_LPS</data>
 </edge>
-<edge source="HEXCER2Pal" target="HEXXCER2Pal" id="89">
-  <data key="d4">R38 net</data>
-  <data key="d5">HEXCER2Pal + Glc &lt;-&gt; HEXXCER2Pal</data>
-  <data key="d6">48.24386903170645</data>
-  <data key="d7">0.08927056480492239</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R38 netpath</data>
-  <data key="d11">LPS_to_PS</data>
-</edge>
-<edge source="HEXCER2Pal" target="HEXXCER2Pal" id="93">
+<edge source="HEXCER2Pal" target="HEXXCER2Pal" id="85">
   <data key="d4">R38 exch</data>
   <data key="d5">HEXCER2Pal + Glc &lt;-&gt; HEXXCER2Pal</data>
   <data key="d6">1.000035467768612e-07</data>
@@ -2434,7 +2394,7 @@
   <data key="d10">R38 exchpath</data>
   <data key="d11">LPS_to_PS</data>
 </edge>
-<edge source="HEXCER2Pal" target="Sink" id="131">
+<edge source="HEXCER2Pal" target="Sink" id="119">
   <data key="d4">R66</data>
   <data key="d5">HEXCER2Pal -&gt; Sink</data>
   <data key="d6">100.0000000000001</data>
@@ -2444,7 +2404,7 @@
   <data key="d10">R66path</data>
   <data key="d11">tracer</data>
 </edge>
-<edge source="HEXCER2Pal" target="HEXCER2Pal.mix" id="167">
+<edge source="HEXCER2Pal" target="HEXCER2Pal.mix" id="155">
   <data key="d4">R94</data>
   <data key="d5">0*HEXCER2Pal -&gt; HEXCER2Pal.mix</data>
   <data key="d6">9.99999999998398e-08</data>
@@ -2455,16 +2415,6 @@
   <data key="d11">PC to Sink</data>
 </edge>
 <edge source="Glc" target="HEXCER2Pal" id="82">
-  <data key="d4">R37 net</data>
-  <data key="d5">CER2Pal + Glc &lt;-&gt; HEXCER2Pal</data>
-  <data key="d6">15.27407886244464</data>
-  <data key="d7">0.1036261681024465</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R37 netpath</data>
-  <data key="d11">PS_to_LPS</data>
-</edge>
-<edge source="Glc" target="HEXCER2Pal" id="86">
   <data key="d4">R37 exch</data>
   <data key="d5">CER2Pal + Glc &lt;-&gt; HEXCER2Pal</data>
   <data key="d6">422.3037108332148</data>
@@ -2474,17 +2424,7 @@
   <data key="d10">R37 exchpath</data>
   <data key="d11">PS_to_LPS</data>
 </edge>
-<edge source="Glc" target="HEXXCER2Pal" id="90">
-  <data key="d4">R38 net</data>
-  <data key="d5">HEXCER2Pal + Glc &lt;-&gt; HEXXCER2Pal</data>
-  <data key="d6">48.24386903170645</data>
-  <data key="d7">0.08927056480492239</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R38 netpath</data>
-  <data key="d11">LPS_to_PS</data>
-</edge>
-<edge source="Glc" target="HEXXCER2Pal" id="94">
+<edge source="Glc" target="HEXXCER2Pal" id="86">
   <data key="d4">R38 exch</data>
   <data key="d5">HEXCER2Pal + Glc &lt;-&gt; HEXXCER2Pal</data>
   <data key="d6">1.000035467768612e-07</data>
@@ -2494,17 +2434,7 @@
   <data key="d10">R38 exchpath</data>
   <data key="d11">LPS_to_PS</data>
 </edge>
-<edge source="Glc" target="HEXXXCER2Pal" id="98">
-  <data key="d4">R39 net</data>
-  <data key="d5">HEXXCER2Pal + Glc &lt;-&gt; HEXXXCER2Pal</data>
-  <data key="d6">48.24386903170633</data>
-  <data key="d7">0.08927056480492239</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R39 netpath</data>
-  <data key="d11">LPS_to_PS</data>
-</edge>
-<edge source="Glc" target="HEXXXCER2Pal" id="102">
+<edge source="Glc" target="HEXXXCER2Pal" id="90">
   <data key="d4">R39 exch</data>
   <data key="d5">HEXXCER2Pal + Glc &lt;-&gt; HEXXXCER2Pal</data>
   <data key="d6">1.000000011686097e-07</data>
@@ -2514,7 +2444,7 @@
   <data key="d10">R39 exchpath</data>
   <data key="d11">LPS_to_PS</data>
 </edge>
-<edge source="Glc" target="Glc.out" id="113">
+<edge source="Glc" target="Glc.out" id="101">
   <data key="d4">R48</data>
   <data key="d5">Glc -&gt; Glc.out</data>
   <data key="d6">9.999996919418663e-08</data>
@@ -2524,7 +2454,7 @@
   <data key="d10">R48path</data>
   <data key="d11">LPE_to_PE</data>
 </edge>
-<edge source="Glc" target="Sink" id="223">
+<edge source="Glc" target="Sink" id="211">
   <data key="d4">R134</data>
   <data key="d5">Glc -&gt; Sink</data>
   <data key="d6">3032.960338554126</data>
@@ -2534,7 +2464,7 @@
   <data key="d10">R134path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Glc" target="DHAP" id="224">
+<edge source="Glc" target="DHAP" id="212">
   <data key="d4">R135</data>
   <data key="d5">Glc -&gt; DHAP + GAP</data>
   <data key="d6">175.454662450432</data>
@@ -2544,7 +2474,7 @@
   <data key="d10">R135path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Glc" target="GAP" id="225">
+<edge source="Glc" target="GAP" id="213">
   <data key="d4">R135</data>
   <data key="d5">Glc -&gt; DHAP + GAP</data>
   <data key="d6">175.454662450432</data>
@@ -2554,17 +2484,7 @@
   <data key="d10">R135path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="HEXXCER2Pal" target="HEXCER2Pal" id="91">
-  <data key="d4">R38 net</data>
-  <data key="d5">HEXCER2Pal + Glc &lt;-&gt; HEXXCER2Pal</data>
-  <data key="d6">48.24386903170645</data>
-  <data key="d7">0.08927056480492239</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R38 netpath</data>
-  <data key="d11">LPS_to_PS</data>
-</edge>
-<edge source="HEXXCER2Pal" target="HEXCER2Pal" id="95">
+<edge source="HEXXCER2Pal" target="HEXCER2Pal" id="87">
   <data key="d4">R38 exch</data>
   <data key="d5">HEXCER2Pal + Glc &lt;-&gt; HEXXCER2Pal</data>
   <data key="d6">1.000035467768612e-07</data>
@@ -2574,17 +2494,7 @@
   <data key="d10">R38 exchpath</data>
   <data key="d11">LPS_to_PS</data>
 </edge>
-<edge source="HEXXCER2Pal" target="Glc" id="92">
-  <data key="d4">R38 net</data>
-  <data key="d5">HEXCER2Pal + Glc &lt;-&gt; HEXXCER2Pal</data>
-  <data key="d6">48.24386903170645</data>
-  <data key="d7">0.08927056480492239</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R38 netpath</data>
-  <data key="d11">LPS_to_PS</data>
-</edge>
-<edge source="HEXXCER2Pal" target="Glc" id="96">
+<edge source="HEXXCER2Pal" target="Glc" id="88">
   <data key="d4">R38 exch</data>
   <data key="d5">HEXCER2Pal + Glc &lt;-&gt; HEXXCER2Pal</data>
   <data key="d6">1.000035467768612e-07</data>
@@ -2594,17 +2504,7 @@
   <data key="d10">R38 exchpath</data>
   <data key="d11">LPS_to_PS</data>
 </edge>
-<edge source="HEXXCER2Pal" target="HEXXXCER2Pal" id="97">
-  <data key="d4">R39 net</data>
-  <data key="d5">HEXXCER2Pal + Glc &lt;-&gt; HEXXXCER2Pal</data>
-  <data key="d6">48.24386903170633</data>
-  <data key="d7">0.08927056480492239</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R39 netpath</data>
-  <data key="d11">LPS_to_PS</data>
-</edge>
-<edge source="HEXXCER2Pal" target="HEXXXCER2Pal" id="101">
+<edge source="HEXXCER2Pal" target="HEXXXCER2Pal" id="89">
   <data key="d4">R39 exch</data>
   <data key="d5">HEXXCER2Pal + Glc &lt;-&gt; HEXXXCER2Pal</data>
   <data key="d6">1.000000011686097e-07</data>
@@ -2614,17 +2514,7 @@
   <data key="d10">R39 exchpath</data>
   <data key="d11">LPS_to_PS</data>
 </edge>
-<edge source="HEXXXCER2Pal" target="HEXXCER2Pal" id="99">
-  <data key="d4">R39 net</data>
-  <data key="d5">HEXXCER2Pal + Glc &lt;-&gt; HEXXXCER2Pal</data>
-  <data key="d6">48.24386903170633</data>
-  <data key="d7">0.08927056480492239</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R39 netpath</data>
-  <data key="d11">LPS_to_PS</data>
-</edge>
-<edge source="HEXXXCER2Pal" target="HEXXCER2Pal" id="103">
+<edge source="HEXXXCER2Pal" target="HEXXCER2Pal" id="91">
   <data key="d4">R39 exch</data>
   <data key="d5">HEXXCER2Pal + Glc &lt;-&gt; HEXXXCER2Pal</data>
   <data key="d6">1.000000011686097e-07</data>
@@ -2634,17 +2524,7 @@
   <data key="d10">R39 exchpath</data>
   <data key="d11">LPS_to_PS</data>
 </edge>
-<edge source="HEXXXCER2Pal" target="Glc" id="100">
-  <data key="d4">R39 net</data>
-  <data key="d5">HEXXCER2Pal + Glc &lt;-&gt; HEXXXCER2Pal</data>
-  <data key="d6">48.24386903170633</data>
-  <data key="d7">0.08927056480492239</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R39 netpath</data>
-  <data key="d11">LPS_to_PS</data>
-</edge>
-<edge source="HEXXXCER2Pal" target="Glc" id="104">
+<edge source="HEXXXCER2Pal" target="Glc" id="92">
   <data key="d4">R39 exch</data>
   <data key="d5">HEXXCER2Pal + Glc &lt;-&gt; HEXXXCER2Pal</data>
   <data key="d6">1.000000011686097e-07</data>
@@ -2654,7 +2534,7 @@
   <data key="d10">R39 exchpath</data>
   <data key="d11">LPS_to_PS</data>
 </edge>
-<edge source="HEXXXCER2Pal" target="Sink" id="133">
+<edge source="HEXXXCER2Pal" target="Sink" id="121">
   <data key="d4">R68</data>
   <data key="d5">HEXXXCER2Pal -&gt; Sink</data>
   <data key="d6">100.0000000000001</data>
@@ -2664,7 +2544,7 @@
   <data key="d10">R68path</data>
   <data key="d11">tracer</data>
 </edge>
-<edge source="HEXXXCER2Pal" target="HEXXXCER2Pal.mix" id="168">
+<edge source="HEXXXCER2Pal" target="HEXXXCER2Pal.mix" id="156">
   <data key="d4">R95</data>
   <data key="d5">0*HEXXXCER2Pal -&gt; HEXXXCER2Pal.mix</data>
   <data key="d6">9.999999999994822e-08</data>
@@ -2674,7 +2554,7 @@
   <data key="d10">R95path</data>
   <data key="d11">PE to Sink</data>
 </edge>
-<edge source="Pal.lab" target="Pal" id="105">
+<edge source="Pal.lab" target="Pal" id="93">
   <data key="d4">R40</data>
   <data key="d5">Pal.lab -&gt; Pal</data>
   <data key="d6">1.000000082740371e-07</data>
@@ -2684,7 +2564,7 @@
   <data key="d10">R40path</data>
   <data key="d11">DG_to_PE</data>
 </edge>
-<edge source="Pal.pre" target="Pal" id="106">
+<edge source="Pal.pre" target="Pal" id="94">
   <data key="d4">R41</data>
   <data key="d5">Pal.pre -&gt; Pal</data>
   <data key="d6">1.000000082740371e-07</data>
@@ -2694,7 +2574,7 @@
   <data key="d10">R41path</data>
   <data key="d11">DG_to_PE</data>
 </edge>
-<edge source="Ole.lab" target="Ole" id="108">
+<edge source="Ole.lab" target="Ole" id="96">
   <data key="d4">R43</data>
   <data key="d5">Ole.lab -&gt; Ole</data>
   <data key="d6">9.99999993922529e-08</data>
@@ -2704,7 +2584,7 @@
   <data key="d10">R43path</data>
   <data key="d11">DG_to_PE</data>
 </edge>
-<edge source="Ole.pre" target="Ole" id="109">
+<edge source="Ole.pre" target="Ole" id="97">
   <data key="d4">R44</data>
   <data key="d5">Ole.pre -&gt; Ole</data>
   <data key="d6">9.987305915615252e-08</data>
@@ -2714,7 +2594,7 @@
   <data key="d10">R44path</data>
   <data key="d11">PE_to_LPE</data>
 </edge>
-<edge source="Glc.lab" target="Glc" id="111">
+<edge source="Glc.lab" target="Glc" id="99">
   <data key="d4">R46</data>
   <data key="d5">Glc.lab -&gt; Glc</data>
   <data key="d6">1.00000086433738e-07</data>
@@ -2724,7 +2604,7 @@
   <data key="d10">R46path</data>
   <data key="d11">PE_to_LPE</data>
 </edge>
-<edge source="Glc.lab" target="Glc" id="221">
+<edge source="Glc.lab" target="Glc" id="209">
   <data key="d4">R132</data>
   <data key="d5">Glc.lab -&gt; Glc</data>
   <data key="d6">3200.908655186119</data>
@@ -2734,7 +2614,7 @@
   <data key="d10">R132path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Glc.pre" target="Glc" id="112">
+<edge source="Glc.pre" target="Glc" id="100">
   <data key="d4">R47</data>
   <data key="d5">Glc.pre -&gt; Glc</data>
   <data key="d6">1.000000011686097e-07</data>
@@ -2744,7 +2624,7 @@
   <data key="d10">R47path</data>
   <data key="d11">PE_to_LPE</data>
 </edge>
-<edge source="PE12PalPal.pre" target="PE12PalPal" id="116">
+<edge source="PE12PalPal.pre" target="PE12PalPal" id="104">
   <data key="d4">R51</data>
   <data key="d5">PE12PalPal.pre -&gt; PE12PalPal</data>
   <data key="d6">99.67874489499208</data>
@@ -2754,7 +2634,7 @@
   <data key="d10">R51path</data>
   <data key="d11">LPE_to_PE</data>
 </edge>
-<edge source="PS12PalPal.pre" target="PS12PalPal" id="117">
+<edge source="PS12PalPal.pre" target="PS12PalPal" id="105">
   <data key="d4">R52</data>
   <data key="d5">PS12PalPal.pre -&gt; PS12PalPal</data>
   <data key="d6">1.696439042575548e-06</data>
@@ -2764,7 +2644,7 @@
   <data key="d10">R52path</data>
   <data key="d11">Sphingo</data>
 </edge>
-<edge source="PE12PalOle.pre" target="PE12PalOle" id="120">
+<edge source="PE12PalOle.pre" target="PE12PalOle" id="108">
   <data key="d4">R55</data>
   <data key="d5">PE12PalOle.pre -&gt; PE12PalOle</data>
   <data key="d6">239.0543170906828</data>
@@ -2774,7 +2654,7 @@
   <data key="d10">R55path</data>
   <data key="d11">Sphingo</data>
 </edge>
-<edge source="PS12PalOle.pre" target="PS12PalOle" id="121">
+<edge source="PS12PalOle.pre" target="PS12PalOle" id="109">
   <data key="d4">R56</data>
   <data key="d5">PS12PalOle.pre -&gt; PS12PalOle</data>
   <data key="d6">49.09068504236905</data>
@@ -2784,7 +2664,7 @@
   <data key="d10">R56path</data>
   <data key="d11">Sphingo</data>
 </edge>
-<edge source="PE12OlePal.pre" target="PE12OlePal" id="124">
+<edge source="PE12OlePal.pre" target="PE12OlePal" id="112">
   <data key="d4">R59</data>
   <data key="d5">PE12OlePal.pre -&gt; PE12OlePal</data>
   <data key="d6">9.999997452325715e-08</data>
@@ -2794,7 +2674,7 @@
   <data key="d10">R59path</data>
   <data key="d11">Sphingo</data>
 </edge>
-<edge source="PS12OlePal.pre" target="PS12OlePal" id="125">
+<edge source="PS12OlePal.pre" target="PS12OlePal" id="113">
   <data key="d4">R60</data>
   <data key="d5">PS12OlePal.pre -&gt; PS12OlePal</data>
   <data key="d6">1.730217341844309e-06</data>
@@ -2804,7 +2684,7 @@
   <data key="d10">R60path</data>
   <data key="d11">Sphingo</data>
 </edge>
-<edge source="PE12OleOle.pre" target="PE12OleOle" id="128">
+<edge source="PE12OleOle.pre" target="PE12OleOle" id="116">
   <data key="d4">R63</data>
   <data key="d5">PE12OleOle.pre -&gt; PE12OleOle</data>
   <data key="d6">61.2669379143253</data>
@@ -2814,7 +2694,7 @@
   <data key="d10">R63path</data>
   <data key="d11">tracer</data>
 </edge>
-<edge source="PS12OleOle.pre" target="PS12OleOle" id="129">
+<edge source="PS12OleOle.pre" target="PS12OleOle" id="117">
   <data key="d4">R64</data>
   <data key="d5">PS12OleOle.pre -&gt; PS12OleOle</data>
   <data key="d6">1.704829713844447e-06</data>
@@ -2824,7 +2704,7 @@
   <data key="d10">R64path</data>
   <data key="d11">tracer</data>
 </edge>
-<edge source="HEXCER2Pal.pre" target="HEXCER2Pal" id="130">
+<edge source="HEXCER2Pal.pre" target="HEXCER2Pal" id="118">
   <data key="d4">R65</data>
   <data key="d5">HEXCER2Pal.pre -&gt; HEXCER2Pal</data>
   <data key="d6">132.9697901692619</data>
@@ -2834,7 +2714,7 @@
   <data key="d10">R65path</data>
   <data key="d11">tracer</data>
 </edge>
-<edge source="HEXXXCER2Pal.pre" target="HEXXXCER2Pal" id="132">
+<edge source="HEXXXCER2Pal.pre" target="HEXXXCER2Pal" id="120">
   <data key="d4">R67</data>
   <data key="d5">HEXXXCER2Pal.pre -&gt; HEXXXCER2Pal</data>
   <data key="d6">51.75613096829386</data>
@@ -2844,7 +2724,7 @@
   <data key="d10">R67path</data>
   <data key="d11">tracer</data>
 </edge>
-<edge source="Gly" target="Gly.out" id="134">
+<edge source="Gly" target="Gly.out" id="122">
   <data key="d4">R69</data>
   <data key="d5">Gly -&gt; Gly.out</data>
   <data key="d6">0.0002882902917615837</data>
@@ -2854,7 +2734,7 @@
   <data key="d10">R69path</data>
   <data key="d11">tracer</data>
 </edge>
-<edge source="DG12OleOle" target="DG00OleOle.mix" id="135">
+<edge source="DG12OleOle" target="DG00OleOle.mix" id="123">
   <data key="d4">R70</data>
   <data key="d5">0*DG12OleOle -&gt; DG00OleOle.mix</data>
   <data key="d6">0.0007316258813863108</data>
@@ -2864,7 +2744,7 @@
   <data key="d10">R70path</data>
   <data key="d11">DG mix</data>
 </edge>
-<edge source="DG12OleOle" target="PC12OleOle" id="147">
+<edge source="DG12OleOle" target="PC12OleOle" id="135">
   <data key="d4">R82</data>
   <data key="d5">DG12OleOle + Cho -&gt; PC12OleOle</data>
   <data key="d6">65.40894893512679</data>
@@ -2874,7 +2754,7 @@
   <data key="d10">R82path</data>
   <data key="d11">PC mix</data>
 </edge>
-<edge source="DG12OleOle" target="PE12OleOle" id="149">
+<edge source="DG12OleOle" target="PE12OleOle" id="137">
   <data key="d4">R83</data>
   <data key="d5">DG12OleOle + Eta -&gt; PE12OleOle</data>
   <data key="d6">9.999991945619513e-08</data>
@@ -2884,7 +2764,7 @@
   <data key="d10">R83path</data>
   <data key="d11">PE mix</data>
 </edge>
-<edge source="DG12OleOle" target="PA12OleOle" id="151">
+<edge source="DG12OleOle" target="PA12OleOle" id="139">
   <data key="d4">R84</data>
   <data key="d5">DG12OleOle -&gt; PA12OleOle</data>
   <data key="d6">0.001595497226851705</data>
@@ -2894,7 +2774,7 @@
   <data key="d10">R84path</data>
   <data key="d11">PS mix</data>
 </edge>
-<edge source="DG13OleOle" target="DG00OleOle.mix" id="136">
+<edge source="DG13OleOle" target="DG00OleOle.mix" id="124">
   <data key="d4">R71</data>
   <data key="d5">0*DG13OleOle -&gt; DG00OleOle.mix</data>
   <data key="d6">0.0001235182626686537</data>
@@ -2904,7 +2784,7 @@
   <data key="d10">R71path</data>
   <data key="d11">DG mix</data>
 </edge>
-<edge source="DG23OleOle" target="DG00OleOle.mix" id="137">
+<edge source="DG23OleOle" target="DG00OleOle.mix" id="125">
   <data key="d4">R72</data>
   <data key="d5">0*DG23OleOle -&gt; DG00OleOle.mix</data>
   <data key="d6">0.0001766747145364178</data>
@@ -2914,7 +2794,7 @@
   <data key="d10">R72path</data>
   <data key="d11">DG mix</data>
 </edge>
-<edge source="DG12PalOle" target="DG00PalOle.mix" id="138">
+<edge source="DG12PalOle" target="DG00PalOle.mix" id="126">
   <data key="d4">R73</data>
   <data key="d5">0*DG12PalOle -&gt; DG00PalOle.mix</data>
   <data key="d6">8492.268858400761</data>
@@ -2924,7 +2804,7 @@
   <data key="d10">R73path</data>
   <data key="d11">DG mix</data>
 </edge>
-<edge source="DG12PalOle" target="PC12PalOle" id="157">
+<edge source="DG12PalOle" target="PC12PalOle" id="145">
   <data key="d4">R88</data>
   <data key="d5">DG12PalOle + Cho -&gt; PC12PalOle</data>
   <data key="d6">134.5910474350218</data>
@@ -2934,7 +2814,7 @@
   <data key="d10">R88path</data>
   <data key="d11">PC pre</data>
 </edge>
-<edge source="DG12PalOle" target="PE12PalOle" id="159">
+<edge source="DG12PalOle" target="PE12PalOle" id="147">
   <data key="d4">R89</data>
   <data key="d5">DG12PalOle + Eta -&gt; PE12PalOle</data>
   <data key="d6">1.900564713164243e-06</data>
@@ -2944,7 +2824,7 @@
   <data key="d10">R89path</data>
   <data key="d11">PE pre</data>
 </edge>
-<edge source="DG12PalOle" target="PA12PalOle" id="161">
+<edge source="DG12PalOle" target="PA12PalOle" id="149">
   <data key="d4">R90</data>
   <data key="d5">DG12PalOle -&gt; PA12PalOle</data>
   <data key="d6">1.000023353014967e-07</data>
@@ -2954,7 +2834,7 @@
   <data key="d10">R90path</data>
   <data key="d11">PS pre</data>
 </edge>
-<edge source="DG13PalOle" target="DG00PalOle.mix" id="139">
+<edge source="DG13PalOle" target="DG00PalOle.mix" id="127">
   <data key="d4">R74</data>
   <data key="d5">0*DG13PalOle -&gt; DG00PalOle.mix</data>
   <data key="d6">1.000000000002735e-07</data>
@@ -2964,7 +2844,7 @@
   <data key="d10">R74path</data>
   <data key="d11">DG mix</data>
 </edge>
-<edge source="DG23PalOle" target="DG00PalOle.mix" id="140">
+<edge source="DG23PalOle" target="DG00PalOle.mix" id="128">
   <data key="d4">R75</data>
   <data key="d5">0*DG23PalOle -&gt; DG00PalOle.mix</data>
   <data key="d6">9.99999999998398e-08</data>
@@ -2974,7 +2854,7 @@
   <data key="d10">R75path</data>
   <data key="d11">DG mix</data>
 </edge>
-<edge source="DG12OlePal" target="DG00PalOle.mix" id="141">
+<edge source="DG12OlePal" target="DG00PalOle.mix" id="129">
   <data key="d4">R76</data>
   <data key="d5">0*DG12OlePal -&gt; DG00PalOle.mix</data>
   <data key="d6">1.000000000002735e-07</data>
@@ -2984,7 +2864,7 @@
   <data key="d10">R76path</data>
   <data key="d11">DG mix</data>
 </edge>
-<edge source="DG12OlePal" target="PC12OlePal" id="152">
+<edge source="DG12OlePal" target="PC12OlePal" id="140">
   <data key="d4">R85</data>
   <data key="d5">DG12OlePal + Cho -&gt; PC12OlePal</data>
   <data key="d6">1.983290307094876e-06</data>
@@ -2994,7 +2874,7 @@
   <data key="d10">R85path</data>
   <data key="d11">PC to Sink</data>
 </edge>
-<edge source="DG12OlePal" target="PE12OlePal" id="154">
+<edge source="DG12OlePal" target="PE12OlePal" id="142">
   <data key="d4">R86</data>
   <data key="d5">DG12OlePal + Eta -&gt; PE12OlePal</data>
   <data key="d6">138.733061896951</data>
@@ -3004,7 +2884,7 @@
   <data key="d10">R86path</data>
   <data key="d11">PE to Sink</data>
 </edge>
-<edge source="DG12OlePal" target="PA12OlePal" id="156">
+<edge source="DG12OlePal" target="PA12OlePal" id="144">
   <data key="d4">R87</data>
   <data key="d5">DG12OlePal -&gt; PA12OlePal</data>
   <data key="d6">9.999843797459107e-08</data>
@@ -3014,7 +2894,7 @@
   <data key="d10">R87path</data>
   <data key="d11">PS to Sink</data>
 </edge>
-<edge source="DG13OlePal" target="DG00PalOle.mix" id="142">
+<edge source="DG13OlePal" target="DG00PalOle.mix" id="130">
   <data key="d4">R77</data>
   <data key="d5">0*DG13OlePal -&gt; DG00PalOle.mix</data>
   <data key="d6">9.999999994736442e-08</data>
@@ -3024,7 +2904,7 @@
   <data key="d10">R77path</data>
   <data key="d11">DG mix</data>
 </edge>
-<edge source="DG23OlePal" target="DG00PalOle.mix" id="143">
+<edge source="DG23OlePal" target="DG00PalOle.mix" id="131">
   <data key="d4">R78</data>
   <data key="d5">0*DG23OlePal -&gt; DG00PalOle.mix</data>
   <data key="d6">1087.758743503293</data>
@@ -3034,7 +2914,7 @@
   <data key="d10">R78path</data>
   <data key="d11">DG mix</data>
 </edge>
-<edge source="DG12PalPal" target="DG00PalPal.mix" id="144">
+<edge source="DG12PalPal" target="DG00PalPal.mix" id="132">
   <data key="d4">R79</data>
   <data key="d5">0*DG12PalPal -&gt; DG00PalPal.mix</data>
   <data key="d6">0.002463533804238063</data>
@@ -3044,7 +2924,7 @@
   <data key="d10">R79path</data>
   <data key="d11">DG mix</data>
 </edge>
-<edge source="DG12PalPal" target="PC12PalPal" id="162">
+<edge source="DG12PalPal" target="PC12PalPal" id="150">
   <data key="d4">R91</data>
   <data key="d5">DG12PalPal + Cho -&gt; PC12PalPal</data>
   <data key="d6">1.897783072024595e-06</data>
@@ -3054,7 +2934,7 @@
   <data key="d10">R91path</data>
   <data key="d11">PC mix</data>
 </edge>
-<edge source="DG12PalPal" target="PE12PalPal" id="164">
+<edge source="DG12PalPal" target="PE12PalPal" id="152">
   <data key="d4">R92</data>
   <data key="d5">DG12PalPal + Eta -&gt; PE12PalPal</data>
   <data key="d6">12.17624567740818</data>
@@ -3064,7 +2944,7 @@
   <data key="d10">R92path</data>
   <data key="d11">PE mix</data>
 </edge>
-<edge source="DG12PalPal" target="PA12PalPal" id="166">
+<edge source="DG12PalPal" target="PA12PalPal" id="154">
   <data key="d4">R93</data>
   <data key="d5">DG12PalPal -&gt; PA12PalPal</data>
   <data key="d6">2.577769266487451e-06</data>
@@ -3074,7 +2954,7 @@
   <data key="d10">R93path</data>
   <data key="d11">PS mix</data>
 </edge>
-<edge source="DG13PalPal" target="DG00PalPal.mix" id="145">
+<edge source="DG13PalPal" target="DG00PalPal.mix" id="133">
   <data key="d4">R80</data>
   <data key="d5">0*DG13PalPal -&gt; DG00PalPal.mix</data>
   <data key="d6">0.000125635762077397</data>
@@ -3084,7 +2964,7 @@
   <data key="d10">R80path</data>
   <data key="d11">DG mix</data>
 </edge>
-<edge source="DG23PalPal" target="DG00PalPal.mix" id="146">
+<edge source="DG23PalPal" target="DG00PalPal.mix" id="134">
   <data key="d4">R81</data>
   <data key="d5">0*DG23PalPal -&gt; DG00PalPal.mix</data>
   <data key="d6">0.0006063781515715974</data>
@@ -3094,7 +2974,7 @@
   <data key="d10">R81path</data>
   <data key="d11">DG mix</data>
 </edge>
-<edge source="Cho" target="PC12OleOle" id="148">
+<edge source="Cho" target="PC12OleOle" id="136">
   <data key="d4">R82</data>
   <data key="d5">DG12OleOle + Cho -&gt; PC12OleOle</data>
   <data key="d6">65.40894893512679</data>
@@ -3104,7 +2984,7 @@
   <data key="d10">R82path</data>
   <data key="d11">PC mix</data>
 </edge>
-<edge source="Cho" target="PC12OlePal" id="153">
+<edge source="Cho" target="PC12OlePal" id="141">
   <data key="d4">R85</data>
   <data key="d5">DG12OlePal + Cho -&gt; PC12OlePal</data>
   <data key="d6">1.983290307094876e-06</data>
@@ -3114,7 +2994,7 @@
   <data key="d10">R85path</data>
   <data key="d11">PC to Sink</data>
 </edge>
-<edge source="Cho" target="PC12PalOle" id="158">
+<edge source="Cho" target="PC12PalOle" id="146">
   <data key="d4">R88</data>
   <data key="d5">DG12PalOle + Cho -&gt; PC12PalOle</data>
   <data key="d6">134.5910474350218</data>
@@ -3124,7 +3004,7 @@
   <data key="d10">R88path</data>
   <data key="d11">PC pre</data>
 </edge>
-<edge source="Cho" target="PC12PalPal" id="163">
+<edge source="Cho" target="PC12PalPal" id="151">
   <data key="d4">R91</data>
   <data key="d5">DG12PalPal + Cho -&gt; PC12PalPal</data>
   <data key="d6">1.897783072024595e-06</data>
@@ -3134,7 +3014,7 @@
   <data key="d10">R91path</data>
   <data key="d11">PC mix</data>
 </edge>
-<edge source="PC12OleOle.pre" target="PC12OleOle" id="188">
+<edge source="PC12OleOle.pre" target="PC12OleOle" id="176">
   <data key="d4">R111</data>
   <data key="d5">PC12OleOle.pre -&gt; PC12OleOle</data>
   <data key="d6">89.15586116059299</data>
@@ -3144,7 +3024,7 @@
   <data key="d10">R111path</data>
   <data key="d11">PS mix</data>
 </edge>
-<edge source="PC12OlePal.pre" target="PC12OlePal" id="196">
+<edge source="PC12OlePal.pre" target="PC12OlePal" id="184">
   <data key="d4">R115</data>
   <data key="d5">PC12OlePal.pre -&gt; PC12OlePal</data>
   <data key="d6">245.435184474667</data>
@@ -3154,7 +3034,7 @@
   <data key="d10">R115path</data>
   <data key="d11">PC pre</data>
 </edge>
-<edge source="PC12PalOle.pre" target="PC12PalOle" id="204">
+<edge source="PC12PalOle.pre" target="PC12PalOle" id="192">
   <data key="d4">R119</data>
   <data key="d5">PC12PalOle.pre -&gt; PC12PalOle</data>
   <data key="d6">58.73893124457793</data>
@@ -3164,7 +3044,7 @@
   <data key="d10">R119path</data>
   <data key="d11">LPE mix</data>
 </edge>
-<edge source="PC12PalPal.pre" target="PC12PalPal" id="212">
+<edge source="PC12PalPal.pre" target="PC12PalPal" id="200">
   <data key="d4">R123</data>
   <data key="d5">PC12PalPal.pre -&gt; PC12PalPal</data>
   <data key="d6">6.670023120161723</data>
@@ -3174,7 +3054,7 @@
   <data key="d10">R123path</data>
   <data key="d11">HEXCER pre</data>
 </edge>
-<edge source="Glc.Pre" target="Glc" id="222">
+<edge source="Glc.Pre" target="Glc" id="210">
   <data key="d4">R133</data>
   <data key="d5">0*Glc.Pre -&gt; Glc</data>
   <data key="d6">119.2681626442967</data>
@@ -3184,17 +3064,7 @@
   <data key="d10">R133path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="DHAP" target="GAP" id="226">
-  <data key="d4">R136 net</data>
-  <data key="d5">DHAP &lt;-&gt; GAP</data>
-  <data key="d6">-175.4546354088893</data>
-  <data key="d7">0.04119176442776826</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R136 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="DHAP" target="GAP" id="228">
+<edge source="DHAP" target="GAP" id="214">
   <data key="d4">R136 exch</data>
   <data key="d5">DHAP &lt;-&gt; GAP</data>
   <data key="d6">2.320755785234496e-05</data>
@@ -3204,7 +3074,7 @@
   <data key="d10">R136 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="DHAP" target="G3P.New" id="230">
+<edge source="DHAP" target="G3P.New" id="216">
   <data key="d4">R137</data>
   <data key="d5">DHAP -&gt; G3P.New</data>
   <data key="d6">350.9093100413547</data>
@@ -3214,17 +3084,7 @@
   <data key="d10">R137path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="GAP" target="DHAP" id="227">
-  <data key="d4">R136 net</data>
-  <data key="d5">DHAP &lt;-&gt; GAP</data>
-  <data key="d6">-175.4546354088893</data>
-  <data key="d7">0.04119176442776826</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R136 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="GAP" target="DHAP" id="229">
+<edge source="GAP" target="DHAP" id="215">
   <data key="d4">R136 exch</data>
   <data key="d5">DHAP &lt;-&gt; GAP</data>
   <data key="d6">2.320755785234496e-05</data>
@@ -3234,7 +3094,7 @@
   <data key="d10">R136 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="GAP" target="Pyr.c" id="234">
+<edge source="GAP" target="Pyr.c" id="220">
   <data key="d4">R141</data>
   <data key="d5">GAP -&gt; Pyr.c</data>
   <data key="d6">2.704154270816161e-05</data>
@@ -3244,7 +3104,7 @@
   <data key="d10">R141path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="G3P.New" target="G3P" id="231">
+<edge source="G3P.New" target="G3P" id="217">
   <data key="d4">R138</data>
   <data key="d5">G3P.New -&gt; G3P</data>
   <data key="d6">350.9093100413547</data>
@@ -3254,7 +3114,7 @@
   <data key="d10">R138path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="G3P.Pre" target="G3P" id="232">
+<edge source="G3P.Pre" target="G3P" id="218">
   <data key="d4">R139</data>
   <data key="d5">G3P.Pre -&gt; G3P</data>
   <data key="d6">2.30747870766379e-06</data>
@@ -3264,7 +3124,7 @@
   <data key="d10">R139path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Pyr.c" target="Lac" id="235">
+<edge source="Pyr.c" target="Lac" id="221">
   <data key="d4">R142</data>
   <data key="d5">Pyr.c -&gt; Lac</data>
   <data key="d6">2.520149337215116e-06</data>
@@ -3274,7 +3134,7 @@
   <data key="d10">R142path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Pyr.c" target="Pyr.m" id="236">
+<edge source="Pyr.c" target="Pyr.m" id="222">
   <data key="d4">R143</data>
   <data key="d5">Pyr.c -&gt; Pyr.m</data>
   <data key="d6">2.452139327857594e-05</data>
@@ -3284,7 +3144,7 @@
   <data key="d10">R143path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Pyr.m" target="COO" id="237">
+<edge source="Pyr.m" target="COO" id="223">
   <data key="d4">R144</data>
   <data key="d5">Pyr.m -&gt; COO + Ac.m</data>
   <data key="d6">1.287532509763878e-05</data>
@@ -3294,7 +3154,7 @@
   <data key="d10">R144path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Pyr.m" target="Ac.m" id="238">
+<edge source="Pyr.m" target="Ac.m" id="224">
   <data key="d4">R144</data>
   <data key="d5">Pyr.m -&gt; COO + Ac.m</data>
   <data key="d6">1.287532509763878e-05</data>
@@ -3304,7 +3164,7 @@
   <data key="d10">R144path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Pyr.m" target="Oac.m" id="239">
+<edge source="Pyr.m" target="Oac.m" id="225">
   <data key="d4">R145</data>
   <data key="d5">Pyr.m + COO -&gt; Oac.m</data>
   <data key="d6">0.0008128185815294842</data>
@@ -3314,7 +3174,7 @@
   <data key="d10">R145path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ac.m" target="Cit.m" id="241">
+<edge source="Ac.m" target="Cit.m" id="227">
   <data key="d4">R146</data>
   <data key="d5">Ac.m + Oac.m -&gt; Cit.m</data>
   <data key="d6">1.297532516275623e-05</data>
@@ -3324,7 +3184,7 @@
   <data key="d10">R146path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Oac.m" target="Cit.m" id="242">
+<edge source="Oac.m" target="Cit.m" id="228">
   <data key="d4">R146</data>
   <data key="d5">Ac.m + Oac.m -&gt; Cit.m</data>
   <data key="d6">1.297532516275623e-05</data>
@@ -3334,17 +3194,7 @@
   <data key="d10">R146path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Oac.m" target="Mal.m" id="264">
-  <data key="d4">R153 net</data>
-  <data key="d5">Mal.m &lt;-&gt; Oac.m</data>
-  <data key="d6">-0.0007998432564031432</data>
-  <data key="d7">5.48546732381075e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R153 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Oac.m" target="Mal.m" id="266">
+<edge source="Oac.m" target="Mal.m" id="242">
   <data key="d4">R153 exch</data>
   <data key="d5">Mal.m &lt;-&gt; Oac.m</data>
   <data key="d6">2.579849804451584e-06</data>
@@ -3354,7 +3204,7 @@
   <data key="d10">R153 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Oac.m" target="Asp.m" id="282">
+<edge source="Oac.m" target="Asp.m" id="254">
   <data key="d4">R160</data>
   <data key="d5">Oac.m -&gt; Asp.m</data>
   <data key="d6">3.091070512039642e-15</data>
@@ -3364,17 +3214,7 @@
   <data key="d10">R160path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Cit.m" target="Acon" id="243">
-  <data key="d4">R147 net</data>
-  <data key="d5">Cit.m &lt;-&gt; Acon</data>
-  <data key="d6">2.126461144946745e-06</data>
-  <data key="d7">3.644362736452566e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R147 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Cit.m" target="Acon" id="245">
+<edge source="Cit.m" target="Acon" id="229">
   <data key="d4">R147 exch</data>
   <data key="d5">Cit.m &lt;-&gt; Acon</data>
   <data key="d6">1.000000000583867e-07</data>
@@ -3384,7 +3224,7 @@
   <data key="d10">R147 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Cit.m" target="Cit.c" id="284">
+<edge source="Cit.m" target="Cit.c" id="256">
   <data key="d4">R162</data>
   <data key="d5">Cit.m -&gt; Cit.c</data>
   <data key="d6">1.084886401425678e-05</data>
@@ -3394,7 +3234,7 @@
   <data key="d10">R162path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Cit.m" target="Cit" id="291">
+<edge source="Cit.m" target="Cit" id="263">
   <data key="d4">R169</data>
   <data key="d5">0*Cit.m -&gt; Cit</data>
   <data key="d6">0.0001633280540636914</data>
@@ -3404,17 +3244,7 @@
   <data key="d10">R169path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Acon" target="Cit.m" id="244">
-  <data key="d4">R147 net</data>
-  <data key="d5">Cit.m &lt;-&gt; Acon</data>
-  <data key="d6">2.126461144946745e-06</data>
-  <data key="d7">3.644362736452566e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R147 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Acon" target="Cit.m" id="246">
+<edge source="Acon" target="Cit.m" id="230">
   <data key="d4">R147 exch</data>
   <data key="d5">Cit.m &lt;-&gt; Acon</data>
   <data key="d6">1.000000000583867e-07</data>
@@ -3424,17 +3254,7 @@
   <data key="d10">R147 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Acon" target="Isocit" id="247">
-  <data key="d4">R148 net</data>
-  <data key="d5">Acon &lt;-&gt; Isocit</data>
-  <data key="d6">2.126461156493065e-06</data>
-  <data key="d7">3.644362736452566e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R148 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Acon" target="Isocit" id="249">
+<edge source="Acon" target="Isocit" id="231">
   <data key="d4">R148 exch</data>
   <data key="d5">Acon &lt;-&gt; Isocit</data>
   <data key="d6">1.000000000583867e-07</data>
@@ -3444,17 +3264,7 @@
   <data key="d10">R148 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Isocit" target="Acon" id="248">
-  <data key="d4">R148 net</data>
-  <data key="d5">Acon &lt;-&gt; Isocit</data>
-  <data key="d6">2.126461156493065e-06</data>
-  <data key="d7">3.644362736452566e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R148 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Isocit" target="Acon" id="250">
+<edge source="Isocit" target="Acon" id="232">
   <data key="d4">R148 exch</data>
   <data key="d5">Acon &lt;-&gt; Isocit</data>
   <data key="d6">1.000000000583867e-07</data>
@@ -3464,7 +3274,7 @@
   <data key="d10">R148 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Isocit" target="aKG.m" id="251">
+<edge source="Isocit" target="aKG.m" id="233">
   <data key="d4">R149</data>
   <data key="d5">Isocit -&gt; aKG.m + COO</data>
   <data key="d6">2.126461176921168e-06</data>
@@ -3474,7 +3284,7 @@
   <data key="d10">R149path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Isocit" target="COO" id="252">
+<edge source="Isocit" target="COO" id="234">
   <data key="d4">R149</data>
   <data key="d5">Isocit -&gt; aKG.m + COO</data>
   <data key="d6">2.126461176921168e-06</data>
@@ -3484,7 +3294,7 @@
   <data key="d10">R149path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="aKG.m" target="Suc" id="253">
+<edge source="aKG.m" target="Suc" id="235">
   <data key="d4">R150</data>
   <data key="d5">aKG.m -&gt; Suc + COO</data>
   <data key="d6">1.429256940355117e-06</data>
@@ -3494,7 +3304,7 @@
   <data key="d10">R150path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="aKG.m" target="COO" id="254">
+<edge source="aKG.m" target="COO" id="236">
   <data key="d4">R150</data>
   <data key="d5">aKG.m -&gt; Suc + COO</data>
   <data key="d6">1.429256940355117e-06</data>
@@ -3504,17 +3314,7 @@
   <data key="d10">R150path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="aKG.m" target="Glu" id="268">
-  <data key="d4">R154 net</data>
-  <data key="d5">Glu &lt;-&gt; aKG.m</data>
-  <data key="d6">2.442192842622148e-06</data>
-  <data key="d7">1.360152212841926e-16</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R154 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="aKG.m" target="Glu" id="270">
+<edge source="aKG.m" target="Glu" id="244">
   <data key="d4">R154 exch</data>
   <data key="d5">Glu &lt;-&gt; aKG.m</data>
   <data key="d6">1.615693198786516e-06</data>
@@ -3524,17 +3324,7 @@
   <data key="d10">R154 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="aKG.m" target="aKG.c" id="274">
-  <data key="d4">R157 net</data>
-  <data key="d5">aKG.m &lt;-&gt; aKG.c</data>
-  <data key="d6">3.039397074688921e-06</data>
-  <data key="d7">6.049809705669367e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R157 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="aKG.m" target="aKG.c" id="276">
+<edge source="aKG.m" target="aKG.c" id="248">
   <data key="d4">R157 exch</data>
   <data key="d5">aKG.m &lt;-&gt; aKG.c</data>
   <data key="d6">1.000000005024759e-07</data>
@@ -3544,7 +3334,7 @@
   <data key="d10">R157 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="aKG.m" target="aKG.pool" id="295">
+<edge source="aKG.m" target="aKG.pool" id="267">
   <data key="d4">R173</data>
   <data key="d5">aKG.m -&gt; aKG.pool</data>
   <data key="d6">1.000000002804313e-07</data>
@@ -3554,17 +3344,7 @@
   <data key="d10">R173path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Suc" target="Fum.m" id="255">
-  <data key="d4">R151 net</data>
-  <data key="d5">Suc &lt;-&gt; Fum.m</data>
-  <data key="d6">1.429256897722553e-06</data>
-  <data key="d7">8.156334973296261e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R151 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Suc" target="Fum.m" id="257">
+<edge source="Suc" target="Fum.m" id="237">
   <data key="d4">R151 exch</data>
   <data key="d5">Suc &lt;-&gt; Fum.m</data>
   <data key="d6">80.95524161556818</data>
@@ -3574,17 +3354,7 @@
   <data key="d10">R151 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Fum.m" target="Suc" id="256">
-  <data key="d4">R151 net</data>
-  <data key="d5">Suc &lt;-&gt; Fum.m</data>
-  <data key="d6">1.429256897722553e-06</data>
-  <data key="d7">8.156334973296261e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R151 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Fum.m" target="Suc" id="258">
+<edge source="Fum.m" target="Suc" id="238">
   <data key="d4">R151 exch</data>
   <data key="d5">Suc &lt;-&gt; Fum.m</data>
   <data key="d6">80.95524161556818</data>
@@ -3594,17 +3364,7 @@
   <data key="d10">R151 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Fum.m" target="Mal.m" id="259">
-  <data key="d4">R152 net</data>
-  <data key="d5">Fum.m &lt;-&gt; Mal.m</data>
-  <data key="d6">1.429256910157051e-06</data>
-  <data key="d7">8.156334973296261e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R152 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Fum.m" target="Mal.m" id="261">
+<edge source="Fum.m" target="Mal.m" id="239">
   <data key="d4">R152 exch</data>
   <data key="d5">Fum.m &lt;-&gt; Mal.m</data>
   <data key="d6">1.000000438011739e-07</data>
@@ -3614,17 +3374,7 @@
   <data key="d10">R152 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Mal.m" target="Fum.m" id="260">
-  <data key="d4">R152 net</data>
-  <data key="d5">Fum.m &lt;-&gt; Mal.m</data>
-  <data key="d6">1.429256910157051e-06</data>
-  <data key="d7">8.156334973296261e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R152 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Mal.m" target="Fum.m" id="262">
+<edge source="Mal.m" target="Fum.m" id="240">
   <data key="d4">R152 exch</data>
   <data key="d5">Fum.m &lt;-&gt; Mal.m</data>
   <data key="d6">1.000000438011739e-07</data>
@@ -3634,17 +3384,7 @@
   <data key="d10">R152 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Mal.m" target="Oac.m" id="263">
-  <data key="d4">R153 net</data>
-  <data key="d5">Mal.m &lt;-&gt; Oac.m</data>
-  <data key="d6">-0.0007998432564031432</data>
-  <data key="d7">5.48546732381075e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R153 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Mal.m" target="Oac.m" id="265">
+<edge source="Mal.m" target="Oac.m" id="241">
   <data key="d4">R153 exch</data>
   <data key="d5">Mal.m &lt;-&gt; Oac.m</data>
   <data key="d6">2.579849804451584e-06</data>
@@ -3654,7 +3394,7 @@
   <data key="d10">R153 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Mal.m" target="Pyr.m" id="271">
+<edge source="Mal.m" target="Pyr.m" id="245">
   <data key="d4">R155</data>
   <data key="d5">Mal.m -&gt; Pyr.m + COO</data>
   <data key="d6">0.000801172513323678</data>
@@ -3664,7 +3404,7 @@
   <data key="d10">R155path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Mal.m" target="COO" id="272">
+<edge source="Mal.m" target="COO" id="246">
   <data key="d4">R155</data>
   <data key="d5">Mal.m -&gt; Pyr.m + COO</data>
   <data key="d6">0.000801172513323678</data>
@@ -3674,17 +3414,7 @@
   <data key="d10">R155path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Mal.m" target="Mal.c" id="298">
-  <data key="d4">R175 net</data>
-  <data key="d5">Mal.c &lt;-&gt; Mal.m</data>
-  <data key="d6">-1.000000011686097e-07</data>
-  <data key="d7">7.128918374472312e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R175 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Mal.m" target="Mal.c" id="300">
+<edge source="Mal.m" target="Mal.c" id="270">
   <data key="d4">R175 exch</data>
   <data key="d5">Mal.c &lt;-&gt; Mal.m</data>
   <data key="d6">2.579710552730319e-06</data>
@@ -3694,7 +3424,7 @@
   <data key="d10">R175 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Mal.m" target="Mal" id="302">
+<edge source="Mal.m" target="Mal" id="272">
   <data key="d4">R177</data>
   <data key="d5">0*Mal.m -&gt; Mal</data>
   <data key="d6">0.001458677063491566</data>
@@ -3704,17 +3434,7 @@
   <data key="d10">R177path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Glu" target="aKG.m" id="267">
-  <data key="d4">R154 net</data>
-  <data key="d5">Glu &lt;-&gt; aKG.m</data>
-  <data key="d6">2.442192842622148e-06</data>
-  <data key="d7">1.360152212841926e-16</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R154 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Glu" target="aKG.m" id="269">
+<edge source="Glu" target="aKG.m" id="243">
   <data key="d4">R154 exch</data>
   <data key="d5">Glu &lt;-&gt; aKG.m</data>
   <data key="d6">1.615693198786516e-06</data>
@@ -3724,7 +3444,7 @@
   <data key="d10">R154 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="FFA" target="Ac.m" id="273">
+<edge source="FFA" target="Ac.m" id="247">
   <data key="d4">R156</data>
   <data key="d5">FFA -&gt; Ac.m</data>
   <data key="d6">1.000000766637754e-07</data>
@@ -3734,17 +3454,7 @@
   <data key="d10">R156path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="aKG.c" target="aKG.m" id="275">
-  <data key="d4">R157 net</data>
-  <data key="d5">aKG.m &lt;-&gt; aKG.c</data>
-  <data key="d6">3.039397074688921e-06</data>
-  <data key="d7">6.049809705669367e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R157 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="aKG.c" target="aKG.m" id="277">
+<edge source="aKG.c" target="aKG.m" id="249">
   <data key="d4">R157 exch</data>
   <data key="d5">aKG.m &lt;-&gt; aKG.c</data>
   <data key="d6">1.000000005024759e-07</data>
@@ -3754,7 +3464,7 @@
   <data key="d10">R157 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="aKG.c" target="Cit.c" id="278">
+<edge source="aKG.c" target="Cit.c" id="250">
   <data key="d4">R158</data>
   <data key="d5">aKG.c + COO -&gt; Cit.c</data>
   <data key="d6">1.233169430792103e-06</data>
@@ -3764,7 +3474,7 @@
   <data key="d10">R158path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="aKG.c" target="aKG.pool" id="294">
+<edge source="aKG.c" target="aKG.pool" id="266">
   <data key="d4">R172</data>
   <data key="d5">aKG.c -&gt; aKG.pool</data>
   <data key="d6">1.806227635015034e-06</data>
@@ -3774,7 +3484,7 @@
   <data key="d10">R172path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Cit.c" target="AcCoA.lip" id="280">
+<edge source="Cit.c" target="AcCoA.lip" id="252">
   <data key="d4">R159</data>
   <data key="d5">Cit.c -&gt; AcCoA.lip + Oac.c</data>
   <data key="d6">1.20820334421623e-05</data>
@@ -3784,7 +3494,7 @@
   <data key="d10">R159path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Cit.c" target="Oac.c" id="281">
+<edge source="Cit.c" target="Oac.c" id="253">
   <data key="d4">R159</data>
   <data key="d5">Cit.c -&gt; AcCoA.lip + Oac.c</data>
   <data key="d6">1.20820334421623e-05</data>
@@ -3794,7 +3504,7 @@
   <data key="d10">R159path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Cit.c" target="Cit" id="292">
+<edge source="Cit.c" target="Cit" id="264">
   <data key="d4">R170</data>
   <data key="d5">0*Cit.c -&gt; Cit</data>
   <data key="d6">0.0001410378110185749</data>
@@ -3804,7 +3514,7 @@
   <data key="d10">R170path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="AcCoA.lip" target="Ac" id="310">
+<edge source="AcCoA.lip" target="Ac" id="280">
   <data key="d4">R184</data>
   <data key="d5">AcCoA.lip -&gt; Ac</data>
   <data key="d6">1.208203343328051e-05</data>
@@ -3814,7 +3524,7 @@
   <data key="d10">R184path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Oac.c" target="DHAP" id="308">
+<edge source="Oac.c" target="DHAP" id="278">
   <data key="d4">R183</data>
   <data key="d5">Oac.c -&gt; DHAP + COO</data>
   <data key="d6">1.218203349750979e-05</data>
@@ -3824,7 +3534,7 @@
   <data key="d10">R183path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Oac.c" target="COO" id="309">
+<edge source="Oac.c" target="COO" id="279">
   <data key="d4">R183</data>
   <data key="d5">Oac.c -&gt; DHAP + COO</data>
   <data key="d6">1.218203349750979e-05</data>
@@ -3834,7 +3544,7 @@
   <data key="d10">R183path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Asp.m" target="Asp" id="306">
+<edge source="Asp.m" target="Asp" id="276">
   <data key="d4">R181</data>
   <data key="d5">0*Asp.m -&gt; Asp</data>
   <data key="d6">0.0006073959497207237</data>
@@ -3844,7 +3554,7 @@
   <data key="d10">R181path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Bicarb.source" target="COO" id="283">
+<edge source="Bicarb.source" target="COO" id="255">
   <data key="d4">R161</data>
   <data key="d5">0*Bicarb.source -&gt; COO</data>
   <data key="d6">2.581184542549408e-06</data>
@@ -3854,7 +3564,7 @@
   <data key="d10">R161path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Gln.Pre" target="Gln" id="286">
+<edge source="Gln.Pre" target="Gln" id="258">
   <data key="d4">R164</data>
   <data key="d5">Gln.Pre -&gt; Gln</data>
   <data key="d6">1.000001605966361e-07</data>
@@ -3864,7 +3574,7 @@
   <data key="d10">R164path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Gln" target="Sink" id="288">
+<edge source="Gln" target="Sink" id="260">
   <data key="d4">R166</data>
   <data key="d5">Gln -&gt; Sink</data>
   <data key="d6">9.999999983634211e-08</data>
@@ -3874,7 +3584,7 @@
   <data key="d10">R166path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Gln" target="Glu" id="289">
+<edge source="Gln" target="Glu" id="261">
   <data key="d4">R167</data>
   <data key="d5">Gln -&gt; Glu</data>
   <data key="d6">2.073714269634763e-06</data>
@@ -3884,7 +3594,7 @@
   <data key="d10">R167path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Gln.lab" target="Gln" id="287">
+<edge source="Gln.lab" target="Gln" id="259">
   <data key="d4">R165</data>
   <data key="d5">Gln.lab -&gt; Gln</data>
   <data key="d6">2.073714122641235e-06</data>
@@ -3894,7 +3604,7 @@
   <data key="d10">R165path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Glu.Pre" target="Glu" id="290">
+<edge source="Glu.Pre" target="Glu" id="262">
   <data key="d4">R168</data>
   <data key="d5">0*Glu.Pre -&gt; Glu</data>
   <data key="d6">3.684785880864183e-07</data>
@@ -3904,7 +3614,7 @@
   <data key="d10">R168path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Cit" target="Sink" id="293">
+<edge source="Cit" target="Sink" id="265">
   <data key="d4">R171</data>
   <data key="d5">Cit -&gt; Sink</data>
   <data key="d6">0.0003043658650437752</data>
@@ -3914,7 +3624,7 @@
   <data key="d10">R171path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="aKG.pool" target="Sink" id="296">
+<edge source="aKG.pool" target="Sink" id="268">
   <data key="d4">R174</data>
   <data key="d5">aKG.pool -&gt; Sink</data>
   <data key="d6">1.906227634407287e-06</data>
@@ -3924,17 +3634,7 @@
   <data key="d10">R174path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Mal.c" target="Mal.m" id="297">
-  <data key="d4">R175 net</data>
-  <data key="d5">Mal.c &lt;-&gt; Mal.m</data>
-  <data key="d6">-1.000000011686097e-07</data>
-  <data key="d7">7.128918374472312e-17</data>
-  <data key="d8">False</data>
-  <data key="d9">False</data>
-  <data key="d10">R175 netpath</data>
-  <data key="d12">False</data>
-</edge>
-<edge source="Mal.c" target="Mal.m" id="299">
+<edge source="Mal.c" target="Mal.m" id="269">
   <data key="d4">R175 exch</data>
   <data key="d5">Mal.c &lt;-&gt; Mal.m</data>
   <data key="d6">2.579710552730319e-06</data>
@@ -3944,7 +3644,7 @@
   <data key="d10">R175 exchpath</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Mal.c" target="Mal" id="301">
+<edge source="Mal.c" target="Mal" id="271">
   <data key="d4">R176</data>
   <data key="d5">0*Mal.c -&gt; Mal</data>
   <data key="d6">2.092607377481789e-06</data>
@@ -3954,7 +3654,7 @@
   <data key="d10">R176path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Mal.c" target="Oac.c" id="304">
+<edge source="Mal.c" target="Oac.c" id="274">
   <data key="d4">R179</data>
   <data key="d5">Mal.c -&gt; Oac.c</data>
   <data key="d6">9.99999993922529e-08</data>
@@ -3964,7 +3664,7 @@
   <data key="d10">R179path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Mal" target="Sink" id="303">
+<edge source="Mal" target="Sink" id="273">
   <data key="d4">R178</data>
   <data key="d5">Mal -&gt; Sink</data>
   <data key="d6">0.001460769670862692</data>
@@ -3974,7 +3674,7 @@
   <data key="d10">R178path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Asp.c" target="Asp" id="305">
+<edge source="Asp.c" target="Asp" id="275">
   <data key="d4">R180</data>
   <data key="d5">0*Asp.c -&gt; Asp</data>
   <data key="d6">0.0001964384551059245</data>
@@ -3984,7 +3684,7 @@
   <data key="d10">R180path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Asp" target="Sink" id="307">
+<edge source="Asp" target="Sink" id="277">
   <data key="d4">R182</data>
   <data key="d5">Asp -&gt; Sink</data>
   <data key="d6">0.0008038344048305039</data>
@@ -3994,7 +3694,7 @@
   <data key="d10">R182path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ac" target="Sink" id="312">
+<edge source="Ac" target="Sink" id="282">
   <data key="d4">R186</data>
   <data key="d5">Ac -&gt; Sink</data>
   <data key="d6">1.375453561802686e-05</data>
@@ -4004,7 +3704,7 @@
   <data key="d10">R186path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ac" target="Pal.New" id="313">
+<edge source="Ac" target="Pal.New" id="283">
   <data key="d4">R187</data>
   <data key="d5">0*Ac -&gt; Pal.New</data>
   <data key="d6">1262.177422116273</data>
@@ -4014,7 +3714,7 @@
   <data key="d10">R187path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ac" target="Ste.P1" id="317">
+<edge source="Ac" target="Ste.P1" id="287">
   <data key="d4">R191</data>
   <data key="d5">0*Ac + 0*Pal.New -&gt; Ste.P1</data>
   <data key="d6">9.999999406318238e-08</data>
@@ -4024,7 +3724,7 @@
   <data key="d10">R191path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ac" target="Ste.P2" id="319">
+<edge source="Ac" target="Ste.P2" id="289">
   <data key="d4">R192</data>
   <data key="d5">0*Ac + 0*Pal.Pre -&gt; Ste.P2</data>
   <data key="d6">2.332682150552046e-06</data>
@@ -4034,7 +3734,7 @@
   <data key="d10">R192path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="AcCoA.Pre" target="Ac" id="311">
+<edge source="AcCoA.Pre" target="Ac" id="281">
   <data key="d4">R185</data>
   <data key="d5">AcCoA.Pre -&gt; Ac</data>
   <data key="d6">1.672502111027541e-06</data>
@@ -4044,7 +3744,7 @@
   <data key="d10">R185path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Pal.New" target="Pal" id="314">
+<edge source="Pal.New" target="Pal" id="284">
   <data key="d4">R188</data>
   <data key="d5">Pal.New -&gt; Pal</data>
   <data key="d6">1262.177422116273</data>
@@ -4054,7 +3754,7 @@
   <data key="d10">R188path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Pal.New" target="Ste.P1" id="318">
+<edge source="Pal.New" target="Ste.P1" id="288">
   <data key="d4">R191</data>
   <data key="d5">0*Ac + 0*Pal.New -&gt; Ste.P1</data>
   <data key="d6">9.999999406318238e-08</data>
@@ -4064,7 +3764,7 @@
   <data key="d10">R191path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Pal.Pre" target="Pal" id="315">
+<edge source="Pal.Pre" target="Pal" id="285">
   <data key="d4">R189</data>
   <data key="d5">Pal.Pre -&gt; Pal</data>
   <data key="d6">9.999996564147295e-08</data>
@@ -4074,7 +3774,7 @@
   <data key="d10">R189path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Pal.Pre" target="Ste.P2" id="320">
+<edge source="Pal.Pre" target="Ste.P2" id="290">
   <data key="d4">R192</data>
   <data key="d5">0*Ac + 0*Pal.Pre -&gt; Ste.P2</data>
   <data key="d6">2.332682150552046e-06</data>
@@ -4084,7 +3784,7 @@
   <data key="d10">R192path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ste.P1" target="Ste" id="321">
+<edge source="Ste.P1" target="Ste" id="291">
   <data key="d4">R193</data>
   <data key="d5">Ste.P1 -&gt; Ste</data>
   <data key="d6">1.000000793283107e-07</data>
@@ -4094,7 +3794,7 @@
   <data key="d10">R193path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ste.P1" target="Ole.P1" id="325">
+<edge source="Ste.P1" target="Ole.P1" id="295">
   <data key="d4">R197</data>
   <data key="d5">0*Ste.P1 -&gt; Ole.P1</data>
   <data key="d6">221.5023674521122</data>
@@ -4104,7 +3804,7 @@
   <data key="d10">R197path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ste.P2" target="Ste" id="322">
+<edge source="Ste.P2" target="Ste" id="292">
   <data key="d4">R194</data>
   <data key="d5">Ste.P2 -&gt; Ste</data>
   <data key="d6">2.332682150552046e-06</data>
@@ -4114,7 +3814,7 @@
   <data key="d10">R194path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ste.P2" target="Ole.P2" id="326">
+<edge source="Ste.P2" target="Ole.P2" id="296">
   <data key="d4">R198</data>
   <data key="d5">0*Ste.P2 -&gt; Ole.P2</data>
   <data key="d6">85.33291120600472</data>
@@ -4124,7 +3824,7 @@
   <data key="d10">R198path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ste" target="Sink" id="324">
+<edge source="Ste" target="Sink" id="294">
   <data key="d4">R196</data>
   <data key="d5">Ste -&gt; Sink</data>
   <data key="d6">-4.902055253808157e-05</data>
@@ -4134,7 +3834,7 @@
   <data key="d10">R196path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ste.Pre" target="Ste" id="323">
+<edge source="Ste.Pre" target="Ste" id="293">
   <data key="d4">R195</data>
   <data key="d5">Ste.Pre -&gt; Ste</data>
   <data key="d6">-5.14532347608565e-05</data>
@@ -4144,7 +3844,7 @@
   <data key="d10">R195path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ole.P1" target="Ole" id="327">
+<edge source="Ole.P1" target="Ole" id="297">
   <data key="d4">R199</data>
   <data key="d5">Ole.P1 -&gt; Ole</data>
   <data key="d6">221.5023674521122</data>
@@ -4154,7 +3854,7 @@
   <data key="d10">R199path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ole.P2" target="Ole" id="328">
+<edge source="Ole.P2" target="Ole" id="298">
   <data key="d4">R200</data>
   <data key="d5">Ole.P2 -&gt; Ole</data>
   <data key="d6">85.33291120600475</data>
@@ -4164,7 +3864,7 @@
   <data key="d10">R200path</data>
   <data key="d12">False</data>
 </edge>
-<edge source="Ole.Pre" target="Ole" id="329">
+<edge source="Ole.Pre" target="Ole" id="299">
   <data key="d4">R201</data>
   <data key="d5">Ole.Pre -&gt; Ole</data>
   <data key="d6">9.999999406318238e-08</data>
