@@ -43,7 +43,12 @@ def compare_two_txt_files(file1_location, file2_location):
     print("-------------------------------------------------------------------------")
 
 #compare_two_txt_files("./metabolomic_optimization/assets/input/model_202r_output.txt", "./metabolomic_optimization/assets/output/A4GALT_threshold_0.txt")
-#compare_two_txt_files("./metabolomic_optimization/assets/input/PalPaoSteOle_regular_new.txt", "./metabolomic_optimization/assets/output/PalPaoSteOle_regular_new_threshold_0.txt")
+
+# Revelation of the problem at the 40th percentil
+#compare_two_txt_files("./metabolomic_optimization/assets/output/PalPaoSteOle_regular_new_threshold_40.txt", "./metabolomic_optimization/assets/input/PalPaoSteOle_regular_PROBLEM_threshold_40.txt")
+
+
+
 #add_header("./metabolomic_optimization/A4GALT_flux.xlsx")
 
 def read_txt_reaction_file(file_location):

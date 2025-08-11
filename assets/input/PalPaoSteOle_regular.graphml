@@ -891,55 +891,55 @@
 <node id="DG00PalPal.mix">
   <data key="d0">DG00PalPal.mix</data>
   <data key="d1">square</data>
-  <data key="d2">DG0,0Pa,l.m,lPa</data>
+  <data key="d2">0Pa,DG0,l.m,lPa</data>
   <data key="d3">3</data>
 </node>
 <node id="DG00PalSte.mix">
   <data key="d0">DG00PalSte.mix</data>
   <data key="d1">square</data>
-  <data key="d2">DG0,0Pa,lSt,e.m</data>
+  <data key="d2">0Pa,DG0,lSt,e.m</data>
   <data key="d3">6</data>
 </node>
 <node id="DG00PalPao.mix">
   <data key="d0">DG00PalPao.mix</data>
   <data key="d1">square</data>
-  <data key="d2">DG0,0Pa,lPa,o.m</data>
+  <data key="d2">0Pa,DG0,lPa,o.m</data>
   <data key="d3">6</data>
 </node>
 <node id="DG00PalOle.mix">
   <data key="d0">DG00PalOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">DG0,0Pa,lOl,e.m</data>
+  <data key="d2">0Pa,DG0,lOl,e.m</data>
   <data key="d3">6</data>
 </node>
 <node id="DG00SteSte.mix">
   <data key="d0">DG00SteSte.mix</data>
   <data key="d1">square</data>
-  <data key="d2">DG0,eSt,0St,e.m</data>
+  <data key="d2">DG0,e.m,0St,eSt</data>
   <data key="d3">3</data>
 </node>
 <node id="DG00PaoSte.mix">
   <data key="d0">DG00PaoSte.mix</data>
   <data key="d1">square</data>
-  <data key="d2">DG0,0Pa,oSt,e.m</data>
+  <data key="d2">0Pa,DG0,e.m,oSt</data>
   <data key="d3">6</data>
 </node>
 <node id="DG00SteOle.mix">
   <data key="d0">DG00SteOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">DG0,0St,eOl,e.m</data>
+  <data key="d2">DG0,eOl,e.m,0St</data>
   <data key="d3">6</data>
 </node>
 <node id="DG00PaoPao.mix">
   <data key="d0">DG00PaoPao.mix</data>
   <data key="d1">square</data>
-  <data key="d2">DG0,0Pa,o.m,oPa</data>
+  <data key="d2">0Pa,DG0,oPa,o.m</data>
   <data key="d3">3</data>
 </node>
 <node id="DG00PaoOle.mix">
   <data key="d0">DG00PaoOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">DG0,0Pa,e.m,oOl</data>
+  <data key="d2">0Pa,DG0,e.m,oOl</data>
   <data key="d3">6</data>
 </node>
 <node id="DG00OleOle.mix">
@@ -951,127 +951,127 @@
 <node id="TG000PalPalPal.mix">
   <data key="d0">TG000PalPalPal.mix</data>
   <data key="d1">square</data>
-  <data key="d2">alP,00P,al.,TG0</data>
+  <data key="d2">TG0,alP,al.,00P</data>
   <data key="d3">1</data>
 </node>
 <node id="TG000PalPalSte.mix">
   <data key="d0">TG000PalPalSte.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,alP,te.,alS,TG0</data>
+  <data key="d2">TG0,alP,te.,alS,00P</data>
   <data key="d3">3</data>
 </node>
 <node id="TG000PalPalPao.mix">
   <data key="d0">TG000PalPalPao.mix</data>
   <data key="d1">square</data>
-  <data key="d2">alP,ao.,00P,TG0</data>
+  <data key="d2">TG0,alP,ao.,00P</data>
   <data key="d3">3</data>
 </node>
 <node id="TG000PalPalOle.mix">
   <data key="d0">TG000PalPalOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,le.,alP,TG0,alO</data>
+  <data key="d2">le.,TG0,alP,alO,00P</data>
   <data key="d3">3</data>
 </node>
 <node id="TG000PalSteSte.mix">
   <data key="d0">TG000PalSteSte.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,te.,teS,alS,TG0</data>
+  <data key="d2">TG0,te.,teS,alS,00P</data>
   <data key="d3">3</data>
 </node>
 <node id="TG000PalPaoSte.mix">
   <data key="d0">TG000PalPaoSte.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,aoS,alP,te.,TG0</data>
+  <data key="d2">TG0,alP,te.,aoS,00P</data>
   <data key="d3">6</data>
 </node>
 <node id="TG000PalSteOle.mix">
   <data key="d0">TG000PalSteOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,le.,alS,TG0,teO</data>
+  <data key="d2">le.,TG0,teO,alS,00P</data>
   <data key="d3">6</data>
 </node>
 <node id="TG000PalPaoPao.mix">
   <data key="d0">TG000PalPaoPao.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,ao.,aoP,alP,TG0</data>
+  <data key="d2">ao.,TG0,alP,aoP,00P</data>
   <data key="d3">3</data>
 </node>
 <node id="TG000PalPaoOle.mix">
   <data key="d0">TG000PalPaoOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,aoO,le.,alP,TG0</data>
+  <data key="d2">le.,TG0,alP,aoO,00P</data>
   <data key="d3">6</data>
 </node>
 <node id="TG000PalOleOle.mix">
   <data key="d0">TG000PalOleOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,le.,leO,TG0,alO</data>
+  <data key="d2">le.,TG0,alO,00P,leO</data>
   <data key="d3">3</data>
 </node>
 <node id="TG000SteSteSte.mix">
   <data key="d0">TG000SteSteSte.mix</data>
   <data key="d1">square</data>
-  <data key="d2">te.,00S,teS,TG0</data>
+  <data key="d2">TG0,teS,00S,te.</data>
   <data key="d3">1</data>
 </node>
 <node id="TG000PaoSteSte.mix">
   <data key="d0">TG000PaoSteSte.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,aoS,te.,teS,TG0</data>
+  <data key="d2">TG0,te.,aoS,teS,00P</data>
   <data key="d3">3</data>
 </node>
 <node id="TG000SteSteOle.mix">
   <data key="d0">TG000SteSteOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00S,le.,teS,TG0,teO</data>
+  <data key="d2">le.,TG0,00S,teO,teS</data>
   <data key="d3">3</data>
 </node>
 <node id="TG000PaoPaoSte.mix">
   <data key="d0">TG000PaoPaoSte.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,aoS,aoP,te.,TG0</data>
+  <data key="d2">TG0,te.,aoP,aoS,00P</data>
   <data key="d3">3</data>
 </node>
 <node id="TG000PaoSteOle.mix">
   <data key="d0">TG000PaoSteOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,le.,aoS,TG0,teO</data>
+  <data key="d2">le.,TG0,aoS,teO,00P</data>
   <data key="d3">6</data>
 </node>
 <node id="TG000SteOleOle.mix">
   <data key="d0">TG000SteOleOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00S,le.,leO,TG0,teO</data>
+  <data key="d2">le.,TG0,00S,teO,leO</data>
   <data key="d3">3</data>
 </node>
 <node id="TG000PaoPaoPao.mix">
   <data key="d0">TG000PaoPaoPao.mix</data>
   <data key="d1">square</data>
-  <data key="d2">ao.,00P,aoP,TG0</data>
+  <data key="d2">TG0,aoP,ao.,00P</data>
   <data key="d3">1</data>
 </node>
 <node id="TG000PaoPaoOle.mix">
   <data key="d0">TG000PaoPaoOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,aoO,le.,aoP,TG0</data>
+  <data key="d2">le.,TG0,aoO,aoP,00P</data>
   <data key="d3">3</data>
 </node>
 <node id="TG000PaoOleOle.mix">
   <data key="d0">TG000PaoOleOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00P,aoO,le.,leO,TG0</data>
+  <data key="d2">le.,TG0,aoO,00P,leO</data>
   <data key="d3">3</data>
 </node>
 <node id="TG000OleOleOle.mix">
   <data key="d0">TG000OleOleOle.mix</data>
   <data key="d1">square</data>
-  <data key="d2">00O,le.,leO,TG0</data>
+  <data key="d2">TG0,le.,00O,leO</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalPalPal.pre">
   <data key="d0">TG123PalPalPal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">23P,alP,TG1,al.</data>
+  <data key="d2">23P,alP,al.,TG1</data>
   <data key="d3">1</data>
 </node>
 <node id="Sink">
@@ -1083,379 +1083,379 @@
 <node id="TG123PalPalSte.pre">
   <data key="d0">TG123PalPalSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,alP,te.,alS,23P</data>
+  <data key="d2">23P,alP,TG1,te.,alS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalPalPao.pre">
   <data key="d0">TG123PalPalPao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">23P,alP,TG1,ao.</data>
+  <data key="d2">23P,alP,ao.,TG1</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalPalOle.pre">
   <data key="d0">TG123PalPalOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,le.,alP,23P,alO</data>
+  <data key="d2">le.,23P,alP,alO,TG1</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalStePal.pre">
   <data key="d0">TG123PalStePal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,alS,23P,al.</data>
+  <data key="d2">teP,23P,TG1,al.,alS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalSteSte.pre">
   <data key="d0">TG123PalSteSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,te.,teS,alS,23P</data>
+  <data key="d2">23P,TG1,te.,teS,alS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalStePao.pre">
   <data key="d0">TG123PalStePao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,ao.,alS,23P</data>
+  <data key="d2">ao.,teP,23P,TG1,alS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalSteOle.pre">
   <data key="d0">TG123PalSteOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,le.,alS,23P,teO</data>
+  <data key="d2">le.,23P,TG1,teO,alS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalPaoPal.pre">
   <data key="d0">TG123PalPaoPal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,aoP,alP,23P,al.</data>
+  <data key="d2">23P,alP,TG1,al.,aoP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalPaoSte.pre">
   <data key="d0">TG123PalPaoSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,aoS,alP,te.,23P</data>
+  <data key="d2">23P,alP,TG1,te.,aoS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalPaoPao.pre">
   <data key="d0">TG123PalPaoPao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,ao.,aoP,alP,23P</data>
+  <data key="d2">ao.,23P,alP,TG1,aoP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalPaoOle.pre">
   <data key="d0">TG123PalPaoOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">aoO,TG1,le.,alP,23P</data>
+  <data key="d2">le.,23P,alP,TG1,aoO</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalOlePal.pre">
   <data key="d0">TG123PalOlePal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,al.,23P,leP,alO</data>
+  <data key="d2">23P,alO,TG1,al.,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalOleSte.pre">
   <data key="d0">TG123PalOleSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">leS,TG1,te.,23P,alO</data>
+  <data key="d2">leS,23P,alO,TG1,te.</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalOlePao.pre">
   <data key="d0">TG123PalOlePao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,ao.,23P,leP,alO</data>
+  <data key="d2">ao.,23P,alO,TG1,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PalOleOle.pre">
   <data key="d0">TG123PalOleOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,le.,leO,23P,alO</data>
+  <data key="d2">le.,23P,alO,TG1,leO</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123StePalPal.pre">
   <data key="d0">TG123StePalPal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,alP,al.,23S</data>
+  <data key="d2">teP,alP,23S,TG1,al.</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123StePalSte.pre">
   <data key="d0">TG123StePalSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,te.,alS,23S</data>
+  <data key="d2">teP,23S,TG1,te.,alS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123StePalPao.pre">
   <data key="d0">TG123StePalPao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,ao.,alP,23S</data>
+  <data key="d2">ao.,teP,alP,23S,TG1</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123StePalOle.pre">
   <data key="d0">TG123StePalOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,le.,23S,alO</data>
+  <data key="d2">le.,teP,alO,23S,TG1</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123SteStePal.pre">
   <data key="d0">TG123SteStePal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,al.,teS,23S</data>
+  <data key="d2">teP,23S,TG1,al.,teS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123SteSteSte.pre">
   <data key="d0">TG123SteSteSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">te.,TG1,23S,teS</data>
+  <data key="d2">te.,23S,teS,TG1</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123SteStePao.pre">
   <data key="d0">TG123SteStePao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,ao.,teS,23S</data>
+  <data key="d2">ao.,teP,23S,TG1,teS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123SteSteOle.pre">
   <data key="d0">TG123SteSteOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,le.,teS,teO,23S</data>
+  <data key="d2">le.,23S,TG1,teO,teS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123StePaoPal.pre">
   <data key="d0">TG123StePaoPal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,aoP,23S,al.</data>
+  <data key="d2">teP,23S,TG1,aoP,al.</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123StePaoSte.pre">
   <data key="d0">TG123StePaoSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,aoS,te.,23S</data>
+  <data key="d2">teP,23S,TG1,te.,aoS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123StePaoPao.pre">
   <data key="d0">TG123StePaoPao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,ao.,aoP,23S</data>
+  <data key="d2">ao.,teP,23S,TG1,aoP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123StePaoOle.pre">
   <data key="d0">TG123StePaoOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">aoO,teP,le.,TG1,23S</data>
+  <data key="d2">le.,teP,23S,TG1,aoO</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123SteOlePal.pre">
   <data key="d0">TG123SteOlePal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,al.,teO,leP,23S</data>
+  <data key="d2">23S,TG1,al.,teO,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123SteOleSte.pre">
   <data key="d0">TG123SteOleSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">leS,TG1,te.,teO,23S</data>
+  <data key="d2">leS,23S,TG1,te.,teO</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123SteOlePao.pre">
   <data key="d0">TG123SteOlePao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">ao.,TG1,teO,leP,23S</data>
+  <data key="d2">ao.,23S,TG1,teO,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123SteOleOle.pre">
   <data key="d0">TG123SteOleOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">le.,TG1,leO,teO,23S</data>
+  <data key="d2">le.,23S,TG1,teO,leO</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoPalPal.pre">
   <data key="d0">TG123PaoPalPal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,aoP,alP,23P,al.</data>
+  <data key="d2">23P,alP,TG1,al.,aoP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoPalSte.pre">
   <data key="d0">TG123PaoPalSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,aoP,te.,alS,23P</data>
+  <data key="d2">23P,TG1,te.,aoP,alS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoPalPao.pre">
   <data key="d0">TG123PaoPalPao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,ao.,aoP,alP,23P</data>
+  <data key="d2">ao.,23P,alP,TG1,aoP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoPalOle.pre">
   <data key="d0">TG123PaoPalOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,le.,aoP,23P,alO</data>
+  <data key="d2">le.,23P,alO,TG1,aoP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoStePal.pre">
   <data key="d0">TG123PaoStePal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,aoS,23P,al.</data>
+  <data key="d2">teP,23P,TG1,al.,aoS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoSteSte.pre">
   <data key="d0">TG123PaoSteSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,aoS,te.,teS,23P</data>
+  <data key="d2">23P,TG1,te.,aoS,teS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoStePao.pre">
   <data key="d0">TG123PaoStePao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,TG1,aoS,ao.,23P</data>
+  <data key="d2">ao.,teP,23P,TG1,aoS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoSteOle.pre">
   <data key="d0">TG123PaoSteOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,aoS,le.,23P,teO</data>
+  <data key="d2">le.,23P,TG1,aoS,teO</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoPaoPal.pre">
   <data key="d0">TG123PaoPaoPal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">23P,TG1,al.,aoP</data>
+  <data key="d2">23P,al.,aoP,TG1</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoPaoSte.pre">
   <data key="d0">TG123PaoPaoSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,aoS,aoP,te.,23P</data>
+  <data key="d2">23P,TG1,te.,aoP,aoS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoPaoPao.pre">
   <data key="d0">TG123PaoPaoPao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">23P,TG1,ao.,aoP</data>
+  <data key="d2">23P,aoP,ao.,TG1</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoPaoOle.pre">
   <data key="d0">TG123PaoPaoOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">aoO,TG1,le.,aoP,23P</data>
+  <data key="d2">le.,23P,TG1,aoO,aoP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoOlePal.pre">
   <data key="d0">TG123PaoOlePal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">aoO,TG1,23P,leP,al.</data>
+  <data key="d2">23P,TG1,aoO,al.,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoOleSte.pre">
   <data key="d0">TG123PaoOleSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">aoO,leS,TG1,te.,23P</data>
+  <data key="d2">leS,23P,TG1,te.,aoO</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoOlePao.pre">
   <data key="d0">TG123PaoOlePao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">aoO,TG1,ao.,23P,leP</data>
+  <data key="d2">ao.,23P,TG1,aoO,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123PaoOleOle.pre">
   <data key="d0">TG123PaoOleOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">aoO,TG1,le.,leO,23P</data>
+  <data key="d2">le.,23P,TG1,aoO,leO</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OlePalPal.pre">
   <data key="d0">TG123OlePalPal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,alP,al.,leP,23O</data>
+  <data key="d2">alP,TG1,al.,23O,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OlePalSte.pre">
   <data key="d0">TG123OlePalSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,te.,alS,leP,23O</data>
+  <data key="d2">TG1,te.,23O,alS,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OlePalPao.pre">
   <data key="d0">TG123OlePalPao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">ao.,TG1,alP,leP,23O</data>
+  <data key="d2">ao.,alP,TG1,23O,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OlePalOle.pre">
   <data key="d0">TG123OlePalOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,le.,23O,leP,alO</data>
+  <data key="d2">le.,alO,TG1,23O,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OleStePal.pre">
   <data key="d0">TG123OleStePal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,leS,TG1,al.,23O</data>
+  <data key="d2">leS,teP,TG1,al.,23O</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OleSteSte.pre">
   <data key="d0">TG123OleSteSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">leS,TG1,te.,teS,23O</data>
+  <data key="d2">leS,TG1,te.,23O,teS</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OleStePao.pre">
   <data key="d0">TG123OleStePao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">teP,leS,TG1,ao.,23O</data>
+  <data key="d2">leS,ao.,teP,TG1,23O</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OleSteOle.pre">
   <data key="d0">TG123OleSteOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">leS,TG1,le.,teO,23O</data>
+  <data key="d2">le.,leS,TG1,23O,teO</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OlePaoPal.pre">
   <data key="d0">TG123OlePaoPal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,aoP,al.,leP,23O</data>
+  <data key="d2">TG1,al.,aoP,23O,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OlePaoSte.pre">
   <data key="d0">TG123OlePaoSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,aoS,te.,leP,23O</data>
+  <data key="d2">TG1,te.,aoS,23O,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OlePaoPao.pre">
   <data key="d0">TG123OlePaoPao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">ao.,TG1,aoP,leP,23O</data>
+  <data key="d2">ao.,TG1,aoP,23O,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OlePaoOle.pre">
   <data key="d0">TG123OlePaoOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">aoO,le.,TG1,leP,23O</data>
+  <data key="d2">le.,TG1,aoO,23O,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OleOlePal.pre">
   <data key="d0">TG123OleOlePal.pre</data>
   <data key="d1">square</data>
-  <data key="d2">TG1,al.,leO,leP,23O</data>
+  <data key="d2">TG1,al.,23O,leO,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OleOleSte.pre">
   <data key="d0">TG123OleOleSte.pre</data>
   <data key="d1">square</data>
-  <data key="d2">leS,TG1,te.,leO,23O</data>
+  <data key="d2">leS,TG1,te.,23O,leO</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OleOlePao.pre">
   <data key="d0">TG123OleOlePao.pre</data>
   <data key="d1">square</data>
-  <data key="d2">ao.,TG1,leO,leP,23O</data>
+  <data key="d2">ao.,TG1,23O,leO,leP</data>
   <data key="d3">1</data>
 </node>
 <node id="TG123OleOleOle.pre">
   <data key="d0">TG123OleOleOle.pre</data>
   <data key="d1">square</data>
-  <data key="d2">le.,TG1,23O,leO</data>
+  <data key="d2">leO,le.,TG1,23O</data>
   <data key="d3">1</data>
 </node>
 <node id="Glc.Pre">
@@ -1617,13 +1617,13 @@
 <node id="Bicarb.source">
   <data key="d0">Bicarb.source</data>
   <data key="d1">square</data>
-  <data key="d2">arb,.so,Bic</data>
+  <data key="d2">.so,Bic,arb</data>
   <data key="d3">1</data>
 </node>
 <node id="Bicarb.sink">
   <data key="d0">Bicarb.sink</data>
   <data key="d1">square</data>
-  <data key="d2">arb,Bic,.si</data>
+  <data key="d2">Bic,arb,.si</data>
   <data key="d3">1</data>
 </node>
 <node id="Gln.Pre">
