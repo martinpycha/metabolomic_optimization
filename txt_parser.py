@@ -6,13 +6,28 @@ def add_header(file_location):
     # Load the existing Excel file (no headers assumed)
     df = pd.read_excel(file_location, header=None)
     # Define the new header row
-    new_header = ["ID", "Equation", "Value", "StdErr", "LB", "UB", "Pathway"]
+    #new_header = ["ID", "Equation", "Value", "StdErr", "LB", "UB", "Pathway"]
+    new_header = ["Equation", "ID", "Value", "StdErr", "Pathway"]
     # Insert the new header row at the top
     df.columns = new_header  # assign as column names
     df.dropna(subset=['Equation'], inplace=True)
     # Save the new file (overwrite or save separately)
     df = df[~df['ID'].astype(str).str.contains('net', case=False, na=False)]
-    df.to_excel("A4GALT_flux_withHeader.xlsx", index=False)
+    if 'LB' not in df.columns:
+        df['LB'] = ""
+    if 'UB' not in df.columns:
+        df['UB'] = ""
+        
+    desired_order = ["ID", "Equation", "Value", "StdErr", "LB", "UB", "Pathway"]
+    df = df[desired_order]
+
+    
+    #df.to_excel("A4GALT_flux_withHeader.xlsx", index=False)
+    df.to_excel("metabolomic_optimization/assets/input/PalPaoSteOle_rp_T40_withHeader.xlsx", index=False)
+    
+#add_header("metabolomic_optimization/assets/input/PalPaoSteOle_regular_pruning_T40_1806_flux.xlsx")
+    
+
     
 def compare_two_txt_files(file1_location, file2_location):
     list1, list2 = list(), list()

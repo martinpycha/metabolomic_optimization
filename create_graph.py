@@ -6,6 +6,7 @@ import graphml_parser as gp
 import txt_parser as tp
 import importlib
 import copy
+import re
 
 importlib.reload(gp)
 importlib.reload(tp)
@@ -363,14 +364,179 @@ class Pruning:
                 print(f"All reactions beyond threshold {self.threshold} have been added.")
                 self.print_statement()
                 
+
+# VISUALISATION CLASS
+
+class Visualisation:
+    """
+    Represents an instance of the pruning algorithm
+    Attributes:
+        reactions: List of reaction objects
+        first_reactants: List of molecules, which are not (intermediate) products
+        final_products: List of molecules, which are not (initial) reactants
+        ...TODO
+    """
+    def __init__(self, 
+                 reactions, 
+                 first_reactants, 
+                 final_products, 
+                 molecules, 
+                 basic_pruning=False,
+                 connecting=False,
+                 adding_beyond_treshold=False,
+                 init_num_reactions=10,
+                 proportion=False):
+        """
+        Initializes the pruning algorithm class.
+        Args:
+            ractions: List of reaction objects
+            first_reactants: List of molecules, which are not (intermediate) products
+            final_products: List of molecules, which are not (initial) reactants
+            ...TODO
+        Returns:
+            str: A greeting message.
+        """
+        self.reactions = copy.deepcopy(reactions)
+        self.first_reactants = copy.deepcopy(first_reactants)
+        self.final_products = copy.deepcopy(final_products)
+        self.init_num_reactions = init_num_reactions
+        self.proportion = proportion
+        self.all_molecules = copy.deepcopy(molecules)
+        self.basic_pruning = basic_pruning
+        self.connecting = connecting
+        self.adding_beyond_treshold = adding_beyond_treshold
+        self.basic_pruning_done = False
+        self.connecting_done = False
+        self.adding_beyond_treshold_done = False
+        self.pruned_reactions = set()
+        self.mode = "DEBUGGING"
+        self.sorted_reactions = None
+    
+    
+    def sort(self):
+        """
+        Sorts the attribute 'reactions' in the descending order according to the value
+        of each reaction.
+        """
+        sorted_reactions = sorted(self.reactions, key=lambda react: react.value, reverse=True)
+        return sorted_reactions
+        
+    def add_edges(self):
+        """
+        Adding first x (init_num_reactions) reactions with the highest value (react.value)
+        """
+        sorted_reactions = self.sort()
+        self.sorted_reactions = copy.deepcopy(sorted_reactions)
+        #print("PRINTING ADDED REACTIONS")
+        for i in range(self.init_num_reactions):
+            self.pruned_reactions.add(sorted_reactions[i])
+            sorted_reactions[i].source.hasTarget = True
+            sorted_reactions[i].target.hasSource = True
+            #print(sorted_reactions[i])
+            
+    def add_bfs(self):
+        reactions_added = set()
+        reactions_queue = []
+        reactions_queue.extend(self.pruned_reactions)
+        while(len(reactions_queue) != 0):
+            react = reactions_queue.pop()
+            reactions_added.add(react)
+            if (react.source.is_initial_reactant == False):
+                if react.source.hasSource == False:
+                    for pot_react in self.sorted_reactions:
+                        if pot_react.target == react.source:
+                            react.source.hasSource = True
+                            if pot_react not in reactions_added:
+                                reactions_queue.append(pot_react)
+                            break
+            if (react.target.is_final_product == False):
+                if react.target.hasTarget == False:
+                    for pot_react in self.sorted_reactions:
+                        if pot_react.source == react.target:
+                            react.target.hasTarget = True
+                            if pot_react not in reactions_added:
+                                reactions_queue.append(pot_react)
+                            break
+        self.pruned_reactions = reactions_added
+        return reactions_added
+    
+    # DLE JMENA!!
+    def unite_molecules(self, molecules_to_unite, new_name):
+        new_mol = gp.molecule(new_name)
+        for molecule in molecules_to_unite:
+            for react in self.pruned_reactions:
+                if react.source.name == molecule: 
+                    #print("RENAMING")
+                    if new_mol.id == 0:
+                        new_mol.id = react.source.id
+                    #print("PRINTING THE RENAMED MOLECULE and the reaction:")
+                    new_mol.addOldNameId(react.source.name, react.source.id)
+                    react.source = new_mol 
+                    pattern = r'\b' + re.escape(molecule) + r'\b'
+                    react.equation = re.sub(pattern, new_name, react.equation)
+                    
+                    #react.equation = react.equation.replace(molecule, new_name)   
+                    #print(react.source)
+                    #print(react)
+                if react.target.name == molecule: 
+                    #print("RENAMING")
+                    if new_mol.id == 0:
+                        new_mol.id = react.target.id
+                    #print("PRINTING THE RENAMED MOLECULE and the reaction:")
+                    new_mol.addOldNameId(react.target.name, react.target.id)
+                    react.target = new_mol
+                    
+                    pattern = r'\b' + re.escape(molecule) + r'\b'
+                    react.equation = re.sub(pattern, new_name, react.equation)
+                    #react.equation = react.equation.replace(molecule, new_name)   
+                    #print(react.target)
+                    #print(react)
+            
+    def remove_self_loops(self):
+        for react in self.pruned_reactions.copy():
+            if react.source == react.target:
+                self.pruned_reactions.remove(react)
+                
+    def unite_reactions(self):
+        for react1 in self.pruned_reactions.copy():
+            for react2 in self.pruned_reactions.copy():
+                if react1 != react2:
+                    if react1.source == react2.source and react1.target == react2.target:
+                        react1.value = react1.value + react2.value
+                        self.pruned_reactions.remove(react2)
+                    if react1.source == react2.target and react1.target == react2.source:
+                        if react1.value > react2.value:
+                            react1.value = react1.value - react2.value
+                            self.pruned_reactions.remove(react2)
+                        else:
+                            react2.value = react2.value - react1.value
+                            self.pruned_reactions.remove(react1)
+        
+    
+                
+                    
+                
+    
+    
+        
+    
+        
+        
+# RUNING THE RESPECTIVE PARTS OF THE ALGORITHM:
+# the following code is connected to the "pruning" algorithm (class prune)       
+                
 def prepare_mols_reacs(data_address_input):
-    molecules, reactions, _ = gp.data_parser(data_address_input)
+    molecules, reactions, node_id_to_mol = gp.data_parser(data_address_input)
     first_reactants, final_products, all_mols = identify_precs_and_final_prod(reactions)
-    return all_mols, reactions, first_reactants, final_products
+    return all_mols, reactions, first_reactants, final_products, node_id_to_mol
    
 def save_result_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH, first_algorithm, name="output"):
     OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
     gp.to_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, first_algorithm.pruned_reactions)
+    
+def save_result_graphml_vis(INPUT_PATH_GRAPHML, OUTPUT_PATH, first_algorithm, name="output"):
+    OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
+    gp.to_graphml_visualize(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, first_algorithm.pruned_reactions)
     
 def save_result_txt(INPUT_PATH_TXT, OUTPUT_PATH, first_algorithm, name="output"):
     OUTPUT_PATH_TXT = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".txt"
@@ -380,7 +546,7 @@ def save_result_txt(INPUT_PATH_TXT, OUTPUT_PATH, first_algorithm, name="output")
     
 def run_script(INPUT_PATH_GRAPHML, INPUT_PATH_TXT, OUTPUT_PATH, name="output"):
     # PREPARING THE ALGORITHM
-    molecules, reactions, _ = gp.data_parser(INPUT_PATH_GRAPHML)
+    molecules, reactions, node_id_to_mol = gp.data_parser(INPUT_PATH_GRAPHML)
     calculate_stat_relevance(reactions) # can be omitted
     first_reactants, final_products, all_mols = identify_precs_and_final_prod(reactions)
     first_algorithm = Pruning(reactions, 
@@ -410,14 +576,106 @@ def run_script(INPUT_PATH_GRAPHML, INPUT_PATH_TXT, OUTPUT_PATH, name="output"):
     #print(f"Number of pruned reactions after PRUNING + CONNECTING + ADDING QUANTILES: {len(pruned_reactions)}")
     
     ## SAVING TO .GRAPHML FILE
-    save_result_graphml(OUTPUT_PATH, first_algorithm, name="testing")
+    #save_result_graphml(OUTPUT_PATH, first_algorithm, name="testing", keep_all_mols=True, node_id_to_mol=node_id_to_mol)
     #OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
     #gp.to_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, pruned_reactions)
     #
     ## SAVING TO .TXT FILE
-    save_result_txt(INPUT_PATH_TXT, OUTPUT_PATH, first_algorithm, name="testing")
+    #save_result_txt(INPUT_PATH_TXT, OUTPUT_PATH, first_algorithm, name="testing")
+    
+    
+    
+    
     #OUTPUT_PATH_TXT = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".txt"
     #ax.run_the_script(pruned_reactions, first_algorithm.reactions, INPUT_PATH_TXT, OUTPUT_PATH_TXT)
+
+# SECOND ALGORITHM
+
+def save_res(INPUT_PATH_GRAPHML, OUTPUT_PATH, second_algorithm, name="NONAME"):
+    save_result_graphml_vis(INPUT_PATH_GRAPHML, OUTPUT_PATH, second_algorithm, name=name)
+    
+
+def run_sec_algo():
+    # path to the source graphml file - the graph to be pruned
+    INPUT_PATH_GRAPHML = "./metabolomic_optimization/assets/input/PalPaoSteOle_regular.graphml"
+    # path to the original reactions - reactions to be selected
+    INPUT_PATH_TXT = "./metabolomic_optimization/assets/input/PalPaoSteOle_regular_new.txt"
+    # path to the output, where both the resulting .graphml file and .txt file is stored
+    OUTPUT_PATH = "./metabolomic_optimization/assets/output"
+
+
+    molecules, reactions, node_id_to_mol = gp.data_parser(INPUT_PATH_GRAPHML)
+    calculate_stat_relevance(reactions) # can be omitted
+    first_reactants, final_products, all_mols = identify_precs_and_final_prod(reactions)
+
+    second_algorithm = Visualisation(
+        reactions, 
+        first_reactants, 
+        final_products, 
+        all_mols,
+        basic_pruning=True,
+        connecting=True,
+        adding_beyond_treshold=True,
+        init_num_reactions=10
+    )
+
+    second_algorithm.sort()
+    second_algorithm.add_edges()
+    added_reactions = second_algorithm.add_bfs()
+    #list_of_mols_unite = ["TG123StePaoPal.pre", "TG123StePaoPal"]
+
+    list_of_mols_unite = [
+        "GAP", 
+        "Pyr.c", 
+        "Fum.m", 
+        "Mal.m", 
+        "Pyr.m", 
+        "Ac.m", 
+        "Oac.m", 
+        "Cit.m", 
+        "Acon", 
+        "Cit.c"
+    ]
+
+    list_of_mols_unite2 = [
+        "Glc.lab",
+        "Glc",
+        "DHAP",
+        "G3P.New",
+        "G3P"
+    ]
+
+    list_of_mols_unite3 = [
+        "Pao.P2",
+        "TG123PaoStePao"
+    ]
+
+    list_of_mols_unite4 = [
+        "Ac",
+        "Pal.Pre"
+    ]
+
+
+
+
+    # TADY KOMENTOVAT/NEKOMENTOVAT PRO SDRUZOVANI MOLEKUL
+    #second_algorithm.unite_molecules(list_of_mols_unite, "CITRATOVY CYKLUS")
+    second_algorithm.unite_molecules(list_of_mols_unite2, "GLYKOLYSA?")
+    ##second_algorithm.unite_molecules(list_of_mols_unite3, "!!!TEST!!!")
+    #second_algorithm.unite_molecules(list_of_mols_unite4, "OOOOOOOOOOOOOOOOOOOOOOOOO")
+    second_algorithm.remove_self_loops()
+    #second_algorithm.unite_reactions()
+
+    print_all(second_algorithm.pruned_reactions)
+
+    #save_result_txt(INPUT_PATH_TXT, OUTPUT_PATH, second_algorithm, name="UNITED")
+
+
+    save_res(INPUT_PATH_GRAPHML, OUTPUT_PATH, second_algorithm, name="UNITED2")
+
+
+# TADY RUZNE KOMENTOVAT a ZAKOMENTOVAT
+#run_sec_algo()
 
 
 # COMMENT THE FOLOOWING IN ORDER FOR THE SCRIPT TO WORK!
@@ -432,3 +690,5 @@ OUTPUT_PATH = "./metabolomic_optimization/assets/output"
 run_script(INPUT_PATH_GRAPHML,INPUT_PATH_TXT, OUTPUT_PATH)
 
 """
+
+
