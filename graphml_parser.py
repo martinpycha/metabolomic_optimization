@@ -159,8 +159,48 @@ def data_parser(file_path):
         
     return molecules, reactions, node_id_to_mol
     
+def to_graphml(input_file_path, output_path, pruned_reactions, remove_nodes=False):
+    # Load the GraphML XML
+    tree = ET.parse(input_file_path)
+    root = tree.getroot()
 
+    # Find the graph element
+    graph_elem = root.find("{http://graphml.graphdrawing.org/xmlns}graph")
 
+    # Create a set of reaction IDs to keep
+    reaction_ids_to_keep = set(r.id for r in pruned_reactions)
+
+    # Create a set of node IDs to keep (from kept reactions)
+    node_ids_to_keep = set()
+    for r in pruned_reactions:
+        node_ids_to_keep.add(r.source.name)
+        node_ids_to_keep.add(r.target.name)
+
+    # Track removal counts
+    removed_edges = 0
+    removed_nodes = 0
+
+    # Remove unwanted edges
+    for edge in list(graph_elem.findall("{http://graphml.graphdrawing.org/xmlns}edge")):
+        edge_id = edge.get("id")
+        if edge_id not in reaction_ids_to_keep:
+            graph_elem.remove(edge)
+            removed_edges += 1
+
+    # Remove unwanted nodes
+    if remove_nodes:
+        for node in list(graph_elem.findall("{http://graphml.graphdrawing.org/xmlns}node")):
+            node_id = node.get("id")
+            if node_id not in node_ids_to_keep:
+                graph_elem.remove(node)
+                removed_nodes += 1
+
+    print(f"Removed {removed_edges} edges and {removed_nodes} nodes.")
+
+    # Write the pruned GraphML to file
+    tree.write(output_path, encoding='utf-8', xml_declaration=True)
+
+"""
 def to_graphml(input_file_path, output_path, pruned_reactions):
     # Load the GraphML XML
     tree = ET.parse(input_file_path)
@@ -192,7 +232,7 @@ def to_graphml(input_file_path, output_path, pruned_reactions):
 
     # Write the pruned GraphML to file
     tree.write(output_path, encoding='utf-8', xml_declaration=True)
-
+"""
 
 
 

@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:graphml xmlns:ns0="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><ns0:key id="d12" for="edge" attr.name="path" attr.type="boolean" />
+<ns0:key id="d11" for="edge" attr.name="path" attr.type="string" />
+<ns0:key id="d10" for="edge" attr.name="URL" attr.type="string" />
+<ns0:key id="d9" for="edge" attr.name="UB" attr.type="boolean" />
+<ns0:key id="d8" for="edge" attr.name="LB" attr.type="boolean" />
+<ns0:key id="d7" for="edge" attr.name="error" attr.type="double" />
+<ns0:key id="d6" for="edge" attr.name="weight" attr.type="double" />
+<ns0:key id="d5" for="edge" attr.name="equation" attr.type="string" />
+<ns0:key id="d4" for="edge" attr.name="name" attr.type="string" />
+<ns0:key id="d3" for="node" attr.name="degree" attr.type="long" />
+<ns0:key id="d2" for="node" attr.name="includes" attr.type="string" />
+<ns0:key id="d1" for="node" attr.name="configuration" attr.type="string" />
+<ns0:key id="d0" for="node" attr.name="label" attr.type="string" />
+<ns0:graph edgedefault="directed"><ns0:node id="MG1Pal">
+  <ns0:data key="d0">MG1Pal</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">MG1</ns0:data>
+  <ns0:data key="d3">10</ns0:data>
+</ns0:node>
+<ns0:node id="DG12PalPal">
+  <ns0:data key="d0">DG12PalPal</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">12</ns0:data>
+</ns0:node>
+<ns0:node id="Pal">
+  <ns0:data key="d0">Pal</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Pal</ns0:data>
+  <ns0:data key="d3">111</ns0:data>
+</ns0:node>
+<ns0:node id="Ste">
+  <ns0:data key="d0">Ste</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Ste</ns0:data>
+  <ns0:data key="d3">111</ns0:data>
+</ns0:node>
+<ns0:node id="Pao">
+  <ns0:data key="d0">Pao</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Pao</ns0:data>
+  <ns0:data key="d3">111</ns0:data>
+</ns0:node>
+<ns0:node id="Ole">
+  <ns0:data key="d0">Ole</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Ole</ns0:data>
+  <ns0:data key="d3">112</ns0:data>
+</ns0:node>
+<ns0:node id="DG12StePao">
+  <ns0:data key="d0">DG12StePao</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">12</ns0:data>
+</ns0:node>
+<ns0:node id="MG1Pao">
+  <ns0:data key="d0">MG1Pao</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">MG1</ns0:data>
+  <ns0:data key="d3">10</ns0:data>
+</ns0:node>
+<ns0:node id="DG12PaoOle">
+  <ns0:data key="d0">DG12PaoOle</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">12</ns0:data>
+</ns0:node>
+<ns0:node id="TG123PalPalOle">
+  <ns0:data key="d0">TG123PalPalOle</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">13</ns0:data>
+</ns0:node>
+<ns0:node id="TG123PalPaoSte">
+  <ns0:data key="d0">TG123PalPaoSte</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">13</ns0:data>
+</ns0:node>
+<ns0:node id="TG123StePaoSte">
+  <ns0:data key="d0">TG123StePaoSte</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">13</ns0:data>
+</ns0:node>
+<ns0:node id="TG123PaoStePao">
+  <ns0:data key="d0">TG123PaoStePao</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">13</ns0:data>
+</ns0:node>
+<ns0:node id="TG123PaoPaoSte">
+  <ns0:data key="d0">TG123PaoPaoSte</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">13</ns0:data>
+</ns0:node>
+<ns0:node id="TG123PaoOleSte">
+  <ns0:data key="d0">TG123PaoOleSte</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">13</ns0:data>
+</ns0:node>
+<ns0:node id="DG13PalSte">
+  <ns0:data key="d0">DG13PalSte</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">11</ns0:data>
+</ns0:node>
+<ns0:node id="DG13PaoSte">
+  <ns0:data key="d0">DG13PaoSte</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">11</ns0:data>
+</ns0:node>
+<ns0:node id="DG13PaoPao">
+  <ns0:data key="d0">DG13PaoPao</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">11</ns0:data>
+</ns0:node>
+<ns0:node id="DG23PaoSte">
+  <ns0:data key="d0">DG23PaoSte</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">11</ns0:data>
+</ns0:node>
+<ns0:node id="LPA1Ste">
+  <ns0:data key="d0">LPA1Ste</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">6</ns0:data>
+</ns0:node>
+<ns0:node id="PA12StePao">
+  <ns0:data key="d0">PA12StePao</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">3</ns0:data>
+</ns0:node>
+<ns0:node id="Sink">
+  <ns0:data key="d0">Sink</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">77</ns0:data>
+</ns0:node>
+<ns0:node id="TG123PaoStePao.pre">
+  <ns0:data key="d0">TG123PaoStePao.pre</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">ao.,teP,23P,TG1,aoS</ns0:data>
+  <ns0:data key="d3">1</ns0:data>
+</ns0:node>
+<ns0:node id="Pyr.m">
+  <ns0:data key="d0">Pyr.m</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Pyr</ns0:data>
+  <ns0:data key="d3">5</ns0:data>
+</ns0:node>
+<ns0:node id="Ac.m">
+  <ns0:data key="d0">Ac.m</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">3</ns0:data>
+</ns0:node>
+<ns0:node id="Oac.m">
+  <ns0:data key="d0">Oac.m</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Oac</ns0:data>
+  <ns0:data key="d3">8</ns0:data>
+</ns0:node>
+<ns0:node id="Cit.m">
+  <ns0:data key="d0">Cit.m</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Cit</ns0:data>
+  <ns0:data key="d3">8</ns0:data>
+</ns0:node>
+<ns0:node id="Acon">
+  <ns0:data key="d0">Acon</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2" />
+  <ns0:data key="d3">8</ns0:data>
+</ns0:node>
+<ns0:node id="Fum.m">
+  <ns0:data key="d0">Fum.m</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Fum</ns0:data>
+  <ns0:data key="d3">5</ns0:data>
+</ns0:node>
+<ns0:node id="Mal.m">
+  <ns0:data key="d0">Mal.m</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Mal</ns0:data>
+  <ns0:data key="d3">15</ns0:data>
+</ns0:node>
+<ns0:node id="Cit.c">
+  <ns0:data key="d0">Cit.c</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Cit</ns0:data>
+  <ns0:data key="d3">6</ns0:data>
+</ns0:node>
+<ns0:node id="Cit">
+  <ns0:data key="d0">Cit</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Cit</ns0:data>
+  <ns0:data key="d3">3</ns0:data>
+</ns0:node>
+<ns0:node id="Pal.Pre">
+  <ns0:data key="d0">Pal.Pre</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Pal</ns0:data>
+  <ns0:data key="d3">3</ns0:data>
+</ns0:node>
+<ns0:node id="Pao.P2">
+  <ns0:data key="d0">Pao.P2</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Pao</ns0:data>
+  <ns0:data key="d3">2</ns0:data>
+</ns0:node>
+<ns0:node id="Pal.lab">
+  <ns0:data key="d0">Pal.lab</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Pal</ns0:data>
+  <ns0:data key="d3">1</ns0:data>
+</ns0:node>
+<ns0:node id="Ole.lab">
+  <ns0:data key="d0">Ole.lab</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Ole</ns0:data>
+  <ns0:data key="d3">1</ns0:data>
+</ns0:node>
+<ns0:node id="Glc.lab">
+  <ns0:data key="d0">GLYKOLYSA</ns0:data>
+  <ns0:data key="d1">square</ns0:data>
+  <ns0:data key="d2">Glc</ns0:data>
+  <ns0:data key="d3">1</ns0:data>
+</ns0:node>
+<ns0:edge source="MG1Pal" target="DG12PalPal" id="0">
+  <ns0:data key="d4">R1</ns0:data>
+  <ns0:data key="d5">MG1Pal + Pal -&gt; DG12PalPal</ns0:data>
+  <ns0:data key="d6">296.130289729225</ns0:data>
+  <ns0:data key="d7">32.21925438489297</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R1path</ns0:data>
+  <ns0:data key="d11">tracer_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="DG12PalPal" target="TG123PalPalOle" id="70">
+  <ns0:data key="d4">R36</ns0:data>
+  <ns0:data key="d5">DG12PalPal + Ole -&gt; TG123PalPalOle</ns0:data>
+  <ns0:data key="d6">200.0022029262901</ns0:data>
+  <ns0:data key="d7">27.136331264931</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R36path</ns0:data>
+  <ns0:data key="d11">DG13 mix_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="Pal" target="TG123PalPaoSte" id="617">
+  <ns0:data key="d4">R309</ns0:data>
+  <ns0:data key="d5">DG23PaoSte + Pal -&gt; TG123PalPaoSte</ns0:data>
+  <ns0:data key="d6">1115.721802647285</ns0:data>
+  <ns0:data key="d7">25.96660680907235</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R309path</ns0:data>
+  <ns0:data key="d11">polar</ns0:data>
+</ns0:edge>
+<ns0:edge source="Ste" target="TG123StePaoSte" id="115">
+  <ns0:data key="d4">R58</ns0:data>
+  <ns0:data key="d5">DG12StePao + Ste -&gt; TG123StePaoSte</ns0:data>
+  <ns0:data key="d6">724.6853433201824</ns0:data>
+  <ns0:data key="d7">78.29401672839612</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R58path</ns0:data>
+  <ns0:data key="d11">DG23 mix_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="Ste" target="TG123PaoOleSte" id="155">
+  <ns0:data key="d4">R78</ns0:data>
+  <ns0:data key="d5">DG12PaoOle + Ste -&gt; TG123PaoOleSte</ns0:data>
+  <ns0:data key="d6">849.8969194816999</ns0:data>
+  <ns0:data key="d7">26.04951191083692</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R78path</ns0:data>
+  <ns0:data key="d11">TG mix_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="Ste" target="LPA1Ste" id="819">
+  <ns0:data key="d4">R410</ns0:data>
+  <ns0:data key="d5">G3P + Ste -&gt; LPA1Ste</ns0:data>
+  <ns0:data key="d6">1090.38314566406</ns0:data>
+  <ns0:data key="d7">24.65507649576929</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R410path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Pao" target="TG123PaoPaoSte" id="749">
+  <ns0:data key="d4">R375</ns0:data>
+  <ns0:data key="d5">DG13PaoSte + Pao -&gt; TG123PaoPaoSte</ns0:data>
+  <ns0:data key="d6">688.5697535068109</ns0:data>
+  <ns0:data key="d7">54.06068684691108</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R375path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Pao" target="PA12StePao" id="837">
+  <ns0:data key="d4">R419</ns0:data>
+  <ns0:data key="d5">LPA1Ste + Pao -&gt; PA12StePao</ns0:data>
+  <ns0:data key="d6">1090.380967470666</ns0:data>
+  <ns0:data key="d7">24.62812125616124</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R419path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Ole" target="DG12PaoOle" id="23">
+  <ns0:data key="d4">R12</ns0:data>
+  <ns0:data key="d5">MG1Pao + Ole -&gt; DG12PaoOle</ns0:data>
+  <ns0:data key="d6">1058.917157815785</ns0:data>
+  <ns0:data key="d7">26.67704649174427</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R12path</ns0:data>
+  <ns0:data key="d11">DG13 mix_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="DG12StePao" target="TG123StePaoSte" id="114">
+  <ns0:data key="d4">R58</ns0:data>
+  <ns0:data key="d5">DG12StePao + Ste -&gt; TG123StePaoSte</ns0:data>
+  <ns0:data key="d6">724.6853433201824</ns0:data>
+  <ns0:data key="d7">78.29401672839612</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R58path</ns0:data>
+  <ns0:data key="d11">DG23 mix_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="MG1Pao" target="DG12PaoOle" id="22">
+  <ns0:data key="d4">R12</ns0:data>
+  <ns0:data key="d5">MG1Pao + Ole -&gt; DG12PaoOle</ns0:data>
+  <ns0:data key="d6">1058.917157815785</ns0:data>
+  <ns0:data key="d7">26.67704649174427</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R12path</ns0:data>
+  <ns0:data key="d11">DG13 mix_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="DG12PaoOle" target="TG123PaoOleSte" id="154">
+  <ns0:data key="d4">R78</ns0:data>
+  <ns0:data key="d5">DG12PaoOle + Ste -&gt; TG123PaoOleSte</ns0:data>
+  <ns0:data key="d6">849.8969194816999</ns0:data>
+  <ns0:data key="d7">26.04951191083692</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R78path</ns0:data>
+  <ns0:data key="d11">TG mix_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="TG123PalPalOle" target="Pal" id="327">
+  <ns0:data key="d4">R164</ns0:data>
+  <ns0:data key="d5">TG123PalPalOle -&gt; DG23PalOle + Pal</ns0:data>
+  <ns0:data key="d6">100.0047642388411</ns0:data>
+  <ns0:data key="d7">26.0221823164472</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R164path</ns0:data>
+  <ns0:data key="d11">TG pre_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="TG123PalPaoSte" target="DG13PalSte" id="210">
+  <ns0:data key="d4">R106</ns0:data>
+  <ns0:data key="d5">TG123PalPaoSte -&gt; DG13PalSte + Pao</ns0:data>
+  <ns0:data key="d6">1015.723592459755</ns0:data>
+  <ns0:data key="d7">34.41519856427272</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R106path</ns0:data>
+  <ns0:data key="d11">TG mix_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="TG123StePaoSte" target="DG23PaoSte" id="370">
+  <ns0:data key="d4">R186</ns0:data>
+  <ns0:data key="d5">TG123StePaoSte -&gt; DG23PaoSte + Ste</ns0:data>
+  <ns0:data key="d6">624.6854290954482</ns0:data>
+  <ns0:data key="d7">54.84833953735293</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R186path</ns0:data>
+  <ns0:data key="d11">TG pre_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="TG123PaoStePao" target="DG13PaoPao" id="268">
+  <ns0:data key="d4">R135</ns0:data>
+  <ns0:data key="d5">TG123PaoStePao -&gt; DG13PaoPao + Ste</ns0:data>
+  <ns0:data key="d6">754.581349121616</ns0:data>
+  <ns0:data key="d7">30.42797344451973</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R135path</ns0:data>
+  <ns0:data key="d11">TG Sink_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="TG123PaoStePao" target="Ste" id="269">
+  <ns0:data key="d4">R135</ns0:data>
+  <ns0:data key="d5">TG123PaoStePao -&gt; DG13PaoPao + Ste</ns0:data>
+  <ns0:data key="d6">754.581349121616</ns0:data>
+  <ns0:data key="d7">30.42797344451973</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R135path</ns0:data>
+  <ns0:data key="d11">TG Sink_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="TG123PaoPaoSte" target="Pao" id="403">
+  <ns0:data key="d4">R202</ns0:data>
+  <ns0:data key="d5">TG123PaoPaoSte -&gt; DG23PaoSte + Pao</ns0:data>
+  <ns0:data key="d6">588.5657221739799</ns0:data>
+  <ns0:data key="d7">28.48119046378119</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R202path</ns0:data>
+  <ns0:data key="d11">TG pre_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="TG123PaoOleSte" target="DG13PaoSte" id="282">
+  <ns0:data key="d4">R142</ns0:data>
+  <ns0:data key="d5">TG123PaoOleSte -&gt; DG13PaoSte + Ole</ns0:data>
+  <ns0:data key="d6">749.902472588409</ns0:data>
+  <ns0:data key="d7">51.23684309703942</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R142path</ns0:data>
+  <ns0:data key="d11">TG pre_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="DG13PalSte" target="MG1Pal" id="450">
+  <ns0:data key="d4">R226</ns0:data>
+  <ns0:data key="d5">DG13PalSte -&gt; MG1Pal + Ste</ns0:data>
+  <ns0:data key="d6">715.7260722453007</ns0:data>
+  <ns0:data key="d7">28.92981439962577</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R226path</ns0:data>
+  <ns0:data key="d11">TG pre_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="DG13PaoSte" target="TG123PaoPaoSte" id="748">
+  <ns0:data key="d4">R375</ns0:data>
+  <ns0:data key="d5">DG13PaoSte + Pao -&gt; TG123PaoPaoSte</ns0:data>
+  <ns0:data key="d6">688.5697535068109</ns0:data>
+  <ns0:data key="d7">54.06068684691108</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R375path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="DG13PaoPao" target="MG1Pao" id="468">
+  <ns0:data key="d4">R235</ns0:data>
+  <ns0:data key="d5">DG13PaoPao -&gt; MG1Pao + Pao</ns0:data>
+  <ns0:data key="d6">663.6032605518645</ns0:data>
+  <ns0:data key="d7">103.2672973838991</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R235path</ns0:data>
+  <ns0:data key="d11">TG Sink_path</ns0:data>
+</ns0:edge>
+<ns0:edge source="DG23PaoSte" target="TG123PalPaoSte" id="616">
+  <ns0:data key="d4">R309</ns0:data>
+  <ns0:data key="d5">DG23PaoSte + Pal -&gt; TG123PalPaoSte</ns0:data>
+  <ns0:data key="d6">1115.721802647285</ns0:data>
+  <ns0:data key="d7">25.96660680907235</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R309path</ns0:data>
+  <ns0:data key="d11">polar</ns0:data>
+</ns0:edge>
+<ns0:edge source="Glc.lab" target="LPA1Ste" id="818">
+  <ns0:data key="d4">R410</ns0:data>
+  <ns0:data key="d5">GLYKOLYSA + Ste -&gt; LPA1Ste</ns0:data>
+  <ns0:data key="d6">1090.38314566406</ns0:data>
+  <ns0:data key="d7">24.65507649576929</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R410path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="LPA1Ste" target="PA12StePao" id="836">
+  <ns0:data key="d4">R419</ns0:data>
+  <ns0:data key="d5">LPA1Ste + Pao -&gt; PA12StePao</ns0:data>
+  <ns0:data key="d6">1090.380967470666</ns0:data>
+  <ns0:data key="d7">24.62812125616124</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R419path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="PA12StePao" target="DG12StePao" id="862">
+  <ns0:data key="d4">R435</ns0:data>
+  <ns0:data key="d5">PA12StePao -&gt; DG12StePao</ns0:data>
+  <ns0:data key="d6">1090.380967470666</ns0:data>
+  <ns0:data key="d7">24.62812125616124</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R435path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="TG123PaoStePao.pre" target="TG123PaoStePao" id="1060">
+  <ns0:data key="d4">R633</ns0:data>
+  <ns0:data key="d5">TG123PaoStePao.pre -&gt; TG123PaoStePao</ns0:data>
+  <ns0:data key="d6">846.9915220346039</ns0:data>
+  <ns0:data key="d7">82.93137585982558</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R633path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Pyr.m" target="Ac.m" id="1128">
+  <ns0:data key="d4">R696</ns0:data>
+  <ns0:data key="d5">Pyr.m -&gt; COO + Ac.m</ns0:data>
+  <ns0:data key="d6">0.5822582270635421</ns0:data>
+  <ns0:data key="d7">7.329223271456863</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R696path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Pyr.m" target="Oac.m" id="1129">
+  <ns0:data key="d4">R697</ns0:data>
+  <ns0:data key="d5">Pyr.m + COO -&gt; Oac.m</ns0:data>
+  <ns0:data key="d6">0.7857781837298301</ns0:data>
+  <ns0:data key="d7">10.17671895894381</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R697path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Ac.m" target="Cit.m" id="1131">
+  <ns0:data key="d4">R698</ns0:data>
+  <ns0:data key="d5">Ac.m + Oac.m -&gt; Cit.m</ns0:data>
+  <ns0:data key="d6">0.7857781837298488</ns0:data>
+  <ns0:data key="d7">10.17671895894381</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R698path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Oac.m" target="Cit.m" id="1132">
+  <ns0:data key="d4">R698</ns0:data>
+  <ns0:data key="d5">Ac.m + Oac.m -&gt; Cit.m</ns0:data>
+  <ns0:data key="d6">0.7857781837298488</ns0:data>
+  <ns0:data key="d7">10.17671895894381</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R698path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Cit.m" target="Acon" id="1133">
+  <ns0:data key="d4">R699 net</ns0:data>
+  <ns0:data key="d5">Cit.m &lt;-&gt; Acon</ns0:data>
+  <ns0:data key="d6">0.7850687820100452</ns0:data>
+  <ns0:data key="d7">17.5460357063072</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R699 netpath</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Cit.m" target="Cit.c" id="1171">
+  <ns0:data key="d4">R714</ns0:data>
+  <ns0:data key="d5">Cit.m -&gt; Cit.c</ns0:data>
+  <ns0:data key="d6">0.0007094017198093633</ns0:data>
+  <ns0:data key="d7">20.92229013359543</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R714path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Acon" target="Cit.m" id="1134">
+  <ns0:data key="d4">R699 net</ns0:data>
+  <ns0:data key="d5">Cit.m &lt;-&gt; Acon</ns0:data>
+  <ns0:data key="d6">0.7850687820100452</ns0:data>
+  <ns0:data key="d7">17.5460357063072</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R699 netpath</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Fum.m" target="Mal.m" id="1146">
+  <ns0:data key="d4">R704 net</ns0:data>
+  <ns0:data key="d5">Fum.m &lt;-&gt; Mal.m</ns0:data>
+  <ns0:data key="d6">0.7850717411815433</ns0:data>
+  <ns0:data key="d7">9.454858929379078</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R704 netpath</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Mal.m" target="Fum.m" id="1147">
+  <ns0:data key="d4">R704 net</ns0:data>
+  <ns0:data key="d5">Fum.m &lt;-&gt; Mal.m</ns0:data>
+  <ns0:data key="d6">0.7850717411815433</ns0:data>
+  <ns0:data key="d7">9.454858929379078</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R704 netpath</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Mal.m" target="Pyr.m" id="1158">
+  <ns0:data key="d4">R707</ns0:data>
+  <ns0:data key="d5">Mal.m -&gt; Pyr.m + COO</ns0:data>
+  <ns0:data key="d6">0.7850716411815266</ns0:data>
+  <ns0:data key="d7">9.45485892937908</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R707path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Cit.c" target="Cit" id="1178">
+  <ns0:data key="d4">R721</ns0:data>
+  <ns0:data key="d5">0*Cit.c -&gt; Cit</ns0:data>
+  <ns0:data key="d6">0.001152263153065458</ns0:data>
+  <ns0:data key="d7">26.84424257142555</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R721path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Cit" target="Sink" id="1179">
+  <ns0:data key="d4">R722</ns0:data>
+  <ns0:data key="d5">Cit -&gt; Sink</ns0:data>
+  <ns0:data key="d6">0.001451072367297966</ns0:data>
+  <ns0:data key="d7">26.78547056546399</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R722path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Pal.Pre" target="Pao.P2" id="1218">
+  <ns0:data key="d4">R755</ns0:data>
+  <ns0:data key="d5">Pal.Pre -&gt; Pao.P2</ns0:data>
+  <ns0:data key="d6">1315.835161452587</ns0:data>
+  <ns0:data key="d7">252.5252240415626</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R755path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Pao.P2" target="Pao" id="1220">
+  <ns0:data key="d4">R757</ns0:data>
+  <ns0:data key="d5">Pao.P2 -&gt; Pao</ns0:data>
+  <ns0:data key="d6">1315.835161452587</ns0:data>
+  <ns0:data key="d7">252.5252240415626</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R757path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Pal.lab" target="Pal" id="1230">
+  <ns0:data key="d4">R767</ns0:data>
+  <ns0:data key="d5">Pal.lab -&gt; Pal</ns0:data>
+  <ns0:data key="d6">2606.914002077905</ns0:data>
+  <ns0:data key="d7">27.02121023663365</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R767path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+<ns0:edge source="Ole.lab" target="Ole" id="1231">
+  <ns0:data key="d4">R768</ns0:data>
+  <ns0:data key="d5">Ole.lab -&gt; Ole</ns0:data>
+  <ns0:data key="d6">2726.381956499158</ns0:data>
+  <ns0:data key="d7">28.04660009533677</ns0:data>
+  <ns0:data key="d8">False</ns0:data>
+  <ns0:data key="d9">False</ns0:data>
+  <ns0:data key="d10">R768path</ns0:data>
+  <ns0:data key="d12">False</ns0:data>
+</ns0:edge>
+</ns0:graph></ns0:graphml>

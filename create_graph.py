@@ -98,6 +98,7 @@ class Pruning:
                  first_reactants, 
                  final_products, 
                  molecules, 
+                 remove_irrelevant_pre=False,
                  basic_pruning=False,
                  connecting=False,
                  adding_beyond_treshold=False,
@@ -122,11 +123,15 @@ class Pruning:
         self.basic_pruning = basic_pruning
         self.connecting = connecting
         self.adding_beyond_treshold = adding_beyond_treshold
+        self.remove_irrelevant_pre = remove_irrelevant_pre
+        self.removed_irr_pre = False
         self.basic_pruning_done = False
         self.connecting_done = False
         self.adding_beyond_treshold_done = False
-        self.pruned_reactions = None
+        self.sorted = False
+        self.pruned_reactions = set()
         self.mode = None
+        self.sorted_reactions = list()
               
     def sort(self):
         """
@@ -134,7 +139,70 @@ class Pruning:
         of each reaction.
         """
         sorted_reactions = sorted(self.reactions, key=lambda react: react.value, reverse=True)
+        self.sorted_reactions = sorted_reactions
+        self.sorted = True
         return sorted_reactions
+        
+        
+    # maybe totally WRONG?
+    def remove_irrelevant_nodes_and_edges(self):
+        
+        
+        print(f"Number of sorted reactions AFTER SORTING: {len(self.sorted_reactions)}")
+        print(f"Number of pruned reactions AFTER SORTING: {len(self.pruned_reactions)}")
+        #matches = []
+        #self.sort()
+        #print(f"Number of sorted reactions BEFORE removal: {len(self.sorted_reactions)}")
+        #print(f"Number of pruned reactions BEFORE removal: {len(self.pruned_reactions)}")
+        for react in self.sorted_reactions.copy():
+            if react.source.name.endswith(".pre"):
+                expected_target = react.source.name[:-4]
+                if react.target.name == expected_target:
+                    for react2 in self.sorted_reactions.copy():
+                        if (#react2 != react \
+                            react2.source.name == react.target.name \
+                            and react2.target.name == "Sink" \
+                            and abs(react.value - react2.value) < 0.5):
+                            if react in self.sorted_reactions:
+                                print(f"REMOVING: " + react.equation + " val: " + str(react.value))
+                                self.sorted_reactions.remove(react)
+                            if react in self.pruned_reactions:
+                                self.pruned_reactions.remove(react)
+                            
+                            if react2 in self.sorted_reactions:
+                                print(f"REMOVING: " + react2.equation + " val: " + str(react2.value))
+                                self.sorted_reactions.remove(react2)
+                            if react2 in self.pruned_reactions:
+                                self.pruned_reactions.remove(react2)
+                            #print("Removing reaction:")
+                            #print(react2)
+
+                            #print("Removing nodes:")
+                            #print(react.source)
+                            #print(react.target)
+                            self.first_reactants.remove(react.source)
+                            self.all_molecules.remove(react.source)
+                            self.all_molecules.remove(react.target)
+                            for react3 in self.sorted_reactions.copy():
+                                if react3.source.name == react.target.name or react3.target.name == react.target.name:
+                                    if react3.source.name == react.target.name:
+                                        print("the reac.target is source ")
+                                    if react3.target.name == react.target.name:
+                                        print("the reac.target is target ")
+                                        
+                                        
+                                        
+                                        
+                                    if react3 in self.sorted_reactions:
+                                        print(f"REMOVING related eq: " + react3.equation + " val: " + str(react3.value))
+                                        self.sorted_reactions.remove(react3)
+                                    if react3 in self.pruned_reactions:
+                                        self.pruned_reactions.remove(react3)
+        self.removed_irr_pre = True
+        #print(f"Number of sorted reactions AFTER removal: {len(self.sorted_reactions)}")   
+        #print(f"Number of pruned reactions AFTER removal: {len(self.pruned_reactions)}")   
+                
+
         
     # tady dat Kruskala    
     def prune(self):
@@ -147,7 +215,7 @@ class Pruning:
         if self.basic_pruning_done:
             print("Basic pruning has already been conducted!")
             return 
-        sorted_reactions = self.sort()
+        #sorted_reactions = self.sort()
         #print("PRINTING THE SORTED REACTION >>>>>>>>>>>>>>>>>>>>>>>>")
         #for react in sorted_reactions:
         #    print(f">>>{react.equation, react.value, react.source, react.target} <<<\n")
@@ -155,8 +223,11 @@ class Pruning:
         #        print("TADY BYL!!!")
         #print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
         
+        # COMMENT IF ALREADY SORTED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        #self.sort()
+        sorted_reactions = self.sorted_reactions
+
         
-        #sorted_reactions = self.reactions
         pruned_reactions = set()
         
         last_reaction_value = 0
@@ -244,7 +315,10 @@ class Pruning:
             function return 'None'.
             
         """
-        sorted_reactions = self.sort()
+        # TADY TED MENIM - misto:
+        #sorted_reactions = self.sort()
+        # BERU JIZ SERTONENE
+        sorted_reactions = self.sorted_reactions
         for reaction in sorted_reactions:
             if reaction.source.isPartOfConnectedGraph == True \
                 and reaction.target.isPartOfConnectedGraph == False:
@@ -273,25 +347,31 @@ class Pruning:
         if self.connecting_done:
             print("Connectivity has already been ensured!")
         list_of_molecules = self.all_molecules.copy()
+        #print(f"CONNECTIVITY BEING DONE NOW, list len: {len(list_of_molecules)}")
         set_of_all_molecules = set(list_of_molecules)
         molecule = list_of_molecules.pop() 
         molecules_visited = set()
         i = 0
         search = True
         self.mode = "Connected_pruning" 
+        #print(f"CONNECTIVITY BEING FINISHED0, list len: {len(list_of_molecules)}")
         while (search):
             i += 1
             molecules_newly_visited = self.doBFS(molecule)
             molecules_visited.union(molecules_newly_visited)
             if (molecules_visited == set_of_all_molecules):
+                #print("Conectivity has been finished")
                 search = False
             molecule = self.connect()
             if molecule is None:
                 #print("We are connected!!!")
+                #print(f"CONNECTIVITY BEING FINISHED2, set len: {len(set_of_all_molecules)}")
+                #print(f"CONNECTIVITY BEING FINISHED2, list len: {len(molecules_visited)}")
+
                 break
             #molecule = set_of_all_molecules.difference(molecules_visited)
             if i > 1000:
-                #print("Zacyklení ve while!!!")
+                print("Zacyklení ve while!!!")
                 break
             
     def addBeyondTreshold(self, threshold=0.75):
@@ -304,8 +384,8 @@ class Pruning:
              percentage of pruned_reactions matches the threshold
         """
         if self.proportion == True:
-            for react in self.reactions:
-                if len(self.pruned_reactions) < len(self.reactions) * self.threshold:
+            for react in self.sorted_reactions:
+                if len(self.pruned_reactions) < len(self.sorted_reactions) * self.threshold:
                     self.pruned_reactions.add(react)
                 else:
                     return
@@ -315,14 +395,14 @@ class Pruning:
                 new instance of algorithm with a different threshold.")
         self.treshold = threshold
         values = []
-        for react in self.reactions:
+        for react in self.sorted_reactions:
             values.append(react.value)
             
         data_frame = pd.DataFrame(values, columns=["value"])
         #quantile = float(data_frame.iloc[0].quantile(threshold))
         #print(data_frame.iloc[1])
         quantile = float(data_frame["value"].quantile(threshold))
-        for react in self.reactions:
+        for react in self.sorted_reactions:
             if react.value > quantile:
                 self.pruned_reactions.add(react)
         self.mode = "threshold_" + str(int(threshold * 100))
@@ -335,8 +415,28 @@ class Pruning:
         percentage = num_kept/len(self.reactions) * 100
         print(f"Number of reactions kept: {num_kept}, which is {percentage:.2f}% of all reactions.")
         
-        
     def run(self):
+
+        print(f"Number of sorted reactions START: {len(self.sorted_reactions)}")   
+        print(f"Number of pruned reactions START: {len(self.pruned_reactions)}")   
+        
+        if self.sorted:
+            print("Already sorted.")
+        else:
+            self.sort()
+        
+         # FUNKCE ODSTRANUJICI IRELEVANTNI NODES A EDGES
+        # ----------------------------------------------------
+        if self.remove_irrelevant_pre:
+            if self.removed_irr_pre:
+                print("You have already eliminated reactions with x.pre -1-> x -1-> Sink")
+            else:
+                self.remove_irrelevant_nodes_and_edges()
+        # ----------------------------------------------------
+        print(f"Number of sorted reactions AFTER REMOVING IRRELEVANT: {len(self.sorted_reactions)}")   
+        print(f"Number of pruned reactions AFTER REMOVING IRRELEVANT: {len(self.pruned_reactions)}")   
+        
+        
         if self.basic_pruning:
             if self.basic_pruning_done:
                 print("Basic pruning has already been conducted!")
@@ -345,6 +445,13 @@ class Pruning:
                 self.basic_pruning_done = True
                 print("Basic pruning has been conducted.")
                 self.print_statement()
+                
+       
+        print(f"Number of sorted reactions AFTER BASIC PRUNING: {len(self.sorted_reactions)}")   
+        print(f"Number of pruned reactions AFTER BASIC PRUNING: {len(self.pruned_reactions)}")   
+        
+        
+        
         if self.connecting:
             if self.connecting_done:
                 print("Connectivity has already been ensured!")
@@ -353,6 +460,11 @@ class Pruning:
                 self.connecting_done = True
                 print("Connectivity has been ensured.")
                 self.print_statement()
+                
+        print(f"Number of sorted reactions AFTER CONNECTING: {len(self.sorted_reactions)}")   
+        print(f"Number of pruned reactions AFTER CONNECTING: {len(self.pruned_reactions)}")           
+                
+                
         if self.adding_beyond_treshold:
             if self.adding_beyond_treshold_done:
                 print("You have already added reactions beyond certain treshold. \n\
@@ -363,6 +475,9 @@ class Pruning:
                 self.adding_beyond_treshold_done = True
                 print(f"All reactions beyond threshold {self.threshold} have been added.")
                 self.print_statement()
+        
+        print(f"Number of sorted reactions AFTER ADDING BEYOND THRESHOLD: {len(self.sorted_reactions)}")   
+        print(f"Number of pruned reactions AFTER ADDING BEYOND THRESHOLD: {len(self.pruned_reactions)}")     
                 
 
 # VISUALISATION CLASS
@@ -410,7 +525,7 @@ class Visualisation:
         self.adding_beyond_treshold_done = False
         self.pruned_reactions = set()
         self.mode = "DEBUGGING"
-        self.sorted_reactions = None
+        self.sorted_reactions = list()
     
     
     def sort(self):
@@ -419,20 +534,49 @@ class Visualisation:
         of each reaction.
         """
         sorted_reactions = sorted(self.reactions, key=lambda react: react.value, reverse=True)
+        self.sorted_reactions = sorted_reactions
         return sorted_reactions
         
+    # MUST BE DONE BEFORE BFS
     def add_edges(self):
         """
         Adding first x (init_num_reactions) reactions with the highest value (react.value)
         """
-        sorted_reactions = self.sort()
-        self.sorted_reactions = copy.deepcopy(sorted_reactions)
+        #sorted_reactions = self.sort()
+        sorted_reactions = self.sorted_reactions
         #print("PRINTING ADDED REACTIONS")
         for i in range(self.init_num_reactions):
             self.pruned_reactions.add(sorted_reactions[i])
             sorted_reactions[i].source.hasTarget = True
             sorted_reactions[i].target.hasSource = True
             #print(sorted_reactions[i])
+            
+    # MUST BE DONE BEFORE BFS
+    def include_specific_node(self, node_name):
+        """
+        Adding edges, which ought to be included.
+        """
+        for react in self.sorted_reactions: # projizdim reakcemi
+            
+            if react.source.name == node_name:  # najdu reakci, kde je zdrojem hledana molekula
+                # NEMUZE SE STAT, ze by dana molekula nemela vychazejici reakci (protoze je source v react)
+                # zaroven je to nejvetsi takova reakce (protoze ji potkame jako prvni)
+                if (react.source.hasTarget == False): # nema cil? tak pridam tuto reakci
+                    self.pruned_reactions.add(react)
+                    react.source.hasTarget = True
+                    
+            if react.target.name == node_name:
+                # NEMUZE SE STAT, ze by dana molekula nemela prichazejici reakci (protoze je target v react)
+                # zaroven je to nejvetsi takova reakce (protoze ji potkame jako prvni)
+                if (react.target.hasSource == False):
+                    self.pruned_reactions.add(react)
+                    react.target.hasSource = True
+        print(f"The following node should be included: {node_name}")
+    
+    def include_specific_nodes(self, nodes):
+        for single_node in nodes:
+            self.include_specific_node(single_node)
+        
             
     def add_bfs(self):
         reactions_added = set()
@@ -511,6 +655,7 @@ class Visualisation:
                         else:
                             react2.value = react2.value - react1.value
                             self.pruned_reactions.remove(react1)
+                            
         
     
                 
@@ -530,9 +675,9 @@ def prepare_mols_reacs(data_address_input):
     first_reactants, final_products, all_mols = identify_precs_and_final_prod(reactions)
     return all_mols, reactions, first_reactants, final_products, node_id_to_mol
    
-def save_result_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH, first_algorithm, name="output"):
+def save_result_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH, first_algorithm, remove_nodes=False, name="output"):
     OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
-    gp.to_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, first_algorithm.pruned_reactions)
+    gp.to_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, first_algorithm.pruned_reactions, remove_nodes)
     
 def save_result_graphml_vis(INPUT_PATH_GRAPHML, OUTPUT_PATH, first_algorithm, name="output"):
     OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
@@ -655,9 +800,6 @@ def run_sec_algo():
         "Pal.Pre"
     ]
 
-
-
-
     # TADY KOMENTOVAT/NEKOMENTOVAT PRO SDRUZOVANI MOLEKUL
     #second_algorithm.unite_molecules(list_of_mols_unite, "CITRATOVY CYKLUS")
     second_algorithm.unite_molecules(list_of_mols_unite2, "GLYKOLYSA?")
@@ -690,5 +832,3 @@ OUTPUT_PATH = "./metabolomic_optimization/assets/output"
 run_script(INPUT_PATH_GRAPHML,INPUT_PATH_TXT, OUTPUT_PATH)
 
 """
-
-
