@@ -676,15 +676,18 @@ def prepare_mols_reacs(data_address_input):
     return all_mols, reactions, first_reactants, final_products, node_id_to_mol
    
 def save_result_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH, first_algorithm, remove_nodes=False, name="output"):
-    OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
+    #OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
+    OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_T" + str(int(first_algorithm.threshold * 100)) + ".graphml"
     gp.to_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, first_algorithm.pruned_reactions, remove_nodes)
     
 def save_result_graphml_vis(INPUT_PATH_GRAPHML, OUTPUT_PATH, first_algorithm, name="output"):
-    OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
+    #OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
+    OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + ".graphml"
     gp.to_graphml_visualize(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, first_algorithm.pruned_reactions)
     
 def save_result_txt(INPUT_PATH_TXT, OUTPUT_PATH, first_algorithm, name="output"):
-    OUTPUT_PATH_TXT = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".txt"
+    #OUTPUT_PATH_TXT = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".txt"
+    OUTPUT_PATH_TXT = f"" + OUTPUT_PATH + "/" + name + "_T" + str(int(first_algorithm.threshold * 100)) + ".txt"
     tp.run_the_script(first_algorithm.pruned_reactions, first_algorithm.reactions, INPUT_PATH_TXT, OUTPUT_PATH_TXT)
     
 
