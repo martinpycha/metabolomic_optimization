@@ -23,9 +23,10 @@ def add_header(file_location):
 
     
     #df.to_excel("A4GALT_flux_withHeader.xlsx", index=False)
-    df.to_excel("metabolomic_optimization/assets/input/PalPaoSteOle_rp_T40_withHeader.xlsx", index=False)
+    df.to_excel("metabolomic_optimization/assets/input/PPSO_regular_v2.xlsx", index=False)
     
 #add_header("metabolomic_optimization/assets/input/PalPaoSteOle_regular_pruning_T40_1806_flux.xlsx")
+#add_header("metabolomic_optimization/PalPaoSteOle_regular_1279_flux_v2.xlsx")
     
 
     

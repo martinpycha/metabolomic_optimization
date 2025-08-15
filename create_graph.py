@@ -138,13 +138,26 @@ class Pruning:
         Sorts the attribute 'reactions' in the descending order according to the value
         of each reaction.
         """
-        sorted_reactions = sorted(self.reactions, key=lambda react: react.value, reverse=True)
+        #sorted_reactions = sorted(self.reactions, key=lambda react: react.value, reverse=True)
+        
+        # SORTING NEWLY ACCORDING TO THE ABSOLUTE VALUE
+        sorted_reactions = sorted(self.reactions, key=lambda react: abs(react.value), reverse=True)
         self.sorted_reactions = sorted_reactions
         self.sorted = True
         return sorted_reactions
         
         
     # maybe totally WRONG?
+    def check_relevance(self, node, react1, react2):
+        for react in self.sorted_reactions:
+            if react == react1 or react == react2:
+                continue
+            elif react.source.name == node.name or react.target.name == node.name:
+                # NASTAVENI THRESHOLDU NA JEDNU TISICINU
+                if react.value > 0.001:
+                    return True
+        return False
+    
     def remove_irrelevant_nodes_and_edges(self):
         
         
@@ -163,6 +176,28 @@ class Pruning:
                             react2.source.name == react.target.name \
                             and react2.target.name == "Sink" \
                             and abs(react.value - react2.value) < 0.5):
+                            
+                            # if the react.target is relevant, it is not to be removed from the mix
+                            if self.check_relevance(react.target, react, react2):
+                                print("----------------------------------------------------")
+                                print("WE ARE NOT REMOVING -- MOLECULE IS TOO IMPORTANT!!!!")
+                                print(f"Molecule in question: " + str(react.target.name))
+                                print("----------------------------------------------------")
+                                continue
+                            
+                            if (react.reaction_path == "polar" \
+                                or react.reaction_path == "tracer_path" \
+                                or react.reaction_path == "polar_path"\
+                                or react2.reaction_path == "polar" \
+                                or react2.reaction_path == "tracer_path" \
+                                or react2.reaction_path == "polar_path"\
+                                    ):
+                                print("----------------------------------------------------")
+                                print("WE ARE NOT REMOVING -- reaction IS POLAR!!!!")
+                                #print(f"Molecule in question: " + str(react))
+                                print("----------------------------------------------------")
+                                continue
+                            
                             if react in self.sorted_reactions:
                                 print(f"REMOVING: " + react.equation + " val: " + str(react.value))
                                 self.sorted_reactions.remove(react)
@@ -200,10 +235,21 @@ class Pruning:
                                         self.pruned_reactions.remove(react3)
         self.removed_irr_pre = True
         #print(f"Number of sorted reactions AFTER removal: {len(self.sorted_reactions)}")   
-        #print(f"Number of pruned reactions AFTER removal: {len(self.pruned_reactions)}")   
-                
-
+        #print(f"Number of pruned reactions AFTER removal: {len(self.pruned_reactions)}")
         
+    def keep_polars_and_tracers(self):
+        i = 0
+        for react in self.reactions:
+            if react.reaction_path == "polar" \
+                or react.reaction_path == "tracer_path" \
+                or react.reaction_path == "polar_path":
+                i += 1
+                print(f"POLAR REACTION KEPT: " + str(react.equation))
+                
+                self.pruned_reactions.add(react)
+        print(f"Number of polar reactions: {i}")
+        
+                
     # tady dat Kruskala    
     def prune(self):
         """
@@ -437,6 +483,12 @@ class Pruning:
         print(f"Number of pruned reactions AFTER REMOVING IRRELEVANT: {len(self.pruned_reactions)}")   
         
         
+        self.keep_polars_and_tracers()
+        
+        print(f"Number of sorted reactions AFTER KEEPING POLARS AND TRACERS: {len(self.sorted_reactions)}")   
+        print(f"Number of pruned reactions AFTER KEEPING POLARS AND TRACERS: {len(self.pruned_reactions)}")   
+        
+        
         if self.basic_pruning:
             if self.basic_pruning_done:
                 print("Basic pruning has already been conducted!")
@@ -477,7 +529,9 @@ class Pruning:
                 self.print_statement()
         
         print(f"Number of sorted reactions AFTER ADDING BEYOND THRESHOLD: {len(self.sorted_reactions)}")   
-        print(f"Number of pruned reactions AFTER ADDING BEYOND THRESHOLD: {len(self.pruned_reactions)}")     
+        print(f"Number of pruned reactions AFTER ADDING BEYOND THRESHOLD: {len(self.pruned_reactions)}")   
+        
+        self.keep_polars_and_tracers()  
                 
 
 # VISUALISATION CLASS

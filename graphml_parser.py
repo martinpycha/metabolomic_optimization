@@ -54,7 +54,7 @@ class molecule:
         self.old_ids.add(another_old_id)
         
 class reaction:
-    def __init__(self, id, source, target, equation, value, stderr):
+    def __init__(self, id, source, target, equation, value, stderr, reaction_path):
         self.id = id
         self.source = source
         self.target = target
@@ -65,6 +65,7 @@ class reaction:
         #    self.value = 0
         #else:
         #    self.value = value
+        self.reaction_path = reaction_path.strip() if reaction_path else ""
         self.value = value
         self.stderr = stderr
         self.isRelevant = True  # at the beginning, all reactions are considered to be relevant
@@ -147,11 +148,11 @@ def data_parser(file_path):
         #if "d12" not in data_elements:
         #    reaction_UB = float(data_elements["d9"])
         #reaction_URL = data_elements["d10"]
-        #reaction_path = data_elements["d11"]
+        reaction_path = data_elements.get("d11")  
         
         source = node_id_to_mol[source_id]
         target = node_id_to_mol[target_id]
-        reac = reaction(reaction_id, source, target, reaction_eq, reaction_val, reaction_stdErr)
+        reac = reaction(reaction_id, source, target, reaction_eq, reaction_val, reaction_stdErr, reaction_path)
         reactions.append(reac)
         
         
