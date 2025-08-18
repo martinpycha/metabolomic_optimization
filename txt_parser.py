@@ -12,7 +12,10 @@ def add_header(file_location):
     df.columns = new_header  # assign as column names
     df.dropna(subset=['Equation'], inplace=True)
     # Save the new file (overwrite or save separately)
-    df = df[~df['ID'].astype(str).str.contains('net', case=False, na=False)]
+    
+    # THERE WAS A MISTAKE - nets are to stay, exch are to be removed!
+    #df = df[~df['ID'].astype(str).str.contains('net', case=False, na=False)]
+    df = df[~df['ID'].astype(str).str.contains('exch', case=False, na=False)]
     if 'LB' not in df.columns:
         df['LB'] = ""
     if 'UB' not in df.columns:
@@ -23,9 +26,9 @@ def add_header(file_location):
 
     
     #df.to_excel("A4GALT_flux_withHeader.xlsx", index=False)
-    df.to_excel("metabolomic_optimization/assets/input/PPSO_regular_v2.xlsx", index=False)
+    df.to_excel("metabolomic_optimization/assets/input/PPSO_v2_header.xlsx", index=False)
     
-#add_header("metabolomic_optimization/assets/input/PalPaoSteOle_regular_pruning_T40_1806_flux.xlsx")
+#add_header("metabolomic_optimization/assets/input/PPSO_BEST.xlsx")
 #add_header("metabolomic_optimization/PalPaoSteOle_regular_1279_flux_v2.xlsx")
     
 
@@ -63,7 +66,53 @@ def compare_two_txt_files(file1_location, file2_location):
 # Revelation of the problem at the 40th percentil
 #compare_two_txt_files("./metabolomic_optimization/assets/output/PalPaoSteOle_regular_new_threshold_40.txt", "./metabolomic_optimization/assets/input/PalPaoSteOle_regular_PROBLEM_threshold_40.txt")
 
+import re
+import pandas as pd
 
+def clean_reaction(line):
+    """
+    Remove bracketed sections and extra spaces from a reaction line.
+    Example:
+    'MG1Pal (...) + Pal (...) -> DG12PalPal (...)'
+    becomes
+    'MG1Pal + Pal -> DG12PalPal'
+    """
+    # Remove everything inside parentheses
+    cleaned = re.sub(r'\([^)]*\)', '', line)
+    # Remove multiple spaces
+    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
+    return cleaned
+
+def compare_files(txt_file, excel_file, excel_column=1, output_file="comparison_results.txt"):
+    # Read TXT file (long reactions with brackets)
+    with open(txt_file, "r") as f:
+        original_lines = [clean_reaction(line.strip()) for line in f if line.strip()]
+    
+    # Read Excel file (simplified reactions, assumed in first column by default)
+    df = pd.read_excel(excel_file, header=None)
+    simplified_lines = [str(x).strip() for x in df[excel_column].dropna().tolist()]
+    
+    # Compare
+    extra_in_original = [r for r in original_lines if r not in simplified_lines]
+    extra_in_simplified = [r for r in simplified_lines if r not in original_lines]
+    matches = [r for r in simplified_lines if r in original_lines]
+    
+    # Write results to file
+    with open(output_file, "w") as out:
+        out.write(f"✅ Matches found: {len(matches)}\n\n")
+        
+        out.write("⚠️ Extra reactions in TXT (long) file:\n")
+        for r in extra_in_original:
+            out.write("  " + r + "\n")
+        
+        out.write("\n⚠️ Extra reactions in Excel (simplified) file:\n")
+        for r in extra_in_simplified:
+            out.write("  " + r + "\n")
+    
+    print(f"Comparison complete ✅ Results saved in {output_file}")
+
+# Example usage:
+#compare_files("./metabolomic_optimization/assets/input/PalPaoSteOle_regular_new.txt", "./metabolomic_optimization/assets/input/PPSO_regular_v2.xlsx", excel_column=0, output_file="results.txt")
 
 #add_header("./metabolomic_optimization/A4GALT_flux.xlsx")
 

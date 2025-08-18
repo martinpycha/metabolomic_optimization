@@ -2,11 +2,24 @@ import collections
 import pandas as pd
 from enum import Enum
 import math
-import graphml_parser as gp
-import txt_parser as tp
+# RUNING FROM APP
+from . import graphml_parser as gp
+from . import txt_parser as tp
+# RUNING DIRECTLY
+#import graphml_parser as gp
+#import txt_parser as tp
 import importlib
 import copy
 import re
+
+
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ASSETS_DIR = os.path.join(BASE_DIR, "assets")
+
+
+
+
 
 importlib.reload(gp)
 importlib.reload(tp)
@@ -722,26 +735,43 @@ class Visualisation:
         
         
 # RUNING THE RESPECTIVE PARTS OF THE ALGORITHM:
-# the following code is connected to the "pruning" algorithm (class prune)       
-                
+# the following code is connected to the "pruning" algorithm (class prune)     
+
+
 def prepare_mols_reacs(data_address_input):
-    molecules, reactions, node_id_to_mol = gp.data_parser(data_address_input)
+    INPUT_PATH_GRAPHML = os.path.join(ASSETS_DIR, "input", data_address_input)
+    molecules, reactions, node_id_to_mol = gp.data_parser(INPUT_PATH_GRAPHML)
+    #molecules, reactions, node_id_to_mol = gp.data_parser(data_address_input)
     first_reactants, final_products, all_mols = identify_precs_and_final_prod(reactions)
     return all_mols, reactions, first_reactants, final_products, node_id_to_mol
+
    
 def save_result_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH, first_algorithm, remove_nodes=False, name="output"):
+    INPUT_PATH_GRAPHML = os.path.join(ASSETS_DIR, "input", INPUT_PATH_GRAPHML)
+    #molecules, reactions, node_id_to_mol = gp.data_parser(INPUT_PATH_GRAPHML)
+    
+    
     #OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
-    OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_T" + str(int(first_algorithm.threshold * 100)) + ".graphml"
-    gp.to_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, first_algorithm.pruned_reactions, remove_nodes)
+    # TOTO naposledy zakomentovano
+    #OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_T" + str(int(first_algorithm.threshold * 100)) + ".graphml"
+    
+    OUTPUT_PATH = os.path.join(ASSETS_DIR, "output", OUTPUT_PATH + "_T" + str(int(first_algorithm.threshold * 100)) + ".graphml")
+    gp.to_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH, first_algorithm.pruned_reactions, remove_nodes)
+    #gp.to_graphml(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, first_algorithm.pruned_reactions, remove_nodes)
     
 def save_result_graphml_vis(INPUT_PATH_GRAPHML, OUTPUT_PATH, first_algorithm, name="output"):
+    INPUT_PATH_GRAPHML = os.path.join(ASSETS_DIR, "input", INPUT_PATH_GRAPHML)
+    OUTPUT_PATH_GRAPHML = os.path.join(ASSETS_DIR, "output", OUTPUT_PATH)
+    
     #OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".graphml"
-    OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + ".graphml"
+    #OUTPUT_PATH_GRAPHML = f"" + OUTPUT_PATH + "/" + name + ".graphml"
     gp.to_graphml_visualize(INPUT_PATH_GRAPHML, OUTPUT_PATH_GRAPHML, first_algorithm.pruned_reactions)
     
 def save_result_txt(INPUT_PATH_TXT, OUTPUT_PATH, first_algorithm, name="output"):
     #OUTPUT_PATH_TXT = f"" + OUTPUT_PATH + "/" + name + "_" + first_algorithm.mode + ".txt"
-    OUTPUT_PATH_TXT = f"" + OUTPUT_PATH + "/" + name + "_T" + str(int(first_algorithm.threshold * 100)) + ".txt"
+    OUTPUT_PATH_TXT = os.path.join(ASSETS_DIR, "output", OUTPUT_PATH + "_T" + str(int(first_algorithm.threshold * 100)) + ".txt")
+    INPUT_PATH_TXT = os.path.join(ASSETS_DIR, "input", INPUT_PATH_TXT)
+    #OUTPUT_PATH_TXT = f"" + OUTPUT_PATH + "/" + name + "_T" + str(int(first_algorithm.threshold * 100)) + ".txt"
     tp.run_the_script(first_algorithm.pruned_reactions, first_algorithm.reactions, INPUT_PATH_TXT, OUTPUT_PATH_TXT)
     
 
